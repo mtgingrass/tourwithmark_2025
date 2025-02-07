@@ -7,13 +7,17 @@ image: images/markandollie1.webp
 
 ## Professional
 
-I have over two decades of experience in the federal space leading high-performing teams, delivering enterprise software projects, and driving organizational success through strategic contracting, reorganization, and exceptional communication.
+I bring over two decades of experience in the federal space, where I have led high-performing teams, delivered enterprise software projects, and driven organizational success through strategic contracting, reorganization, and exceptional communication.
 
-I excel at translating complex technical concepts into clear, actionable insights for diverse stakeholders and aligning projects with mission objectives. With extensive experience overseeing multiple scrum teams; including Product Owners and Scrum Masters. I provide leadership, coaching, and support to optimize team performance. I am adept at managing product backlogs, transforming stakeholder requirements into actionable user stories, and guiding Agile teams to deliver software solutions.
+Throughout my career, I have excelled at translating complex technical concepts into actionable insights for stakeholders at all levels. As a leader overseeing multiple Scrum teams, I have successfully guided Agile transformations, coached Product Owners and Scrum Masters, and optimized team performance to meet mission-critical objectives.
+
+With a proven track record in managing product backlogs, transforming stakeholder requirements into user-focused stories, and delivering innovative software solutions, I am committed to creating real-world value through technology and collaboration.
+
+I am passionate about improving processes, fostering innovation, and helping organizations achieve their missions efficiently and effectively. Feel free to connect to discuss how I can contribute to your team’s success.
 
 # About Me
 
-I’m a lifelong learner, outdoor enthusiast, and problem solver. I enjoy staying up to date with techn, and dabbling with some code (like building this site). I’m always looking for ways to grow.  
+I’m a lifelong learner, outdoor enthusiast, and problem solver.
 
 ### Hobbies  
 I have been actively hiking for a few years now. I started doing some over-nighters recently and love the steep climbs. I also mountain bike and skateboard. I have a partially built out van and pose as a vanlifer on the weekends from time to time. 
@@ -21,6 +25,6 @@ I have been actively hiking for a few years now. I started doing some over-night
 My dog, Ollie, is usually along for the ride. He’s my trail buddy and road trip companion.
 
 ### Curious Mind  
-I have an interest in technology, policy, and efficiency - I love learning about Lean and six sigma and anything to do with being efficient and eliminating wasteful processes.
+I have interests in technology, policy, governance, and efficiency. I enjoy learning about Lean, Six Sigma, and anything related to improving efficiency and eliminating wasteful processes.
 
-At the end of the day, I’m always looking for ways to combine what I know with what I love.
+At the end of the day, I’m always seeking ways to combine what I know with what I love.
