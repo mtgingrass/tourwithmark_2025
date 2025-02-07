@@ -5,7 +5,7 @@ author:
   - name: Mark Gingrass
 date: 10-19-2024
 categories: [Self Help, Writing] # self-defined categories
-image: preview-image.png
+image: englishgrammar.webp
 draft: false
 ---
 
