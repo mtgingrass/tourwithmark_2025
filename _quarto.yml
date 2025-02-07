@@ -9,6 +9,10 @@ website:
         text: Home
       - posts.qmd
       - booklist.qmd
+    right:
+      - icon: github
+        href: https://github.com/mtgingrass
+        aria-label: GitHub
 
 format:
   html:
