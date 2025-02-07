@@ -1,10 +1,14 @@
 /* css styles */
-/* Improve blockquote visibility */
+
+/* Updated blockquote styles for better visibility */
 blockquote {
-    color: #333; /* Darker text */
-    background: #f9f9f9; /* Light gray background for contrast */
-    border-left: 4px solid #0077cc; /* Blue left border for emphasis */
-    padding: 10px 15px;
-    font-style: italic;
-    margin: 15px 0;
+    color: #1a1a1a; /* Darker font color for better readability */
+    background: #e6f7ff; /* Light blue background for contrast */
+    border-left: 6px solid #0056b3; /* Bolder blue border for emphasis */
+    padding: 15px 20px;
+    font-style: normal; /* Keep text style normal for better clarity */
+    font-size: 1.1em; /* Slightly larger font size */
+    margin: 20px 0;
+    line-height: 1.5; /* Improve text spacing for readability */
+    border-radius: 4px; /* Rounded corners for a polished look */
 }
