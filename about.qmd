@@ -1,5 +1,7 @@
 ---
 title: "About"
+about:
+  template: trestles
 ---
 
 I have over two decades of federal government experience leading multiple teams, delivering enterprise software projects, and driving organizational success through strategic contracting, reorganization, and exceptional communication.

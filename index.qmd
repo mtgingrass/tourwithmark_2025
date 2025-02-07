@@ -2,10 +2,7 @@
 title: "Mark Gingrass"
 ---
 
-This is a Quarto website.
+I have over two decades of federal government experience leading multiple teams, delivering enterprise software projects, and driving organizational success through strategic contracting, reorganization, and exceptional communication.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+I’m an expert with translating technical concepts into business acumen for many stakeholders, and aligning projects with mission goals. Overseeing multiple Scrum teams, including Product Owners and Scrum Masters, while also stepping in to coach and support them as needed. Responsible for managing product backlogs, translating stakeholder requirements into actionable user stories, and guiding Agile teams to deliver software solutions.
+---
