@@ -13,6 +13,8 @@ website:
       - icon: github
         href: https://github.com/mtgingrass
         aria-label: GitHub
+      - icon: envelope-arrow-up-fill
+        href: mailto:mark.gingrass@gmail.com
 
 format:
   html:
