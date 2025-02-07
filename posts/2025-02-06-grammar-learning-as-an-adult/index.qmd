@@ -1,6 +1,6 @@
 ---
 title: "Learning Grammar as an Adult"
-description: "I’ve always believed that true understanding comes from questioning even the most basic rules. In this post, I dive into a few grammar rules—like split infinitives, passive voice, and words that weaken writing—that I’ve been rethinking. Should we follow them rigidly, or is clarity more important? Let’s break them down and see what really matters."
+description: "Learning grammar as an adult can be fun and refreshing. I treat it like math; it's just a bunch of rules. I jump into a few grammar rules—like split infinitives, passive voice, and words that weaken writing—that I’ve been rethinking. Should we follow them rigidly, or is clarity more important? Let’s break them down and see what really matters."
 author:
   - name: Mark Gingrass
 date: 10-19-2024
