@@ -5,7 +5,22 @@ about:
 image: images/markandollie1.webp
 ---
 
-I have over two decades of federal government experience leading multiple teams, delivering enterprise software projects, and driving organizational success through strategic contracting, reorganization, and exceptional communication.
+## Professional
 
-I’m an expert with translating technical concepts into business acumen for many stakeholders, and aligning projects with mission goals. Overseeing multiple Scrum teams, including Product Owners and Scrum Masters, while also stepping in to coach and support them as needed. Responsible for managing product backlogs, translating stakeholder requirements into actionable user stories, and guiding Agile teams to deliver software solutions.
----
+I have over two decades of experience in the federal space leading high-performing teams, delivering enterprise software projects, and driving organizational success through strategic contracting, reorganization, and exceptional communication.
+
+I excel at translating complex technical concepts into clear, actionable insights for diverse stakeholders and aligning projects with mission objectives. With extensive experience overseeing multiple scrum teams; including Product Owners and Scrum Masters. I provide leadership, coaching, and support to optimize team performance. I am adept at managing product backlogs, transforming stakeholder requirements into actionable user stories, and guiding Agile teams to deliver software solutions.
+
+# About Me
+
+I’m a lifelong learner, outdoor enthusiast, and problem solver. I enjoy staying up to date with techn, and dabbling with some code (like building this site). I’m always looking for ways to grow.  
+
+### 🚐 Hobbies  
+I have been actively hiking for a few years now. I started doing some over-nighters recently and love the steep climbs. I also mountain bike and skateboard. I have a partially built out van and pose as a vanlifer on the weekends from time to time. 
+
+My dog, Ollie, is usually along for the ride. He’s my trail buddy and road trip companion, 
+
+### Staying Curious  
+I have an interest in technology, policy, and efficiency - I love lean/six sigma.
+
+At the end of the day, I’m always looking for ways to combine what I know with what I love.
