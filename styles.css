@@ -2,8 +2,8 @@
 
 /* Updated blockquote styles for better visibility */
 blockquote {
-    color: #1a1a1a; /* Darker font color for better readability */
-    background: #e6f7ff; /* Light blue background for contrast */
+    color: #000000; /* Darker font color for better readability */
+    background: #5c5174; /* Light blue background for contrast */
     border-left: 6px solid #0056b3; /* Bolder blue border for emphasis */
     padding: 15px 20px;
     font-style: normal; /* Keep text style normal for better clarity */
