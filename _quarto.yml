@@ -11,7 +11,7 @@ website:
 
 format:
   html:
-    theme: morph
+    theme: solona
     css: styles.css
     toc: true
 
