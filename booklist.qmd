@@ -8,22 +8,12 @@ I'll try to keep up with the books I have read and add them here. From this poin
 
 *The links are Amazon Affiliate links and I make a tiny commission if you choose to purchase one at no cost to you. This helps keep me motivated to update this site.*
 
-# Non-fiction
+# History & Politics
 
 ### **The Limits of Power** by Andrew Bacevich
 
 A critical examination of America's foreign policy and its overreliance on military power. Bacevich delves into the consequences of unchecked national ambitions.\
 [Buy on Amazon](https://www.amazon.com/Limits-Power-End-American-Exceptionalism/dp/0805088156?tag=hatro-20)
-
-### **Anxious People** by Fredrik Backman
-
-A heartwarming and humorous story about a failed bank robbery that turns into a hostage situation, revealing the interconnectedness of human lives.\
-[Buy on Amazon](https://www.amazon.com/Anxious-People-Novel-Fredrik-Backman/dp/1501160834?tag=hatro-20)
-
-### **The Denial of Death** by Ernest Becker
-
-This Pulitzer Prize-winning work explores human civilization's relationship with mortality and how the fear of death influences behavior.\
-[Buy on Amazon](https://www.amazon.com/Denial-Death-Ernest-Becker/dp/0684832402?tag=hatro-20)
 
 ### **Easy Spanish Step-By-Step** by Barbara Bregstein
 
@@ -60,21 +50,6 @@ This volume chronicles Johnson's vice presidency and the transition to his unexp
 The first installment in the series, exploring Johnson's early life and political rise in Texas.\
 [Buy on Amazon](https://www.amazon.com/Path-Power-Years-Lyndon-Johnson/dp/0679729453?tag=hatro-20)
 
-### **How We Learn** by Stanislas Dehaene
-
-A comprehensive look into the neuroscience of learning, offering insights into how we acquire and retain knowledge.\
-[Buy on Amazon](https://www.amazon.com/How-We-Learn-Why-Brains/dp/0525559886?tag=hatro-20)
-
-### **The Idiot** by Fyodor Dostoevsky
-
-A profound novel exploring the life of Prince Myshkin, whose innocence and kindness are perceived as foolishness in a corrupt society.\
-[Buy on Amazon](https://www.amazon.com/Idiot-Fyodor-Dostoevsky/dp/014044792X?tag=hatro-20)
-
-### **Dreyer's English** by Benjamin Dreyer
-
-An informative and entertaining guide to writing and grammar, offering tips from a seasoned copy editor.\
-[Buy on Amazon](https://www.amazon.com/Dreyers-English-Ultimate-Companion-Writing/dp/0812995708?tag=hatro-20)
-
 ### **Man's Search for Meaning** by Viktor E. Frankl
 
 A moving memoir by a Holocaust survivor, discussing finding purpose amidst suffering and the importance of meaning in life.\
@@ -90,21 +65,6 @@ A sweeping narrative of human history, examining how Homo sapiens came to domina
 A harrowing account of the persecution of homosexuals in Nazi concentration camps, shedding light on a lesser-known aspect of history.\
 [Buy on Amazon](https://www.amazon.com/Men-Pink-Triangle-Heinz-Heger/dp/1555830064?tag=hatro-20)
 
-### **Lean Enterprise** by Jez Humble, Joanne Molesky, and Barry O'Reilly
-
-A guide for organizations aiming to adopt lean principles to drive innovation and achieve sustainable growth.\
-[Buy on Amazon](https://www.amazon.com/Lean-Enterprise-Performance-Organizations-High-Performance/dp/1449368425?tag=hatro-20)
-
-### **The Phoenix Project** by Gene Kim, Kevin Behr, and George Spafford
-
-A novel that illustrates the challenges of IT operations and the journey to implement DevOps practices for better efficiency.\
-[Buy on Amazon](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290?tag=hatro-20)
-
-### **The Unicorn Project** by Gene Kim
-
-A companion to *The Phoenix Project*, focusing on the developer's perspective and the importance of autonomy and innovation.\
-[Buy on Amazon](https://www.amazon.com/Unicorn-Project-Developers-Disruption-Thriving/dp/1942788762?tag=hatro-20)
-
 ### **They Thought They Were Free** by Milton Mayer
 
 An exploration of how ordinary Germans came to accept and support the Nazi regime, offering insights into the nature of conformity.\
@@ -115,20 +75,20 @@ An exploration of how ordinary Germans came to accept and support the Nazi regim
 An analysis of how evangelical culture in America has been shaped by a rugged, militant view of masculinity, with far-reaching consequences.\
 [Buy on Amazon](https://www.amazon.com/Jesus-John-Wayne-Evangelicals-Corrupted/dp/163149905X?tag=hatro-20)
 
+### **A People's History of the United States** by Howard Zinn
+
+A bottom-up view of American history, focusing on the stories often left out of textbooks.\
+[Buy on Amazon](https://www.amazon.com/Peoples-History-United-States/dp/0062397346?tag=hatro-20)
+
+### **The Policy-Making Process** by Charles E. Lindblom
+
+An insightful look into the intricacies of creating and implementing policies in complex systems.\
+[Buy on Amazon](https://www.amazon.com/Policy-Making-Process-Charles-E-Lindblom/dp/0136813820?tag=hatro-20)
+
 ### **The War on the West** by Douglas Murray
 
 A sharp critique of the cultural movements targeting Western history and values, exploring what might be lost in the process.\
 [Buy on Amazon](https://www.amazon.com/War-West-Douglas-Murray/dp/0063162024?tag=hatro-20)
-
-### **Animal Farm** by George Orwell
-
-A satirical allegory on totalitarianism and power dynamics, as relevant today as when it was written.\
-[Buy on Amazon](https://www.amazon.com/Animal-Farm-George-Orwell/dp/0451526341?tag=hatro-20)
-
-### **Remarkably Bright Creatures** by Shelby Van Pelt
-
-A heartwarming story about unexpected friendships and healing, featuring a giant Pacific octopus.\
-[Buy on Amazon](https://www.amazon.com/Remarkably-Bright-Creatures-Shelby-Pelt/dp/0063204150?tag=hatro-20)
 
 ### **Pharma** by Gerald Posner
 
@@ -145,12 +105,56 @@ A fascinating critique of how state-led schemes for improving society often fail
 A deep dive into Vladimir Putin’s strategies and how they shape global geopolitics.\
 [Buy on Amazon](https://www.amazon.com/Putins-World-Russia-Against-West/dp/1455533018?tag=hatro-20)
 
-### **The Policy-Making Process** by Charles E. Lindblom
+# Tech, Science, Self Help
 
-An insightful look into the intricacies of creating and implementing policies in complex systems.\
-[Buy on Amazon](https://www.amazon.com/Policy-Making-Process-Charles-E-Lindblom/dp/0136813820?tag=hatro-20)
+### **Dreyer's English** by Benjamin Dreyer
 
-### **A People's History of the United States** by Howard Zinn
+An informative and entertaining guide to writing and grammar, offering tips from a seasoned copy editor.\
+[Buy on Amazon](https://www.amazon.com/Dreyers-English-Ultimate-Companion-Writing/dp/0812995708?tag=hatro-20)
 
-A bottom-up view of American history, focusing on the stories often left out of textbooks.\
-[Buy on Amazon](https://www.amazon.com/Peoples-History-United-States/dp/0062397346?tag=hatro-20)
+### **Lean Enterprise** by Jez Humble, Joanne Molesky, and Barry O'Reilly
+
+A guide for organizations aiming to adopt lean principles to drive innovation and achieve sustainable growth.\
+[Buy on Amazon](https://www.amazon.com/Lean-Enterprise-Performance-Organizations-High-Performance/dp/1449368425?tag=hatro-20)
+
+### **How We Learn** by Stanislas Dehaene
+
+A comprehensive look into the neuroscience of learning, offering insights into how we acquire and retain knowledge.\
+[Buy on Amazon](https://www.amazon.com/How-We-Learn-Why-Brains/dp/0525559886?tag=hatro-20)
+
+### **The Phoenix Project** by Gene Kim, Kevin Behr, and George Spafford
+
+A novel that illustrates the challenges of IT operations and the journey to implement DevOps practices for better efficiency.\
+[Buy on Amazon](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290?tag=hatro-20)
+
+### **The Unicorn Project** by Gene Kim
+
+A companion to *The Phoenix Project*, focusing on the developer's perspective and the importance of autonomy and innovation.\
+[Buy on Amazon](https://www.amazon.com/Unicorn-Project-Developers-Disruption-Thriving/dp/1942788762?tag=hatro-20)
+
+### **The Denial of Death** by Ernest Becker
+
+This Pulitzer Prize-winning work explores human civilization's relationship with mortality and how the fear of death influences behavior.\
+[Buy on Amazon](https://www.amazon.com/Denial-Death-Ernest-Becker/dp/0684832402?tag=hatro-20)
+
+# Fiction
+
+### **Remarkably Bright Creatures** by Shelby Van Pelt
+
+A heartwarming story about unexpected friendships and healing, featuring a giant Pacific octopus.\
+[Buy on Amazon](https://www.amazon.com/Remarkably-Bright-Creatures-Shelby-Pelt/dp/0063204150?tag=hatro-20)
+
+### **The Idiot** by Fyodor Dostoevsky
+
+A profound novel exploring the life of Prince Myshkin, whose innocence and kindness are perceived as foolishness in a corrupt society.\
+[Buy on Amazon](https://www.amazon.com/Idiot-Fyodor-Dostoevsky/dp/014044792X?tag=hatro-20)
+
+### **Anxious People** by Fredrik Backman
+
+A heartwarming and humorous story about a failed bank robbery that turns into a hostage situation, revealing the interconnectedness of human lives.\
+[Buy on Amazon](https://www.amazon.com/Anxious-People-Novel-Fredrik-Backman/dp/1501160834?tag=hatro-20)
+
+### **Animal Farm** by George Orwell
+
+A satirical allegory on totalitarianism and power dynamics, as relevant today as when it was written.\
+[Buy on Amazon](https://www.amazon.com/Animal-Farm-George-Orwell/dp/0451526341?tag=hatro-20)
