@@ -1,6 +1,6 @@
 ---
-title: 'My Photo Blog Post'
-author: 'Your Name'
+title: 'Chattoga Trail - Lick Log from Burrells Ford Campground'
+author: 'Mark'
 date: '2025-02-10'
 categories: ['Photography', 'Hiking']
 image: 'images/IMG_0007.webp'
@@ -12,8 +12,8 @@ description: An overnight hike on the Chattooga Trail to Lick Log Falls from Bur
 
 <figure>
   <figcaption>Listen to audio:</figcaption>
-  <audio controls src="/images/LickLog.mp3"></audio>
-  <a href="/images/LickLog.mp3"> Download audio </a>
+  <audio controls src="images/LickLog.mp3"></audio>
+  <a href="images/LickLog.mp3"> Download audio </a>
 </figure>
 
 ## Plenty of rocks and beaches by the river
