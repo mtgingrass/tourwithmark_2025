@@ -1,0 +1,92 @@
+---
+title: 'My Photo Blog Post'
+author: 'Your Name'
+date: '2025-02-10'
+categories: ['Photography', 'Hiking']
+image: 'images/IMG_0007.webp'
+format: html
+---
+
+## Plenty of rocks and beaches by the river
+
+![IMG_0007](images/IMG_0007.webp)
+
+## Love the waterfalls.
+
+![IMG_0061](images/IMG_0061.webp)
+
+## Beautiful Day
+
+![IMG_0063](images/IMG_0063.webp)
+
+## 32 lbs - no problem. 
+
+![IMG_0069 (1)](images/IMG_0069%20(1).webp)
+
+## River
+
+![IMG_0070](images/IMG_0070.webp)
+
+## Post hike photo.
+
+![IMG_0074](images/IMG_0074.webp)
+
+## Ollie loves the hike, and the water.
+
+![IMG_4283](images/IMG_4283.webp)
+
+## Little help, please.
+
+![IMG_4289](images/IMG_4289.webp)
+
+## Don't jump.
+
+![IMG_4293](images/IMG_4293.webp)
+
+## Smoke this.
+
+![IMG_4314](images/IMG_4314.webp)
+
+## Don't steal my Helinox Chair Zero.
+
+![IMG_4319](images/IMG_4319.webp)
+
+## Stinky socks.
+
+![IMG_4321](images/IMG_4321.webp)
+
+## Starting the hike.
+
+![IMG_9978](images/IMG_9978.webp)
+
+## Partner in crime.
+
+![IMG_9981](images/IMG_9981.webp)
+
+## I brought my water shoes.
+
+![IMG_9983](images/IMG_9983.webp)
+
+## I love the sound of the river.
+
+![IMG_9984](images/IMG_9984.webp)
+
+## Follow the river.
+
+![IMG_9989](images/IMG_9989.webp)
+
+## Water, water, water.
+
+![IMG_9990](images/IMG_9990.webp)
+
+## Shower time.
+
+![IMG_9991](images/IMG_9991.webp)
+
+## The real boss.
+
+![IMG_9997](images/IMG_9997.webp)
+
+## More falls.
+
+![IMG_9998](images/IMG_9998.webp)
