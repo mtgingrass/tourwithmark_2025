@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Mark Gingrass"
+  title: "Tour with Mark"
   navbar:
     left:
       - href: index.qmd
@@ -14,7 +14,7 @@ website:
         href: https://github.com/mtgingrass
         aria-label: GitHub
       - icon: envelope-arrow-up-fill
-        href: mailto:mark.gingrass@gmail.com
+        href: mailto:handle@tourwithmark.com
 
 format:
   html:
