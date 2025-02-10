@@ -12,8 +12,8 @@ description: An overnight hike on the Chattooga Trail to Lick Log Falls from Bur
 
 <figure>
   <figcaption>Listen to audio:</figcaption>
-  <audio controls src="posts/2025-02-10-chattooga-trail-to-lick-log-falls/LickLog.mp3"></audio>
-  <a href="posts/2025-02-10-chattooga-trail-to-lick-log-falls/LickLog.mp3"> Download audio </a>
+  <audio controls src="https://github.com/mtgingrass/my-website/raw/refs/heads/tourwithmark_quarto/posts/2025-02-10-chattooga-trail-to-lick-log-falls/LickLog.mp3"></audio>
+  <a href="https://github.com/mtgingrass/my-website/raw/refs/heads/tourwithmark_quarto/posts/2025-02-10-chattooga-trail-to-lick-log-falls/LickLog.mp3"> Download audio </a>
 </figure>
 
 ## Plenty of rocks and beaches by the river
