@@ -5,7 +5,10 @@ date: '2025-02-10'
 categories: ['Photography', 'Hiking']
 image: 'images/IMG_0007.webp'
 format: html
+description: An overnight hike on the Chattooga Trail to Lick Log Falls from Burrells Ford Campground. We hikd eight miles there, camped, and eight miles back; of course, with Ollie. 
 ---
+
+[All Trails](https://www.alltrails.com/trail/us/south-carolina/foothills-trail-chattooga-river?sh=9ibwrr) has a nice river hike with overnight backpacking. Check out the photos. 
 
 ## Plenty of rocks and beaches by the river
 
@@ -19,7 +22,7 @@ format: html
 
 ![IMG_0063](images/IMG_0063.webp)
 
-## 32 lbs - no problem. 
+## 32 lbs - no problem.
 
 ![IMG_0069 (1)](images/IMG_0069%20(1).webp)
 
