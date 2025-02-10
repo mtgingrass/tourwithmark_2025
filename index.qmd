@@ -2,21 +2,23 @@
 title: "Tour with Mark"
 about:
   template: trestles
-image: images/markandollie1.webp
+image: images/markfoglick.webp
 ---
 
-# About Me
+# Welcome to Tour with Mark 
 
-I’m a lifelong learner, outdoor enthusiast, and problem solver.
+## Don't just think, do.
 
-### Hobbies
+I’m Mark, and this is my space. A place for adventure, learning, and self-reflection. I’m a thinker, a traveler, and a lifelong learner.
 
-I have been actively hiking for a few years now. I started doing some over-nighters recently and love the steep climbs. I also mountain bike and skateboard. I have a partially built out van and pose as a vanlifer on the weekends from time to time.
+I don’t just think about things—I do them.  
 
-My dog, Ollie, is usually along for the ride. He’s my trail buddy and road trip companion.
+I’ve built out my van and experienced the realities of a tough life. I’ve been poor, and I’ve been comfortably middle class. I’ve been technically homeless, and I’ve lived in luxury apartments that most of my peers couldn’t afford. My journey has taken me from delivering newspapers and working at McDonald’s and retail jobs to serving as an Air Force electronics technician and eventually managing IT contracts in the corporate world. I’ve seen a lot—across industries, social classes, and life’s full spectrum, from struggle to stability. 
 
-### Curious Mind
+## This Site
 
-I have interests in technology, policy, governance, and efficiency. I enjoy learning about Lean, Six Sigma, and anything related to improving efficiency and eliminating wasteful processes.
+This site is where it all merges. Here, you’ll find my life experiences, the challenges from my hikes, and the philosophy behind my pursuit of a more meaningful life. I’ve stepped away from traditional social media—not because I don’t have opinions, but because I want to create more often and consume less. I want to focus on literature written with dedication and attention, ideas that took time to develop, perhaps over months, years, or even a lifeteim.  
 
-At the end of the day, I’m always seeking ways to combine what I know with what I love.
+Whether you’re here to follow my adventures, learn from my experiences, or find motivation for your own journey, welcome.
+
+**This is TourWithMark.com. My trail. My terms. My Life.**
