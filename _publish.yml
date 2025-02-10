@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 8e338483-b578-42b2-946a-e96b5e73463e
+      url: 'https://unique-dusk-33200c.netlify.app'

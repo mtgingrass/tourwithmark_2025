@@ -18,7 +18,7 @@ website:
 
 format:
   html:
-    theme: solona
+    theme: cosmo
     css: styles.css
     toc: true
 
