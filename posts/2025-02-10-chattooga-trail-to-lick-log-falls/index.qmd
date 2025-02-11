@@ -11,9 +11,13 @@ description: An overnight hike on the Chattooga Trail to Lick Log Falls from Bur
 [All Trails](https://www.alltrails.com/trail/us/south-carolina/foothills-trail-chattooga-river?sh=9ibwrr) has a nice river hike with overnight backpacking. Check out the photos.
 
 <figure>
-  <figcaption>Listen to audio:</figcaption>
-  <audio controls src="https://github.com/mtgingrass/my-website/raw/refs/heads/tourwithmark_quarto/posts/2025-02-10-chattooga-trail-to-lick-log-falls/LickLog.mp3"></audio>
-  <a href="https://github.com/mtgingrass/my-website/raw/refs/heads/tourwithmark_quarto/posts/2025-02-10-chattooga-trail-to-lick-log-falls/LickLog.mp3"> Download audio </a>
+
+<figcaption>Listen to audio:</figcaption>
+
+<audio controls src="https://github.com/mtgingrass/my-website/raw/refs/heads/tourwithmark_quarto/posts/2025-02-10-chattooga-trail-to-lick-log-falls/LickLog.mp3">
+
+</audio>
+
 </figure>
 
 ### Backpacking at Burrells Ford Campground
@@ -24,11 +28,25 @@ This past weekend, we packed up our gear, grabbed the dog, and hit the trail for
 
 We picked up Ollie (our golden retriever and enthusiastic hiking buddy) and left early Saturday morning. It was about an hour and 15-minute drive to the trailhead, and we started hiking around 10:30 a.m.
 
+## Ollie loves the hike, and the water.
+
+![IMG_4283](images/IMG_4283.webp)
+
 I had about 32 pounds in my pack, and she carried around 24 pounds. I even brought a little luxury: the Helinox Chair Zero, which turned out to be awesome—more on that later.
+
+![IMG_9978](images/IMG_9978.webp)
+
+![IMG_9981](images/IMG_9981.webp)
 
 The first stretch of the hike followed what looked like an old dirt road, closed off to traffic. After about half a mile, we hit the actual trail. Almost immediately, my hips started hurting. No idea why—maybe my pack sat wrong or I wasn’t used to carrying weight like that—but my legs and my mental energy were solid, so I just pushed through.
 
 The trail mostly followed a river, with plenty of gradual ups and downs, a few steeper sections, but nothing compared to Linville Gorge or some of the rougher Pisgah trails. Still, eight miles with a loaded pack took its toll. We took lots of short stops along the way because the river was incredible—roaring with small waterfalls everywhere. Just powerful, fast-moving water. Ollie was loving it, diving in at every chance.
+
+![IMG_0069 (1)](images/IMG_0069%20(1).webp)
+
+## Follow the river.
+
+![IMG_9989](images/IMG_9989.webp)
 
 ### Wildlife, Campsite, and Camp Cooking
 
@@ -37,6 +55,10 @@ We only saw four people the entire hike: two mountain bikers messing around and 
 By the time we got to camp, we had our pick of sites—middle of February, after all. Nobody else was out there, so we just picked a good spot, set up camp, and settled in for the night.
 
 For dinner, I had eggs, some pre-cooked chicken, noodles, and the usual snacks. Also, I snuck in a big Truly for her—she appreciated it. I stuck with coffee. Speaking of coffee, it was perfect with lunch—hot, strong, exactly what I needed.
+
+## Smoke this.
+
+![IMG_4314](images/IMG_4314.webp)
 
 The weather held up most of the day, sitting in the 60s, but as usual, we got some rain. Happens every time we hike. And, as expected, I was disorganized and let my stove get soaked. Rookie mistake. To make things worse, I didn’t bring a lighter (I meant to, I just didn’t). So, no coffee in the morning. That was the real tragedy.
 
@@ -56,86 +78,62 @@ My hips feel fine today, so no long-term damage there. Overall, a great trip—g
 
 Over and out.
 
-## Plenty of rocks and beaches by the river
+### Plenty of rocks and beaches by the river
 
 ![IMG_0007](images/IMG_0007.webp)
 
-## Love the waterfalls.
+### Love the waterfalls.
 
 ![IMG_0061](images/IMG_0061.webp)
 
-## Beautiful Day
+### Beautiful Day
 
 ![IMG_0063](images/IMG_0063.webp)
 
-## 32 lbs - no problem.
-
-![IMG_0069 (1)](images/IMG_0069%20(1).webp)
-
-## River
+### River
 
 ![IMG_0070](images/IMG_0070.webp)
 
-## Post hike photo.
+### Post hike photo.
 
 ![IMG_0074](images/IMG_0074.webp)
 
-## Ollie loves the hike, and the water.
-
-![IMG_4283](images/IMG_4283.webp)
-
-## Little help, please.
+### Little help, please.
 
 ![IMG_4289](images/IMG_4289.webp)
 
-## Don't jump.
+### Don't jump.
 
 ![IMG_4293](images/IMG_4293.webp)
 
-## Smoke this.
-
-![IMG_4314](images/IMG_4314.webp)
-
-## Don't steal my Helinox Chair Zero.
+### Don't steal my Helinox Chair Zero.
 
 ![IMG_4319](images/IMG_4319.webp)
 
-## Stinky socks.
+### Stinky socks.
 
 ![IMG_4321](images/IMG_4321.webp)
 
-## Starting the hike.
-
-![IMG_9978](images/IMG_9978.webp)
-
-## Partner in crime.
-
-![IMG_9981](images/IMG_9981.webp)
-
-## I brought my water shoes.
+### I brought my water shoes.
 
 ![IMG_9983](images/IMG_9983.webp)
 
-## I love the sound of the river.
+### I love the sound of the river.
 
 ![IMG_9984](images/IMG_9984.webp)
 
-## Follow the river.
-
-![IMG_9989](images/IMG_9989.webp)
-
-## Water, water, water.
+### Water, water, water.
 
 ![IMG_9990](images/IMG_9990.webp)
 
-## Shower time.
+### Shower time.
 
 ![IMG_9991](images/IMG_9991.webp)
 
-## The real boss.
+### The real boss.
 
 ![IMG_9997](images/IMG_9997.webp)
 
-## More falls.
+### More falls.
 
 ![IMG_9998](images/IMG_9998.webp)
