@@ -14,7 +14,7 @@ website:
         href: https://github.com/mtgingrass
         aria-label: GitHub
       - icon: envelope-arrow-up-fill
-        href: mailto:handle@tourwithmark.com
+        href: mailto:twm@tourwithmark.com
 
 format:
   html:
