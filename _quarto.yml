@@ -9,6 +9,7 @@ website:
         text: Home
       - posts.qmd
       - booklist.qmd
+      - rants.qmd
     right:
       - icon: github
         href: https://github.com/mtgingrass

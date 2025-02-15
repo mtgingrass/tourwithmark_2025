@@ -1,5 +1,5 @@
 ---
-title: "Book List"
+title: "Books"
 format:
   html:
     toc: true
