@@ -11,6 +11,29 @@ format: html
 
 ## 2025-02-18
 
+**🕒 11:38 P.M.**  
+Elon is neither a data scientist nor a data engineer. I’m not one either, but I work with data, and the number one rule is that you cannot draw conclusions from data you don’t fully understand.
+
+- What is the definition of each field in the table?
+
+- How was the data collected and processed?
+
+- What does a blank field represent—missing data or an intentional omission?
+
+- Are there established rules for interpretation (e.g., assuming individuals over 120 years old are deceased)?
+
+- Is this dataset even the authoritative source of truth for these records?
+
+- What happens if states no longer report deaths, or if reporting errors come from state agencies rather than the federal government?
+
+- Is this data cross-referenced with benefits records?
+
+- What SQL Statement did his young adult entourage use to query this anyway?
+
+A screenshot of this table, without context or analysis, serves only as propaganda, pitting working-class Americans in the private sector against those in the public sector. It distracts from more pressing issues, such as changes to the Federal Acquisition Regulation (FAR), the lucrative government contracts Elon’s companies receive, and the broader oligarchic takeover.
+
+No serious data professional would take that screenshot at face value.
+
 **🕒 11:13 P.M.**  
 My first post using mobile. Let's see if it works.  
 It does!
