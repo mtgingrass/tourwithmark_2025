@@ -10,7 +10,7 @@ website:
         text: Home
       - posts.qmd
       - booklist.qmd
-      - rants.qmd
+      - random_posts.qmd
       - text: "Rants"
         href: rants.html 
     right:
