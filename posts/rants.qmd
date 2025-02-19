@@ -1,0 +1,20 @@
+---
+title: "Rants"
+format: html
+execute:
+  freeze: auto
+---
+
+# Rants
+
+::: {.callout-note}
+💭 **Unfiltered thoughts, updated regularly.**
+:::
+
+```{r}
+library(yaml)
+rants <- yaml::read_yaml("posts/rants.yaml")
+
+for (rant in rants$rants) {
+  cat("##", rant$date, "\n\n", rant$content, "\n\n---\n\n")
+}
