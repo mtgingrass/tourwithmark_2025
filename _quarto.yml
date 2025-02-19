@@ -12,7 +12,7 @@ website:
       - booklist.qmd
       - random_posts.qmd
       - text: "Rants"
-        href: rants.html 
+        href: posts/rants.html 
     right:
       - icon: github
         href: https://github.com/mtgingrass
