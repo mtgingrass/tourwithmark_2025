@@ -1,4 +1,17 @@
+---
+title: "Rants"
+format: html
+---
+
 # Rants
 
-## My First Rant (2025-02-18)
-This is an example rant! Testing the system.
+::: {.callout-note appearance="simple"}
+💭 **Unfiltered thoughts, updated regularly.**
+:::
+
+{% for rant in rants %}
+## {{ rant.date }}
+{{ rant.content }}
+
+---
+{% endfor %}
