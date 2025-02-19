@@ -9,6 +9,10 @@ format: html
 **Unfiltered thoughts, updated regularly.**
 :::
 
+## 2025-02-18
+
+My first poat using mobile. Lets see if it wirks. 
+
 ## 2025-02-20
 
 Just realized that trying to automate rants was more trouble than it was worth. Back to manual updates for a few days. ---
@@ -16,8 +20,6 @@ Just realized that trying to automate rants was more trouble than it was worth. 
 ## 2025-02-19
 
 This is my first rant! Netlify Identity was a pain, but I figured out a better way.
-
-------------------------------------------------------------------------
 
 ## 2025-02-18
 
