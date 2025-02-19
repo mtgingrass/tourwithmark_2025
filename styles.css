@@ -9,3 +9,35 @@ blockquote {
     font-style: italic;
     margin: 15px 0;
 }
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.callout-note {
+  text-align: center;
+  font-style: italic;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+h2 {
+  color: #d9534f;
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

@@ -9,11 +9,11 @@ website:
       - href: index.qmd
         text: Home
       - posts.qmd
-      - booklist.qmd
       - random_posts.qmd
       - text: "Rants"
-        href: posts/rants.html 
+        href: rants.qmd 
     right:
+      - booklist.qmd
       - icon: github
         href: https://github.com/mtgingrass
         aria-label: GitHub
