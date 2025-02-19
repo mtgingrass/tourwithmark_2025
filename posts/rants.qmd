@@ -1,8 +1,6 @@
 ---
 title: "Rants"
 format: html
-execute:
-  freeze: auto
 ---
 
 # Rants
@@ -11,10 +9,15 @@ execute:
 💭 **Unfiltered thoughts, updated regularly.**
 :::
 
-```{r}
-library(yaml)
-rants <- yaml::read_yaml("posts/rants.yaml")
+## 2025-02-20
+Just realized that trying to automate rants was more trouble than it was worth.
+Back to manual updates for a few days.
+---
 
-for (rant in rants$rants) {
-  cat("##", rant$date, "\n\n", rant$content, "\n\n---\n\n")
-}
+## 2025-02-19
+This is my first rant! Netlify Identity was a pain, but I figured out a better way.
+
+---
+
+## 2025-02-18
+Yesterday I was thinking about how frustrating Git can be.
