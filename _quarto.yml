@@ -11,6 +11,8 @@ website:
       - posts.qmd
       - booklist.qmd
       - rants.qmd
+      - text: "Rants"
+        href: rants.html 
     right:
       - icon: github
         href: https://github.com/mtgingrass
