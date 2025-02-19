@@ -5,22 +5,30 @@ format: html
 
 # Random Rants & Interesting Tidbits
 
-::: callout-note
+::: {.callout-note}
 **Unfiltered thoughts, updated regularly.**
 :::
 
 ## 2025-02-18
 
-My first poat using mobile. Lets see if it wirks. 
+**🕒 11:13 P.M.**  
+My first post using mobile. Let's see if it works.  
+It does!
 
-## 2025-02-20
+---
 
-Just realized that trying to automate rants was more trouble than it was worth. Back to manual updates for a few days. ---
+**🕒 11:09 P.M.**  
+Just realized that trying to automate rants was more trouble than it was worth.  
+Back to manual updates for a few days.
 
-## 2025-02-19
+---
 
+**🕒 10:44 P.M.**  
 This is my first rant! Netlify Identity was a pain, but I figured out a better way.
 
-## 2025-02-18
+---
 
-Yesterday I was thinking about how frustrating Git can be.
+## 2025-02-17
+
+**🕒 9:00 A.M.**  
+Let's just test yesterday's format.
