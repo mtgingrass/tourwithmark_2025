@@ -3,7 +3,7 @@ title: "Rants"
 format: html
 ---
 
-# Random Rants & Interesting Tidbits
+# & Interesting Tidbits
 
 ::: {.callout-note}
 **Unfiltered thoughts, updated regularly.**
