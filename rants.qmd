@@ -13,7 +13,9 @@ format: html
 
 **🕒 3:58 P.M.**
 
-![Watch the video](https://youtube.com/shorts/8bbOG1rNW5I)
+<a href="https://youtube.com/shorts/8bbOG1rNW5I" target="_blank">
+ <img src="http://img.youtube.com/vi/nTQUwghvy5Q/mqdefault.jpg" alt="Watch the video" width="240" height="180" border="10" />
+</a>
 
 **🕒 2:19 P.M.**
 
