@@ -1,1 +1,1 @@
-{{< include "../booklist.qmd" >}}
+/Users/markgingrass/Documents/2025 Websites/booklist.qmd
