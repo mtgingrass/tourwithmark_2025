@@ -1,128 +1,129 @@
 ---
 title: 'Ollie is Awesome'
-author: 'Your Name'
+author: 'Mark'
 date: '2025-02-21'
 categories: ['Photography', 'Hiking']
 image: 'images/IMG_3989.webp'
 format: html
+description: Ollie just celebrated his second birthday, and I couldn’t ask for a better buddy. He’s always by my side, and loves unconditionally. Here’s a collection of photos of Ollie - capturing his personality, his adventures, and the little things that make him such a special part of my life. 
 ---
 
 ## Leading the way.
 
-![IMG_0068](images/IMG_0068.webp)
+![](images/IMG_0068.webp)
 
 ## Ollie is tired.
 
-![IMG_0229](images/IMG_0229.webp)
+![](images/IMG_0229.webp)
 
 ## Bridge to nowhere.
 
-![IMG_0495](images/IMG_0495.webp)
+![](images/IMG_0495.webp)
 
 ## Happy Place
 
-![IMG_0499](images/IMG_0499.webp)
+![](images/IMG_0499.webp)
 
 ## Water, water, water.
 
-![IMG_0667](images/IMG_0667.webp)
+![](images/IMG_0667.webp)
 
 ## Posing.
 
-![IMG_1467](images/IMG_1467.webp)
+![](images/IMG_1467.webp)
 
 ## Thirsty.
 
-![IMG_1967](images/IMG_1967.webp)
+![](images/IMG_1967.webp)
 
 ## Relax.
 
-![IMG_1975](images/IMG_1975.webp)
+![](images/IMG_1975.webp)
 
 ## What a view!
 
-![IMG_2451](images/IMG_2451.webp)
+![](images/IMG_2451.webp)
 
 ## Are we home yet?
 
-![IMG_2655](images/IMG_2655.webp)
+![](images/IMG_2655.webp)
 
 ## A clean dog is a happy dog.
 
-![IMG_2782](images/IMG_2782.webp)
+![](images/IMG_2782.webp)
 
 ## Help me, Dad.
 
-![IMG_3769](images/IMG_3769.webp)
+![](images/IMG_3769.webp)
 
 ## What is this cold white stuff?
 
-![IMG_3989](images/IMG_3989.webp)
+![](images/IMG_3989.webp)
 
 ## I can do it myself. 
 
-![IMG_4289](images/IMG_4289.webp)
+![](images/IMG_4289.webp)
 
 ## Young ollie.
 
-![IMG_6066](images/IMG_6066.webp)
+![](images/IMG_6066.webp)
 
 ## Young boy.
 
-![IMG_6100](images/IMG_6100.webp)
+![](images/IMG_6100.webp)
 
 ## Portrait mode.
 
-![IMG_6576](images/IMG_6576.webp)
+![](images/IMG_6576.webp)
 
 ## Trapped in the van.
 
-![IMG_6747](images/IMG_6747.webp)
+![](images/IMG_6747.webp)
 
 ## Ollie has friends
 
-![IMG_6872](images/IMG_6872.webp)
+![](images/IMG_6872.webp)
 
 ## Just cooling off in the mud. 
 
-![IMG_8069](images/IMG_8069.webp)
+![](images/IMG_8069.webp)
 
 ## Taking a break.
 
-![IMG_8150](images/IMG_8150.webp)
+![](images/IMG_8150.webp)
 
 ## Copilot.
 
-![IMG_8261](images/IMG_8261.webp)
+![](images/IMG_8261.webp)
 
 ## Wring your neck.
 
-![IMG_8839](images/IMG_8839.webp)
+![](images/IMG_8839.webp)
 
 ## Best buds.
 
-![IMG_8903](images/IMG_8903.webp)
+![](images/IMG_8903.webp)
 
 ## Happy birthday, tired one.
 
-![IMG_9484](images/IMG_9484.webp)
+![](images/IMG_9484.webp)
 
 ## Being good indoors.
 
-![IMG_9486](images/IMG_9486.webp)
+![](images/IMG_9486.webp)
 
 ## Look at the camera.
 
-![IMG_9622](images/IMG_9622.webp)
+![](images/IMG_9622.webp)
 
 ## I like my scarf. 
 
-![IMG_9672](images/IMG_9672.webp)
+![](images/IMG_9672.webp)
 
 ## Ice, ice, baby. 
 
-![IMG_9878](images/IMG_9878.webp)
+![](images/IMG_9878.webp)
 
 ## Don't mind me.
 
-![IMG_9957](images/IMG_9957.webp)
+![](images/IMG_9957.webp)
