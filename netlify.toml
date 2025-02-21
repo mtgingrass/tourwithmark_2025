@@ -1,5 +1,2 @@
 [[plugins]]
 package = "@quarto/netlify-plugin-quarto"
-[build]
-command = "cp /Users/markgingrass/Documents/2025 Websites/booklist.qmd . && quarto render"
-publish = "_site"
