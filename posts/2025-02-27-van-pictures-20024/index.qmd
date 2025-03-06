@@ -1,6 +1,6 @@
 ---
 title: 'Welcome to my Van'
-author: 'Your Name'
+author: 'Mark'
 date: '2025-02-27'
 categories: ['Vanlife', 'Adventure']
 image: 'images/IMG_3824.webp'
