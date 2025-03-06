@@ -1,0 +1,24 @@
+---
+title: 'Santos Fat Tire Festival 2025'
+author: 'Your Name'
+date: '2025-03-067'
+categories: ['Photography', 'Hiking']
+image: 'images/IMG_3824.webp'
+format: html
+---
+
+## Santos Fat Tire Fest 2025
+
+![](images/IMG_0302.webp)
+
+
+![](images/IMG_0295.webp)
+
+
+![](images/IMG_0298.webp)
+
+
+![](images/IMG_0299.webp)
+
+![](images/IMG_0300.webp)
+
