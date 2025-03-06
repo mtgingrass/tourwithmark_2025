@@ -1,9 +1,9 @@
 ---
 title: 'Santos Fat Tire Festival 2025'
 author: 'Your Name'
-date: '2025-03-067'
-categories: ['Photography', 'Hiking']
-image: 'images/IMG_3824.webp'
+date: '2025-03-06'
+categories: ['MTB', 'Adventure']
+image: 'images/IMG_0300.webp'
 format: html
 ---
 
