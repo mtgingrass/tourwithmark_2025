@@ -1,8 +1,8 @@
 ---
-title: 'My Photo Blog Post'
+title: 'Welcome to my Van'
 author: 'Your Name'
 date: '2025-02-27'
-categories: ['Photography', 'Hiking']
+categories: ['Vanlife', 'Adventure']
 image: 'images/IMG_3824.webp'
 format: html
 description: "Check out my self-converted camper van. Just a collection of photos, but they tell the whole story.  
