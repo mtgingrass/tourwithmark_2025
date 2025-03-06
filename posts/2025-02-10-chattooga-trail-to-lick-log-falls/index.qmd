@@ -2,7 +2,7 @@
 title: 'Chattoga Trail - Lick Log from Burrells Ford Campground'
 author: 'Mark'
 date: '2025-02-10'
-categories: ['Photography', 'Hiking']
+categories: ['Hiking']
 image: 'images/IMG_4283.webp'
 format: html
 description: An overnight hike on the Chattooga Trail to Lick Log Falls from Burrells Ford Campground. We hikd eight miles there, camped, and eight miles back; of course, with Ollie. 
