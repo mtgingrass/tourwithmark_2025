@@ -3,7 +3,7 @@ title: 'Quick Ride in Dupont Wild Fires'
 author: 'Mark'
 date: '2025-03-27'
 categories: ['MTB', 'North Carolina']
-image: 'images/mark-dupont-river.png'
+image: 'images/mark-dupont-river.jpg'
 format: html
 description: "Just quick 7 or so mile ride in the smokey Dupont Forest."
 ---
