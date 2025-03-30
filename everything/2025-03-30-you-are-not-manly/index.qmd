@@ -2,7 +2,7 @@
 title: 'You Are Not Manly?'
 author: 'Mark'
 date: '2025-03-30'
-categories: ['Life']
+categories: ['Life', 'Politics']
 image: 'images/standup-lgbtq-manly.png'
 format: html
 description: "Unfiltered takedown of masculinity and cowardly scapegoating in American culture. It calls out those who claim to be “tough” or “manly” while targeting marginalized groups like the LGBTQ+ community and government workers instead of standing up for justice. The central message: true strength isn’t about dominance—it’s about defending the vulnerable and calling out real power structures."
