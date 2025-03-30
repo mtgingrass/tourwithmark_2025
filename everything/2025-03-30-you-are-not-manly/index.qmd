@@ -1,5 +1,5 @@
 ---
-title: 'You Are Not Manly?'
+title: 'You Are Not Manly'
 author: 'Mark'
 date: '2025-03-30'
 categories: ['Life', 'Politics']
