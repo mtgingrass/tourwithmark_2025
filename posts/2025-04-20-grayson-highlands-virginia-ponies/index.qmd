@@ -1,5 +1,5 @@
 ---
-title: 'he Pony Whisperer: A Birthday Hike in Grayson Highlands'
+title: 'The Pony Whisperer: A Birthday Hike in Grayson Highlands'
 author: 'Mark'
 date: '2025-04-20'
 categories: ['Hiking', 'Virginia']
@@ -8,7 +8,7 @@ format: html
 description: "For Daria’s birthday week, we hit the trails of Grayson Highlands, Virginia—wild ponies,  mountain views, and Ollie stealing the show. A perfect return to hiking post-surgery (snip snip). #vanlife"
 ---
 
-Almost finished up a with a #vanlife trip to **Grayson Highlands, Virginia** with Daria for her birthday week. It was my first real hike post-surgery, and it felt *so* good to get back out there.
+Almost finished up a with a #vanlife trip to **Grayson Highlands, Virginia** with Darya for her birthday week. It was my first real hike post-surgery, and it felt *so* good to get back out there.
 
 **Ollie turned into the Pony Whisperer.** Ponies were walking right up to us like he’d summoned them.
 
