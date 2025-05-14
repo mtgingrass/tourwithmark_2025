@@ -12,8 +12,7 @@ website:
       - random_posts.qmd
       - text: "Rants"
         href: rants.qmd
-      - text: "Mark for Change"
-        href: https://markforchange.com
+
     right:
       - booklist.qmd
       - icon: github
