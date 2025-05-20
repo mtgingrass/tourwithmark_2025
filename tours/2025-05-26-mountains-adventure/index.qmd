@@ -5,7 +5,7 @@ date: '2025-05-26'
 categories: ['Adventure']
 image: 'images/mountain-vista.webp'
 format: html
-description: "Spent an incredible day exploring the mountain trails, taking in breathtaking views and enjoying the fresh mountain air. A perfect day for adventure and reflection in nature's playground."
+description: "I just happen to like this photo, so I am posting it."
 ---
 
 # A Day in the Mountains
@@ -13,13 +13,11 @@ description: "Spent an incredible day exploring the mountain trails, taking in b
 **Date:** May 26, 2025  
 **Location:** Blue Ridge Mountains  
 **Activity:** Hiking
-
 ---
 
 ![Mountain Vista](images/mountain-vista.webp)
 
-Today was one of those perfect mountain days - clear skies, comfortable temperatures, and trails calling my name. I set out early to catch the morning light and make the most of the day.
-
+What a great photo. 
 
 ---
 
