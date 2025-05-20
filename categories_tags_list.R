@@ -2,7 +2,7 @@ library(yaml)  # For parsing YAML
 library(fs)    # For file system operations
 
 # Define the directory where your Quarto blog posts are stored
-blog_directory <- "posts"  # Update with your actual path
+blog_directory <- "tours"  # Update with your actual path
 
 # Function to extract tags and categories from YAML front matter
 extract_metadata <- function(file_path) {

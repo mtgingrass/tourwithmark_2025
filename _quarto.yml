@@ -8,7 +8,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - posts.qmd
+      - tours.qmd
       - random_posts.qmd
       - text: "Rants"
         href: rants.qmd

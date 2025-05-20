@@ -1,0 +1,28 @@
+---
+title: 'Mountain Adventure: A Day in the High Country'
+author: 'Mark'
+date: '2025-05-26'
+categories: ['Adventure']
+image: 'images/mountain-vista.jpg'
+format: html
+description: "Spent an incredible day exploring the mountain trails, taking in breathtaking views and enjoying the fresh mountain air. A perfect day for adventure and reflection in nature's playground."
+---
+
+# A Day in the Mountains
+
+**Date:** May 26, 2025  
+**Location:** Blue Ridge Mountains  
+**Activity:** Hiking
+
+---
+
+![Mountain Vista](images/mountain-vista.jpg)
+
+Today was one of those perfect mountain days - clear skies, comfortable temperatures, and trails calling my name. I set out early to catch the morning light and make the most of the day.
+
+
+---
+
+
+
+Stay tuned for more adventures on [TourWithMark.com](https://TourWithMark.com)! 
