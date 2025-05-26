@@ -1,0 +1,43 @@
+---
+title: 'Amsterdam Adventure: Exploring the Venice of the North'
+author: 'Mark'
+date: '2025-05-26'
+categories: ['Travel', 'Europe']
+image: 'images/IMG_1032.webp'
+format: html
+description: "Enjoying Amsterdam"
+---
+
+# A Day in Amsterdam
+
+**Date:** May 26, 2025  
+**Location:** Amsterdam, Netherlands  
+**Activity:** City Exploration
+
+---
+
+## Photo Gallery
+
+![Amsterdam scene](images/IMG_1031.webp)
+
+![Amsterdam canals](images/IMG_1032.webp)
+
+![Beautiful Amsterdam architecture](images/IMG_1033.webp)
+
+![Amsterdam street view](images/IMG_1034.webp)
+
+![Canal boats](images/IMG_1035.webp)
+
+![Amsterdam bridge](images/IMG_1036.webp)
+
+![Historic buildings](images/IMG_1037.webp)
+
+![Amsterdam waterfront](images/IMG_1038.webp)
+
+![City square](images/IMG_1039.webp)
+
+![Nighttime in Amsterdam](images/IMG_1040.webp)
+
+---
+
+Stay tuned for more adventures on [TourWithMark.com](https://TourWithMark.com)! 
