@@ -1,0 +1,27 @@
+---
+title: 'Mountain Adventure: A Day in the High Country'
+author: 'Mark'
+date: '2025-05-25'
+categories: ['Adventure']
+image: 'images/mountain-vista.jpg'
+format: html
+description: "I just happen to like this photo."
+---
+
+# A Day in the Mountains
+
+**Date:** May 26, 2025  
+**Location:** Blue Ridge Mountains  
+**Activity:** Hiking
+
+---
+
+![Mountain Vista](images/mountain-vista.jpg)
+
+
+
+---
+
+
+
+Stay tuned for more adventures on [TourWithMark.com](https://TourWithMark.com)! 
