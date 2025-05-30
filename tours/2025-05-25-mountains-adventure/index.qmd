@@ -3,7 +3,7 @@ title: 'Mountain Adventure: A Day in the High Country'
 author: 'Mark'
 date: '2025-05-25'
 categories: ['Adventure']
-image: 'images/mountain-vista.jpg'
+image: 'images/mountain-vista.webp'
 format: html
 description: "I just happen to like this photo."
 ---
@@ -16,7 +16,7 @@ description: "I just happen to like this photo."
 
 ---
 
-![Mountain Vista](images/mountain-vista.jpg)
+![Mountain Vista](images/mountain-vista.webp)
 
 
 

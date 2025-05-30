@@ -18,25 +18,25 @@ description: "Enjoying Amsterdam"
 
 ## Photo Gallery
 
-![Amsterdam scene](images/IMG_1031.webp)
+![](images/IMG_1031.webp)
 
-![Amsterdam canals](images/IMG_1032.webp)
+![](images/IMG_1032.webp)
 
-![Beautiful Amsterdam architecture](images/IMG_1033.webp)
+![](images/IMG_1033.webp)
 
-![Amsterdam street view](images/IMG_1034.webp)
+![](images/IMG_1034.webp)
 
-![Canal boats](images/IMG_1035.webp)
+![](images/IMG_1035.webp)
 
-![Amsterdam bridge](images/IMG_1036.webp)
+![](images/IMG_1036.webp)
 
-![Historic buildings](images/IMG_1037.webp)
+![](images/IMG_1037.webp)
 
-![Amsterdam waterfront](images/IMG_1038.webp)
+![](images/IMG_1038.webp)
 
-![City square](images/IMG_1039.webp)
+![](images/IMG_1039.webp)
 
-![Nighttime in Amsterdam](images/IMG_1040.webp)
+![](images/IMG_1040.webp)
 
 ---
 
