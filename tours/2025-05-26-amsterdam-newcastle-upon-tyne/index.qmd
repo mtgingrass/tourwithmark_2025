@@ -5,10 +5,10 @@ date: '2025-05-26'
 categories: ['Travel', 'Europe']
 image: 'images/IMG_1032.webp'
 format: html
-description: "Enjoying Amsterdam"
+description: "Enjoying Amsterdam and Newcastle upon Tyne"
 ---
 
-# A Day in Amsterdam
+# A Day in Amsterdam and Newcastle upon Tyne
 
 **Date:** May 26, 2025  
 **Location:** Amsterdam, Netherlands  
