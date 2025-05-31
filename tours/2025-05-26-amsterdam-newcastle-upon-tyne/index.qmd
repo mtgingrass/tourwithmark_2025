@@ -11,94 +11,168 @@ description: "Enjoying Amsterdam and Newcastle upon Tyne"
 # A Day in Amsterdam and Newcastle upon Tyne
 
 **Date:** May 26, 2025  
-**Location:** Amsterdam, Netherlands  
+**Location:** Netherlands and Newcastle upon Tyne, UK  
 **Activity:** City Exploration
 
 ---
 
 ## Photo Gallery
 
-![](images/IMG_1031.webp)
+::: {.gallery}
+![I flew into Boston for two days before departing for the 7 hour trip to Amsterdam. I chose PlayAir because they have good deals. I think my ticket was about $450 round tirp.](images/IMG_1031.webp){.gallery-item}
 
-![](images/IMG_1032.webp)
+![Amsterdam right after the train ride to downtown.](images/IMG_1032.webp){.gallery-item}
 
-![](images/IMG_1033.webp)
+![The iconic narrow houses of Amsterdam line the canal, each with their own unique character and history. These buildings, some dating back to the 17th century, are a testament to the city's rich architectural heritage.](images/IMG_1033.webp){.gallery-item}
 
-![](images/IMG_1034.webp)
+![A typical Amsterdam street scene, where bicycles outnumber cars. The city's commitment to sustainable transportation is evident in every corner, making it one of the most bike-friendly cities in the world.](images/IMG_1034.webp){.gallery-item}
 
-![](images/IMG_1035.webp)
+![Seem like there are plenty of places for a beer. But hang on, I have a favorite coming up soon.](images/IMG_1036.webp){.gallery-item}
 
-![](images/IMG_1036.webp)
+![Pastries all over. I learned that Snack is actually like greesy fried food open late at night, not a sugary treat.](images/IMG_1037.webp){.gallery-item}
 
-![](images/IMG_1037.webp)
+![Good thing I don't eat many of these](images/IMG_1038.webp){.gallery-item}
 
-![](images/IMG_1038.webp)
+![Waffles everywhere.](images/IMG_1039.webp){.gallery-item}
 
-![](images/IMG_1039.webp)
+![This is not a anomolay in Amserdam, these bikes are absolutly all over the place.](images/IMG_1040.webp){.gallery-item}
 
-![](images/IMG_1040.webp)
+![](images/IMG_1041.webp){.gallery-item}
 
-![](images/IMG_1058.webp)
+![Amsterdam view](images/IMG_1043.webp){.gallery-item}
 
-![](images/IMG_1059.webp)
+![Amsterdam scene](images/IMG_1057.webp){.gallery-item}
 
-![](images/IMG_1060.webp)
+![Amsterdam canals](images/IMG_1058.webp){.gallery-item}
+:::
 
-![](images/IMG_1061.webp)
+<br><br>
 
-![](images/IMG_1062.webp)
+::: {.gallery}
 
-![](images/IMG_1064.webp)
+![Amsterdam architecture](images/IMG_1059.webp){.gallery-item}
 
-![](images/IMG_1065.webp)
+![Amsterdam street view](images/IMG_1060.webp){.gallery-item}
 
-![](images/IMG_1067.webp)
+![Amsterdam scene](images/IMG_1061.webp){.gallery-item}
 
-![](images/IMG_1068.webp)
+![Amsterdam view](images/IMG_1062.webp){.gallery-item}
 
-![](images/IMG_1069.webp)
+![Amsterdam scene](images/IMG_1064.webp){.gallery-item}
 
-![](images/IMG_1070.webp)
+![Amsterdam canals](images/IMG_1065.webp){.gallery-item}
 
-![](images/IMG_1071.webp)
+![Amsterdam architecture](images/IMG_1067.webp){.gallery-item}
 
-![](images/IMG_1072.webp)
+![Amsterdam street view](images/IMG_1069.webp){.gallery-item}
 
-![](images/IMG_1073.webp)
+![Amsterdam scene](images/IMG_1070.webp){.gallery-item}
 
-![](images/IMG_1074.webp)
+![Amsterdam view](images/IMG_1071.webp){.gallery-item}
 
-![](images/IMG_1075.webp)
+![Amsterdam scene](images/IMG_1072.webp){.gallery-item}
 
-![](images/IMG_1077.webp)
+![Amsterdam canals](images/IMG_1073.webp){.gallery-item}
 
-![](images/IMG_1079.webp)
+![Amsterdam architecture](images/IMG_1074.webp){.gallery-item}
 
-![](images/IMG_1082.webp)
+![Amsterdam street view](images/IMG_1075.webp){.gallery-item}
 
-![](images/IMG_1083.webp)
+![Amsterdam scene](images/IMG_1076.webp){.gallery-item}
 
-![](images/IMG_1084.webp)
+![Amsterdam view](images/IMG_1079.webp){.gallery-item}
 
-![](images/IMG_1085.webp)
+![Amsterdam scene](images/IMG_1082.webp){.gallery-item}
 
-![](images/IMG_1086.webp)
+![Amsterdam canals](images/IMG_1083.webp){.gallery-item}
 
-![](images/IMG_1087.webp)
+![Amsterdam architecture](images/IMG_1084.webp){.gallery-item}
 
-![](images/IMG_1088.webp)
+![Amsterdam street view](images/IMG_1085.webp){.gallery-item}
 
-![](images/IMG_1089.webp)
+![Amsterdam scene](images/IMG_1086.webp){.gallery-item}
 
-![](images/IMG_1093.webp)
+![Amsterdam view](images/IMG_1087.webp){.gallery-item}
 
-![](images/IMG_1094.webp)
+![Amsterdam scene](images/IMG_1088.webp){.gallery-item}
 
-![](images/IMG_1104.webp)
+![Amsterdam canals](images/IMG_1089.webp){.gallery-item}
 
-![](images/IMG_1107.webp)
+![Amsterdam architecture](images/IMG_1093.webp){.gallery-item}
 
-![](images/IMG_1109.webp)
+![Amsterdam street view](images/IMG_1094.webp){.gallery-item}
+
+![Amsterdam scene](images/IMG_1095.webp){.gallery-item}
+
+![Amsterdam view](images/IMG_1104.webp){.gallery-item}
+
+![Amsterdam scene](images/IMG_1107.webp){.gallery-item}
+
+![Amsterdam canals](images/IMG_1108.webp){.gallery-item}
+
+![Amsterdam architecture](images/IMG_1109.webp){.gallery-item}
+
+![Amsterdam street view](images/IMG_1111.webp){.gallery-item}
+
+![Amsterdam scene](images/IMG_1113.webp){.gallery-item}
+
+![Amsterdam view](images/IMG_1126.webp){.gallery-item}
+
+![Amsterdam scene](images/IMG_1127.webp){.gallery-item}
+
+![Amsterdam canals](images/IMG_1128.webp){.gallery-item}
+
+![Amsterdam architecture](images/IMG_1129.webp){.gallery-item}
+
+![Amsterdam street view](images/IMG_1132.webp){.gallery-item}
+
+![Amsterdam scene](images/IMG_1135.webp){.gallery-item}
+
+![Amsterdam view](images/IMG_5691.webp){.gallery-item}
+
+![Amsterdam scene](images/IMG_5694.webp){.gallery-item}
+
+![Amsterdam canals](images/IMG_A8CA2B9B-D0D7-4284-9F90-2A532FB168F5.webp){.gallery-item}
+
+![Amsterdam architecture](images/76979854010__B3193AAB-78ED-48A2-9D4D-8074C6991D80.webp){.gallery-item}
+
+![Amsterdam street view](images/76996814932__9E9E6FE3-2DF8-4D79-97AE-ED68F10520FC.webp){.gallery-item}
+
+![Amsterdam scene](images/CEFE3C2D-7AAD-4906-AD53-B90F0D4975A8.webp){.gallery-item}
+:::
+
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
 ---
 
