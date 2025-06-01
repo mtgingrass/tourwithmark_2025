@@ -18,161 +18,121 @@ description: "Enjoying Amsterdam and Newcastle upon Tyne"
 
 ## Photo Gallery
 
-::: {.gallery}
-![I flew into Boston for two days before departing for the 7 hour trip to Amsterdam. I chose PlayAir because they have good deals. I think my ticket was about $450 round tirp.](images/IMG_1031.webp){.gallery-item}
+![I flew into Boston for two days before departing for the 7 hour trip to Amsterdam. I chose PlayAir because they have good deals. I think my ticket was about $450 round tirp.](images/IMG_1031.webp)
 
-![Amsterdam right after the train ride to downtown.](images/IMG_1032.webp){.gallery-item}
+![Amsterdam right after the train ride to downtown.](images/IMG_1032.webp)
 
-![The iconic narrow houses of Amsterdam line the canal, each with their own unique character and history. These buildings, some dating back to the 17th century, are a testament to the city's rich architectural heritage.](images/IMG_1033.webp){.gallery-item}
+![The iconic narrow houses of Amsterdam line the canal, each with their own unique character and history. These buildings, some dating back to the 17th century, are a testament to the city's rich architectural heritage.](images/IMG_1033.webp)
 
-![A typical Amsterdam street scene, where bicycles outnumber cars. The city's commitment to sustainable transportation is evident in every corner, making it one of the most bike-friendly cities in the world.](images/IMG_1034.webp){.gallery-item}
+![A typical Amsterdam street scene, where bicycles outnumber cars. The city's commitment to sustainable transportation is evident in every corner, making it one of the most bike-friendly cities in the world.](images/IMG_1034.webp)
 
-![Seem like there are plenty of places for a beer. But hang on, I have a favorite coming up soon.](images/IMG_1036.webp){.gallery-item}
+![Seem like there are plenty of places for a beer. But hang on, I have a favorite coming up soon.](images/IMG_1036.webp)
 
-![Pastries all over. I learned that Snack is actually like greesy fried food open late at night, not a sugary treat.](images/IMG_1037.webp){.gallery-item}
+![Pastries all over. I learned that Snack is actually like greesy fried food open late at night, not a sugary treat.](images/IMG_1037.webp)
 
-![Good thing I don't eat many of these](images/IMG_1038.webp){.gallery-item}
+![Good thing I don't eat many of these](images/IMG_1038.webp)
 
-![Waffles everywhere.](images/IMG_1039.webp){.gallery-item}
+![Waffles everywhere.](images/IMG_1039.webp)
 
-![This is not a anomolay in Amserdam, these bikes are absolutly all over the place.](images/IMG_1040.webp){.gallery-item}
+![This is not a anomolay in Amserdam, these bikes are absolutly all over the place.](images/IMG_1040.webp)
 
-![](images/IMG_1041.webp){.gallery-item}
+![](images/IMG_1041.webp)
 
-![There were a ridiculous number of bikes everywhere. It was amazing to see so many people riding. You constantly had to look behind you just to make sure it was safe to walk. It felt like there were more cyclists than cars. I saw people on tandem bikes, parents with kids sitting properly on the back, others riding with passengers sitting sideways, folding bikes—you name it.](images/IMG_1043.webp){.gallery-item}
+![There were a ridiculous number of bikes everywhere. It was amazing to see so many people riding. You constantly had to look behind you just to make sure it was safe to walk. It felt like there were more cyclists than cars. I saw people on tandem bikes, parents with kids sitting properly on the back, others riding with passengers sitting sideways, folding bikes—you name it.](images/IMG_1043.webp)
 
-![I tried to plug in my European electrical adapter over in England - that did not work so well. lol.](images/IMG_1057.webp){.gallery-item}
+![I tried to plug in my European electrical adapter over in England - that did not work so well. lol.](images/IMG_1057.webp)
 
-![The Architecture was amzing in Newcastle upon Tyne](images/IMG_1058.webp){.gallery-item}
-:::
+![The Architecture was amzing in Newcastle upon Tyne](images/IMG_1058.webp)
 
-<br><br>
+![I love the architecture](images/IMG_1059.webp)
 
-::: {.gallery}
+![](images/IMG_1060.webp)
 
-![I love the architecture](images/IMG_1059.webp){.gallery-item}
+![](images/IMG_1061.webp)
 
-![](images/IMG_1060.webp){.gallery-item}
+![](images/IMG_1062.webp)
 
-![](images/IMG_1061.webp){.gallery-item}
+![](images/IMG_1064.webp)
 
-![](images/IMG_1062.webp){.gallery-item}
+![](images/IMG_1065.webp)
 
-![](images/IMG_1064.webp){.gallery-item}
+![Coblestonemany of the street materials were locally produced in the Netherlands using clay-based brick.](images/IMG_1067.webp)
 
-![](images/IMG_1065.webp){.gallery-item}
+![](images/IMG_1069.webp)
 
-![Coblestonemany of the street materials were locally produced in the Netherlands using clay-based brick.](images/IMG_1067.webp){.gallery-item}
+![](images/IMG_1070.webp)
 
-![Amsterdam street view](images/IMG_1069.webp){.gallery-item}
+![](images/IMG_1071.webp)
 
-![Amsterdam scene](images/IMG_1070.webp){.gallery-item}
+![](images/IMG_1072.webp)
 
-![Amsterdam view](images/IMG_1071.webp){.gallery-item}
+![](images/IMG_1073.webp)
 
-![Amsterdam scene](images/IMG_1072.webp){.gallery-item}
+![](images/IMG_1074.webp)
 
-![Amsterdam canals](images/IMG_1073.webp){.gallery-item}
+![](images/IMG_1075.webp)
 
-![Amsterdam architecture](images/IMG_1074.webp){.gallery-item}
+![](images/IMG_1076.webp)
 
-![Amsterdam street view](images/IMG_1075.webp){.gallery-item}
+![I got to ride in this thing. It was pretty cool being up that tall and riding on the left side of the road.](images/IMG_1079.webp)
 
-![Amsterdam scene](images/IMG_1076.webp){.gallery-item}
+![](images/IMG_1082.webp)
 
-![I got to ride in this thing. It was pretty cool being up that tall and riding on the left side of the road.](images/IMG_1079.webp){.gallery-item}
+![](images/IMG_1083.webp)
 
-![Amsterdam scene](images/IMG_1082.webp){.gallery-item}
+![](images/IMG_1084.webp)
 
-![Amsterdam canals](images/IMG_1083.webp){.gallery-item}
+![](images/IMG_1085.webp)
 
-![Amsterdam architecture](images/IMG_1084.webp){.gallery-item}
+![](images/IMG_1086.webp)
 
-![Amsterdam street view](images/IMG_1085.webp){.gallery-item}
+![](images/IMG_1087.webp)
 
-![Amsterdam scene](images/IMG_1086.webp){.gallery-item}
+![](images/IMG_1088.webp)
 
-![Amsterdam view](images/IMG_1087.webp){.gallery-item}
+![](images/IMG_1089.webp)
 
-![Amsterdam scene](images/IMG_1088.webp){.gallery-item}
+![](images/IMG_1093.webp)
 
-![Amsterdam canals](images/IMG_1089.webp){.gallery-item}
+![](images/IMG_1094.webp)
 
-![Amsterdam architecture](images/IMG_1093.webp){.gallery-item}
+![Doing a little bit of vibe coding while on vacation. Can't always be out and about.](images/IMG_1095.webp)
 
-![Amsterdam street view](images/IMG_1094.webp){.gallery-item}
+![Tips up! Loading from the back. So efficient.](images/IMG_1104.webp)
 
-![Doing a little bit of vibe coding while on vacation. Can't always be out and about.](images/IMG_1095.webp){.gallery-item}
+![](images/IMG_1107.webp)
 
-![Tips up! Loading from the back. So efficient.](images/IMG_1104.webp){.gallery-item}
+![THis place I did not take a photo of, but I love the brown cafe's in Amserdam. They were my type of place for sure. Amazing atmosphere and people.](images/IMG_1108.webp)
 
-![](images/IMG_1107.webp){.gallery-item}
+![](images/IMG_1109.webp)
 
-![THis place I did not take a photo of, but I love the brown cafe's in Amserdam. They were my type of place for sure. Amazing atmosphere and people.](images/IMG_1108.webp){.gallery-item}
+![](images/IMG_1111.webp)
 
-![](images/IMG_1109.webp){.gallery-item}
+![](images/IMG_1113.webp)
 
-![](images/IMG_1111.webp){.gallery-item}
+![](images/IMG_1126.webp)
 
-![](images/IMG_1113.webp){.gallery-item}
+![](images/IMG_1127.webp)
 
-![](images/IMG_1126.webp){.gallery-item}
+![](images/IMG_1128.webp)
 
-![](images/IMG_1127.webp){.gallery-item}
+![](images/IMG_1129.webp)
 
-![](images/IMG_1128.webp){.gallery-item}
+![](images/IMG_1132.webp)
 
-![](images/IMG_1129.webp){.gallery-item}
+![](images/IMG_1135.webp)
 
-![](images/IMG_1132.webp){.gallery-item}
+![](images/IMG_5691.webp)
 
-![](images/IMG_1135.webp){.gallery-item}
+![](images/IMG_5694.webp)
 
-![](images/IMG_5691.webp){.gallery-item}
+![](images/IMG_A8CA2B9B-D0D7-4284-9F90-2A532FB168F5.webp)
 
-![](images/IMG_5694.webp){.gallery-item}
+![](images/76979854010__B3193AAB-78ED-48A2-9D4D-8074C6991D80.webp)
 
-![](images/IMG_A8CA2B9B-D0D7-4284-9F90-2A532FB168F5.webp){.gallery-item}
+![](images/76996814932__9E9E6FE3-2DF8-4D79-97AE-ED68F10520FC.webp)
 
-![](images/76979854010__B3193AAB-78ED-48A2-9D4D-8074C6991D80.webp){.gallery-item}
-
-![](images/76996814932__9E9E6FE3-2DF8-4D79-97AE-ED68F10520FC.webp){.gallery-item}
-
-![](images/CEFE3C2D-7AAD-4906-AD53-B90F0D4975A8.webp){.gallery-item}
-:::
-
-<style>
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.gallery-item {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-  transform: scale(1.02);
-}
-
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
+![](images/CEFE3C2D-7AAD-4906-AD53-B90F0D4975A8.webp)
 
 ---
 
