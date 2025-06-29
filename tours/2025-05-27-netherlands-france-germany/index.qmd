@@ -2,7 +2,7 @@
 title: 'Netherlands, France, and Germany Trip'
 author: 'Mark'
 date: '2025-05-27'
-categories: ['Travel', 'Europe']git
+categories: ['Travel', 'Europe']
 image: 'images/IMG_1260.webp'
 format: html
 description: "Exploring Netherlands, France, and Germany"
