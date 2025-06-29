@@ -1,0 +1,164 @@
+---
+title: 'Netherlands, France, and Germany Trip'
+author: 'Mark'
+date: '2025-05-27'
+categories: ['Travel', 'Europe']
+image: 'images/IMG_1260.webp'
+format: html
+description: "Exploring Netherlands, France, and Germany"
+---
+
+# A Trip Through Netherlands, France, and Germany
+
+**Date:** May 27, 2025
+**Location:** Netherlands, France, and Germany
+**Activity:** Multi-country road trip
+
+---
+
+## Photo Gallery
+
+::: {.panel-tabset}
+
+### Page 1
+
+![](images/IMG_6483.webp)
+![](images/IMG_6481.webp)
+![](images/IMG_6463.webp)
+![](images/IMG_6462.webp)
+![](images/IMG_6285.webp)
+![](images/IMG_6284.webp)
+![](images/IMG_6230.webp)
+![](images/IMG_6197.webp)
+![](images/IMG_6185.webp)
+![](images/IMG_6178.webp)
+![](images/IMG_6177.webp)
+![](images/IMG_6176.webp)
+![](images/IMG_6155.webp)
+![](images/IMG_6068.webp)
+![](images/IMG_6055.webp)
+![](images/IMG_6051.webp)
+![](images/IMG_6027.webp)
+![](images/IMG_5936.webp)
+![](images/IMG_5798.webp)
+![](images/IMG_3286.webp)
+
+### Page 2
+
+![](images/IMG_3247.webp)
+![](images/IMG_3239.webp)
+![](images/IMG_3232.webp)
+![](images/IMG_3191.webp)
+![](images/IMG_1551.webp)
+![](images/IMG_1550.webp)
+![](images/IMG_1546.webp)
+![](images/IMG_1536.webp)
+![](images/IMG_1478.webp)
+![](images/IMG_1477.webp)
+![](images/IMG_1476.webp)
+![](images/IMG_1464.webp)
+![](images/IMG_1463.webp)
+![](images/IMG_1453.webp)
+![](images/IMG_1449.webp)
+![](images/IMG_1447.webp)
+![](images/IMG_1443.webp)
+![](images/IMG_1441.webp)
+![](images/IMG_1440.webp)
+![](images/IMG_1437.webp)
+
+### Page 3
+
+![](images/IMG_1433.webp)
+![](images/IMG_1432.webp)
+![](images/IMG_1431.webp)
+![](images/IMG_1427.webp)
+![](images/IMG_1426.webp)
+![](images/IMG_1425.webp)
+![](images/IMG_1424.webp)
+![](images/IMG_1423.webp)
+![](images/IMG_1422.webp)
+![](images/IMG_1421.webp)
+![](images/IMG_1411.webp)
+![](images/IMG_1402.webp)
+![](images/IMG_1400.webp)
+![](images/IMG_1395.webp)
+![](images/IMG_1392.webp)
+![](images/IMG_1390.webp)
+![](images/IMG_1388.webp)
+![](images/IMG_1382.webp)
+![](images/IMG_1364.webp)
+![](images/IMG_1363.webp)
+
+### Page 4
+
+![](images/IMG_1362.webp)
+![](images/IMG_1361.webp)
+![](images/IMG_1360.webp)
+![](images/IMG_1359.webp)
+![](images/IMG_1358.webp)
+![](images/IMG_1356.webp)
+![](images/IMG_1354.webp)
+![](images/IMG_1353.webp)
+![](images/IMG_1352.webp)
+![](images/IMG_1344.webp)
+![](images/IMG_1341.webp)
+![](images/IMG_1340.webp)
+![](images/IMG_1339.webp)
+![](images/IMG_1338.webp)
+![](images/IMG_1336.webp)
+![](images/IMG_1335.webp)
+![](images/IMG_1334.webp)
+![](images/IMG_1333.webp)
+![](images/IMG_1331.webp)
+![](images/IMG_1330.webp)
+
+### Page 5
+
+![](images/IMG_1329.webp)
+![](images/IMG_1328.webp)
+![](images/IMG_1325.webp)
+![](images/IMG_1320.webp)
+![](images/IMG_1318.webp)
+![](images/IMG_1315.webp)
+![](images/IMG_1311.webp)
+![](images/IMG_1309.webp)
+![](images/IMG_1306.webp)
+![](images/IMG_1299.webp)
+![](images/IMG_1294.webp)
+![](images/IMG_1293.webp)
+![](images/IMG_1280.webp)
+![](images/IMG_1274.webp)
+![](images/IMG_1273.webp)
+![](images/IMG_1269.webp)
+![](images/IMG_1268.webp)
+![](images/IMG_1262.webp)
+![](images/IMG_1261.webp)
+![](images/IMG_1260.webp)
+
+:::
+
+---
+
+Stay tuned for more adventures on [TourWithMark.com](https://TourWithMark.com)!
+
+<script>
+// When the document is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+  // Find the tabset element
+  const tabset = document.querySelector('.panel-tabset');
+  if (tabset) {
+    // Find the navigation tabs inside it
+    const navTabs = tabset.querySelector('.nav-tabs');
+    if (navTabs) {
+      // Create a clone of the navigation tabs
+      const navTabsClone = navTabs.cloneNode(true);
+      
+      // Add a little space above the bottom tabs for better layout
+      navTabsClone.style.marginTop = "1.5rem";
+      
+      // Append the cloned tabs to the end of the tabset
+      tabset.appendChild(navTabsClone);
+    }
+  }
+});
+</script> 
