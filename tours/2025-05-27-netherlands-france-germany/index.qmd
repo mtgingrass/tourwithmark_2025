@@ -2,7 +2,7 @@
 title: 'Netherlands, France, and Germany Trip'
 author: 'Mark'
 date: '2025-05-27'
-categories: ['Travel', 'Europe']
+categories: ['Travel', 'Europe']git
 image: 'images/IMG_1260.webp'
 format: html
 description: "Exploring Netherlands, France, and Germany"
@@ -139,4 +139,26 @@ description: "Exploring Netherlands, France, and Germany"
 
 ---
 
-Stay tuned for more adventures on [TourWithMark.com](https://TourWithMark.com)! 
+Stay tuned for more adventures on [TourWithMark.com](https://TourWithMark.com)!
+
+<script>
+// When the document is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+  // Find the tabset element
+  const tabset = document.querySelector('.panel-tabset');
+  if (tabset) {
+    // Find the navigation tabs inside it
+    const navTabs = tabset.querySelector('.nav-tabs');
+    if (navTabs) {
+      // Create a clone of the navigation tabs
+      const navTabsClone = navTabs.cloneNode(true);
+      
+      // Add a little space above the bottom tabs for better layout
+      navTabsClone.style.marginTop = "1.5rem";
+      
+      // Append the cloned tabs to the end of the tabset
+      tabset.appendChild(navTabsClone);
+    }
+  }
+});
+</script> 
