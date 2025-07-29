@@ -25,6 +25,7 @@ function parseArgs() {
     commit: false,
     push: false,
     editor: false,
+    guiEditor: false,
     message: null,
     rantText: null
   };
@@ -43,6 +44,10 @@ function parseArgs() {
       case '-e':
       case '--editor':
         options.editor = true;
+        break;
+      case '--gui':
+        options.guiEditor = true;
+        options.editor = true; // GUI implies editor mode
         break;
       case '-m':
       case '--message':
@@ -78,6 +83,7 @@ ${colors.yellow}Options:${colors.reset}
   -c, --commit     Add and commit the changes
   -p, --push       Add, commit, and push to GitHub
   -e, --editor     Open editor for composing rant
+  --gui            Open GUI editor (VS Code, TextEdit, etc.)
   -m, --message    Custom commit message (use with -c or -p)
   -h, --help       Show this help message
 
@@ -87,6 +93,7 @@ ${colors.yellow}Examples:${colors.reset}
   rant -p "This rant will be pushed to GitHub"
   rant -p -m "Add thoughts on topic X" "My detailed thoughts..."
   rant -e
+  rant --gui -p
   echo "My rant" | rant -p
 `);
 }
@@ -130,22 +137,73 @@ async function readFromStdin() {
 }
 
 // Open editor for composing rant
-function openEditor() {
+function openEditor(useGui = false) {
   const tempFile = path.join(require('os').tmpdir(), `rant-${Date.now()}.md`);
   fs.writeFileSync(tempFile, '# Type your rant below this line\n\n');
   
-  const editor = process.env.EDITOR || 'nano';
+  let editor;
+  if (useGui) {
+    // Try to find a GUI editor
+    const guiEditors = [
+      'code --wait',           // VS Code
+      'subl --wait',          // Sublime Text
+      'atom --wait',          // Atom
+      'open -W -a TextEdit',  // Mac TextEdit
+      'gedit',                // Linux Gedit
+      'notepad'               // Windows Notepad
+    ];
+    
+    editor = guiEditors.find(ed => {
+      try {
+        execSync(`which ${ed.split(' ')[0]}`, { stdio: 'ignore' });
+        return true;
+      } catch {
+        return false;
+      }
+    });
+    
+    if (!editor) {
+      console.log(`${colors.yellow}No GUI editor found. Install VS Code, Sublime Text, or set EDITOR environment variable.${colors.reset}`);
+      console.log(`${colors.yellow}Falling back to terminal editor...${colors.reset}`);
+      editor = process.env.EDITOR || 'nano';
+    }
+  } else {
+    editor = process.env.EDITOR || 'nano';
+  }
+  
   try {
-    execSync(`${editor} ${tempFile}`, { stdio: 'inherit' });
+    console.log(`${colors.blue}Opening editor: ${editor}${colors.reset}`);
+    execSync(`${editor} "${tempFile}"`, { stdio: 'inherit' });
     const content = fs.readFileSync(tempFile, 'utf8');
     fs.unlinkSync(tempFile);
     
     // Remove the instruction line and clean up
     return content.split('\n').slice(2).join('\n').trim();
   } catch (error) {
-    console.error(`${colors.red}Error opening editor${colors.reset}`);
+    console.error(`${colors.red}Error opening editor: ${error.message}${colors.reset}`);
     process.exit(1);
   }
+}
+
+// Convert URLs to clickable links
+function autoLinkUrls(text) {
+  // More comprehensive regex for URLs
+  const urlRegex = /(https?:\/\/(?:[-\w.])+(?::\d+)?(?:\/(?:[\w._~!$&'()*+,;=:@]|%[0-9A-Fa-f]{2})*)*(?:\?(?:[\w._~!$&'()*+,;=:@/?]|%[0-9A-Fa-f]{2})*)?(?:#(?:[\w._~!$&'()*+,;=:@/?]|%[0-9A-Fa-f]{2})*)?|www\.(?:[-\w.])+(?::\d+)?(?:\/(?:[\w._~!$&'()*+,;=:@]|%[0-9A-Fa-f]{2})*)*(?:\?(?:[\w._~!$&'()*+,;=:@/?]|%[0-9A-Fa-f]{2})*)?(?:#(?:[\w._~!$&'()*+,;=:@/?]|%[0-9A-Fa-f]{2})*)?|(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}(?::\d+)?(?:\/(?:[\w._~!$&'()*+,;=:@]|%[0-9A-Fa-f]{2})*)*(?:\?(?:[\w._~!$&'()*+,;=:@/?]|%[0-9A-Fa-f]{2})*)?(?:#(?:[\w._~!$&'()*+,;=:@/?]|%[0-9A-Fa-f]{2})*)?)/g;
+  
+  return text.replace(urlRegex, (match) => {
+    // Clean up any trailing punctuation that shouldn't be part of the URL
+    const cleanMatch = match.replace(/[.,;:!?]+$/, '');
+    const trailingPunctuation = match.substring(cleanMatch.length);
+    
+    let url = cleanMatch;
+    
+    // Add https:// if it's missing and it's not already a full URL
+    if (!url.startsWith('http://') && !url.startsWith('https://') && !url.startsWith('ftp://')) {
+      url = 'https://' + url;
+    }
+    
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer">${cleanMatch}</a>${trailingPunctuation}`;
+  });
 }
 
 // Insert rant into the file
@@ -184,7 +242,7 @@ function insertRant(rantText) {
 <div class="rant-entry">
 <div class="time-stamp">${time}</div>
 <div class="rant-content">
-${rantText.replace(/\n/g, '\n')}
+${autoLinkUrls(rantText).replace(/\n/g, '\n')}
 </div>
 </div>`;
     }
@@ -211,7 +269,7 @@ ${rantText.replace(/\n/g, '\n')}
 <div class="rant-entry">
 <div class="time-stamp">${time}</div>
 <div class="rant-content">
-${rantText.replace(/\n/g, '\n')}
+${autoLinkUrls(rantText).replace(/\n/g, '\n')}
 </div>
 </div>
 
@@ -275,7 +333,7 @@ async function main() {
   }
   
   if (!rantText && options.editor) {
-    rantText = openEditor();
+    rantText = openEditor(options.guiEditor);
   }
   
   if (!rantText || rantText.trim() === '') {
