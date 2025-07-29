@@ -5,7 +5,46 @@ format:
     css: rants-custom.css
 ---
 
-<div class="rants-container">
+<style>
+/* Firefox-specific dark mode enforcement */
+html, body {
+  background-color: #0a0a0a !important;
+}
+
+.quarto-light body {
+  background-color: #0a0a0a !important;
+}
+
+/* Override any Quarto containers */
+#quarto-document-content,
+#quarto-content,
+.quarto-container-page,
+.page-layout-article,
+main {
+  background-color: #0a0a0a !important;
+}
+
+/* For users who prefer light mode, use light colors */
+@media (prefers-color-scheme: light) {
+  html, body {
+    background-color: #ffffff !important;
+  }
+  
+  .rants-container {
+    background-color: #ffffff !important;
+  }
+  
+  #quarto-document-content,
+  #quarto-content,
+  .quarto-container-page,
+  .page-layout-article,
+  main {
+    background-color: #ffffff !important;
+  }
+}
+</style>
+
+<div class="rants-container" style="background-color: #0a0a0a; min-height: 100vh;">
 
 # Unfiltered Thoughts
 
@@ -22,25 +61,12 @@ Raw opinions, hot takes, and things that need to be said.
 </div>
 
 <div class="rant-entry">
-<div class="time-stamp">5:09 PM</div>
+<div class="time-stamp">5:22 PM</div>
 <div class="rant-content">
-The new design is working perfectly with the rant command!
+p We couldn't save your wife without killing the baby, so we decided to let them both die.
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">5:08 PM</div>
-<div class="rant-content">
-Test rant for a different date
-</div>
-</div>
-
-<div class="rant-entry">
-<div class="time-stamp">5:08 PM</div>
-<div class="rant-content">
-Testing the new modern rants design! This should look much cleaner and more contemporary.
-</div>
-</div>
 
 <div class="rant-entry">
 <div class="time-stamp">5:03 PM</div>

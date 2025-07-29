@@ -1,5 +1,6 @@
 /* Modern Rants Page Styling */
 
+/* Default to dark mode */
 :root {
   --rant-primary: #1a1a1a;
   --rant-secondary: #2d2d2d;
@@ -14,7 +15,7 @@
   --rant-gradient: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
 }
 
-/* Light mode support */
+/* Light mode support with multiple detection methods */
 @media (prefers-color-scheme: light) {
   :root {
     --rant-primary: #2d2d2d;
@@ -30,6 +31,22 @@
   }
 }
 
+/* Force dark mode for Quarto's body if user prefers dark */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--rant-bg) !important;
+    color: var(--rant-text) !important;
+  }
+  
+  .quarto-container-page {
+    background-color: var(--rant-bg) !important;
+  }
+  
+  #quarto-content {
+    background-color: var(--rant-bg) !important;
+  }
+}
+
 /* Container and Layout */
 .rants-container {
   max-width: 800px;
@@ -37,6 +54,60 @@
   padding: 2rem 1rem;
   background-color: var(--rant-bg);
   min-height: 100vh;
+  position: relative;
+}
+
+/* Firefox-specific fixes */
+@-moz-document url-prefix() {
+  .rants-container {
+    background-color: var(--rant-bg) !important;
+  }
+  
+  body {
+    background-color: var(--rant-bg) !important;
+  }
+}
+
+/* Ensure full viewport coverage */
+html {
+  background-color: var(--rant-bg);
+}
+
+body {
+  background-color: var(--rant-bg);
+  margin: 0;
+  padding: 0;
+}
+
+/* Override Quarto's default styles */
+.page-layout-article {
+  background-color: var(--rant-bg) !important;
+}
+
+.page-layout-article > * {
+  background-color: transparent !important;
+}
+
+#quarto-document-content {
+  background-color: var(--rant-bg) !important;
+}
+
+/* Fix any white backgrounds in parent containers */
+main {
+  background-color: var(--rant-bg) !important;
+}
+
+.content {
+  background-color: var(--rant-bg) !important;
+}
+
+/* Additional specificity for stubborn elements */
+body.quarto-light {
+  background-color: var(--rant-bg) !important;
+}
+
+div[class*="quarto"] {
+  background-color: transparent !important;
 }
 
 .rants-container h1 {
