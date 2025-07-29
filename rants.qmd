@@ -61,6 +61,27 @@ Raw opinions, hot takes, and things that need to be said.
 </div>
 
 <div class="rant-entry">
+<div class="time-stamp">5:27 PM</div>
+<div class="rant-content">
+Testing improved URL detection: Visit <a href="https://github.com/user/repo" target="_blank" rel="noopener noreferrer">https://github.com/user/repo</a> for code, check out news at <a href="https://cnn.com" target="_blank" rel="noopener noreferrer">cnn.com</a>, read more at <a href="https://example.org/path?param=value&other=test" target="_blank" rel="noopener noreferrer">example.org/path?param=value&other=test</a>!
+</div>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">5:26 PM</div>
+<div class="rant-content">
+Testing more URLs: Visit <a href="https://github.com/user/repo," target="_blank" rel="noopener noreferrer">https://github.com/user/repo</a>, check out <a href="https://subdomain.site" target="_blank" rel="noopener noreferrer">subdomain.site</a>.<a href="https://co.uk/path?param=value," target="_blank" rel="noopener noreferrer">co.uk/path?param=value</a>, and don't forget about ftp://<a href="https://files.example" target="_blank" rel="noopener noreferrer">files.example</a>.org. Also test punctuation: Go to <a href="https://reddit.com" target="_blank" rel="noopener noreferrer">reddit.com</a>\! Or maybe <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer">stackoverflow.com</a>?
+</div>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">5:26 PM</div>
+<div class="rant-content">
+Check out this awesome site <a href="https://markgingrass.com" target="_blank" rel="noopener noreferrer">https://markgingrass.com</a> and also visit <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">www.example.com</a> or even just <a href="https://google.com" target="_blank" rel="noopener noreferrer">google.com</a> for more info!
+</div>
+</div>
+
+<div class="rant-entry">
 <div class="time-stamp">5:22 PM</div>
 <div class="rant-content">
 p We couldn't save your wife without killing the baby, so we decided to let them both die.
