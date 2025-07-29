@@ -1,0 +1,275 @@
+/* Modern Rants Page Styling */
+
+:root {
+  --rant-primary: #1a1a1a;
+  --rant-secondary: #2d2d2d;
+  --rant-accent: #ff6b6b;
+  --rant-accent-hover: #ff5252;
+  --rant-text: #e0e0e0;
+  --rant-text-muted: #a0a0a0;
+  --rant-bg: #0a0a0a;
+  --rant-card-bg: #161616;
+  --rant-border: #2a2a2a;
+  --rant-shadow: rgba(0, 0, 0, 0.5);
+  --rant-gradient: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+}
+
+/* Light mode support */
+@media (prefers-color-scheme: light) {
+  :root {
+    --rant-primary: #2d2d2d;
+    --rant-secondary: #f5f5f5;
+    --rant-accent: #ff4444;
+    --rant-accent-hover: #ff3333;
+    --rant-text: #2d2d2d;
+    --rant-text-muted: #6a6a6a;
+    --rant-bg: #ffffff;
+    --rant-card-bg: #fafafa;
+    --rant-border: #e0e0e0;
+    --rant-shadow: rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Container and Layout */
+.rants-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: var(--rant-bg);
+  min-height: 100vh;
+}
+
+.rants-container h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--rant-accent);
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  background: var(--rant-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.rants-intro {
+  text-align: center;
+  color: var(--rant-text-muted);
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+/* Timeline Layout */
+.rants-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.rants-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--rant-accent), transparent);
+}
+
+/* Date Headers */
+.rant-day {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.date-header {
+  position: sticky;
+  top: 0;
+  background: var(--rant-bg);
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+  z-index: 10;
+  border-bottom: 1px solid var(--rant-border);
+}
+
+.date-header .date {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--rant-accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.date-header .date::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: var(--rant-accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--rant-bg), 0 0 0 6px var(--rant-accent);
+}
+
+/* Rant Entries */
+.rant-entry {
+  background: var(--rant-card-bg);
+  border: 1px solid var(--rant-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--rant-shadow);
+}
+
+.rant-entry:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px var(--rant-shadow);
+  border-color: var(--rant-accent);
+}
+
+.rant-entry::before {
+  content: '';
+  position: absolute;
+  left: -2.5rem;
+  top: 2rem;
+  width: 1rem;
+  height: 2px;
+  background: var(--rant-border);
+}
+
+/* Time Stamps */
+.time-stamp {
+  font-size: 0.9rem;
+  color: var(--rant-text-muted);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.time-stamp::before {
+  content: '🕐';
+  font-size: 1rem;
+  filter: grayscale(1) opacity(0.5);
+}
+
+/* Rant Content */
+.rant-content {
+  color: var(--rant-text);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.rant-content p {
+  margin-bottom: 1rem;
+}
+
+.rant-content p:last-child {
+  margin-bottom: 0;
+}
+
+.rant-content a {
+  color: var(--rant-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.rant-content a:hover {
+  border-bottom-color: var(--rant-accent);
+}
+
+.rant-content ul, .rant-content ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.rant-content li {
+  margin-bottom: 0.5rem;
+}
+
+.rant-content strong {
+  color: var(--rant-accent);
+  font-weight: 600;
+}
+
+.rant-content em {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rants-container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .rants-container h1 {
+    font-size: 2rem;
+  }
+  
+  .rants-intro {
+    font-size: 1rem;
+  }
+  
+  .rants-timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .date-header .date {
+    font-size: 1.2rem;
+  }
+  
+  .rant-entry {
+    padding: 1rem;
+  }
+  
+  .rant-content {
+    font-size: 1rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rant-entry {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Custom scrollbar for rants */
+.rants-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.rants-container::-webkit-scrollbar-track {
+  background: var(--rant-bg);
+}
+
+.rants-container::-webkit-scrollbar-thumb {
+  background: var(--rant-accent);
+  border-radius: 4px;
+}
+
+.rants-container::-webkit-scrollbar-thumb:hover {
+  background: var(--rant-accent-hover);
+}
