@@ -1,69 +1,110 @@
 ---
 title: "Rants"
-format: html
+format: 
+  html:
+    css: rants-custom.css
 ---
 
-# & Interesting Tidbits
+<div class="rants-container">
 
-::: callout-note
-**Unfiltered thoughts, updated regularly.**
-:::
+# Unfiltered Thoughts
 
-## 2025-07-29
+<div class="rants-intro">
+Raw opinions, hot takes, and things that need to be said.
+</div>
 
-**🕒 5:03 P.M.**
+<div class="rants-timeline">
 
+<!-- 2025-07-29 -->
+<div class="rant-day" data-date="2025-07-29">
+<div class="date-header">
+<span class="date">July 29, 2025</span>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">5:09 PM</div>
+<div class="rant-content">
+The new design is working perfectly with the rant command!
+</div>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">5:08 PM</div>
+<div class="rant-content">
+Test rant for a different date
+</div>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">5:08 PM</div>
+<div class="rant-content">
+Testing the new modern rants design! This should look much cleaner and more contemporary.
+</div>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">5:03 PM</div>
+<div class="rant-content">
 Theft by employers through stolen wages exceed all other forms of theft combined.
 Mugging, burglary, shoplifting. All less than stolen by employers from employees.
 And yet, if an employee takes a  out of the register, the cops will arrest them and throw them in a jail cell, when a kid decided to back out of selling their goat too the the fair because she loved it and wanted to keep it as a pet, the cops travelled 500 miles, took the goat, and had it slaughtered. (https://reason.com/2023/03/31/police-traveled-500-miles-to-seize-girls-pet-goat-for-slaughter/)
 But call the cops about an employer keeping thousands of dollars of your pay? Uh, thats a civil issue." Notice how its only a crime if its the poor stealing from the rich.
 Thanks for what you do at the DOL. Its too bad the conservatives have been dismantling so much of the federal DOL.
+</div>
+</div>
 
----
-
-**🕒 5:02 P.M.**
-
+<div class="rant-entry">
+<div class="time-stamp">5:02 PM</div>
+<div class="rant-content">
 Test
+</div>
+</div>
 
----
+<div class="rant-entry">
+<div class="time-stamp">4:57 PM</div>
+<div class="rant-content">
+It's not the strangers/drag queens/LGBTQ people that you, or especially kids, need to worry about. It's the men in the family. After working 11 years at a crime lab doing DNA, I don't know if I've come across a kid rape kit with a trans person as the suspect. But there are thousands of them from the dad/stepdad/moms bf/step brother/grandpa/etc. If you want to protect kids, start there.
 
-**🕒 4:57 P.M.**
+So, bathroom bills aren't really protecting kids, just diverting attention from actually threats.
+</div>
+</div>
 
-It's not the strangers/drag queens/LGBTQ people that you, or 
-  especially kids, need to worry about. It's the men in the family. After working 11 years at a crime lab doing DNA, I don't know if I've 
-  come across a kid rape kit with a trans person as the suspect. But there are thousands of them from the dad/stepdad/moms bf/step 
-  brother/grandpa/etc. If you want to protect kids, start there.
-
-  So, bathroom bills aren't really protecting kids, just diverting attention from actually threats.
-
----
-
-**🕒 4:50 P.M.**
-
+<div class="rant-entry">
+<div class="time-stamp">4:50 PM</div>
+<div class="rant-content">
 This is a multi-line rant.
 
 It has multiple paragraphs.
 
 And it should preserve the formatting!
+</div>
+</div>
 
----
-
-**🕒 4:49 P.M.**
-
+<div class="rant-entry">
+<div class="time-stamp">4:49 PM</div>
+<div class="rant-content">
 Testing the commit feature of the new rant script!
+</div>
+</div>
 
----
-
-**🕒 4:49 P.M.**
-
+<div class="rant-entry">
+<div class="time-stamp">4:49 PM</div>
+<div class="rant-content">
 This script makes it so much easier to add rants! No more manual editing and formatting.
+</div>
+</div>
 
----
+</div>
 
-## 2025-03-01
+<!-- 2025-03-01 -->
+<div class="rant-day" data-date="2025-03-01">
+<div class="date-header">
+<span class="date">March 1, 2025</span>
+</div>
 
-**🕒 9:39 P.M.**
-
+<div class="rant-entry">
+<div class="time-stamp">9:39 PM</div>
+<div class="rant-content">
 This entire rant is from From [Reddit](https://www.reddit.com/r/worldnews/comments/1j0zud0/comment/mfgi38j/) user [**JustMyOpinionz**](https://www.reddit.com/user/JustMyOpinionz/) . This deserves to be read:
 
 The Oval Office meeting between Trump, Vance, and Zelensky was not just a failure of diplomacy. It was not just an insult to an ally. It was treason.
@@ -89,67 +130,107 @@ Trump and Vance? They are frauds. They are weaklings who would rather kneel befo
 But Zelensky? He stands.
 
 While Trump schemes, Zelensky fights. While Vance panders, Zelensky leads. While America stumbles, Zelensky holds the line.
+</div>
+</div>
 
-## 2025-02-23
+</div>
 
-**🕒 6:30 A.M.**
+<!-- 2025-02-23 -->
+<div class="rant-day" data-date="2025-02-23">
+<div class="date-header">
+<span class="date">February 23, 2025</span>
+</div>
 
+<div class="rant-entry">
+<div class="time-stamp">6:30 AM</div>
+<div class="rant-content">
 The Fork was a completely tone deaf offer that could only be devised by someone who has never had to actually worry about having a real job.
 
 Normal people can't just lock themselves into unemployment with 2 weeks to decide without something else lined up already. That's not how the real world works for people who need income to feed their kids and pay their mortgage.
+</div>
+</div>
 
-## 2025-02-20
+</div>
 
-**🕒 3:58 P.M.**
+<!-- 2025-02-20 -->
+<div class="rant-day" data-date="2025-02-20">
+<div class="date-header">
+<span class="date">February 20, 2025</span>
+</div>
 
+<div class="rant-entry">
+<div class="time-stamp">3:58 PM</div>
+<div class="rant-content">
 <a href="https://youtube.com/shorts/8bbOG1rNW5I" target="_blank"> </a>
+</div>
+</div>
 
-**🕒 2:19 P.M.**
-
+<div class="rant-entry">
+<div class="time-stamp">2:19 PM</div>
+<div class="rant-content">
 I Called My Reps—And You Should Too
 
 Today, I finally did it. I picked up the phone, dialed the numbers for my House Representative and both U.S. Senators from South Carolina, and I let them have it.
 
 Not about the *return to office* mandate itself—I get it, mandates come from above. But what infuriates me is the absolute lack of **clarity, formal guidance, and answers** for those of us being forced into a decision that impacts **our lives, our families, and our futures**.
 
-Here’s what I told them:
+Here's what I told them:
 
--   **Where’s the official guidance?**\
-    It’s all rumors, speculation, and chaos. No one knows what’s happening. If you’re going to upend people’s lives, at least have the decency to put it in writing.
+-   **Where's the official guidance?**  
+    It's all rumors, speculation, and chaos. No one knows what's happening. If you're going to upend people's lives, at least have the decency to put it in writing.
 
--   **What about relocation pay?**\
+-   **What about relocation pay?**  
     Are they going to help people move? Cover expenses? Do we just eat the cost of uprooting our lives because some bureaucrat made a decision on a whim?
 
--   **What about locality pay?**\
-    If I’ve been working remotely from South Carolina but they now force me to move to D.C. (or elsewhere), does my pay adjust? Am I expected to take a financial hit on top of everything else?
+-   **What about locality pay?**  
+    If I've been working remotely from South Carolina but they now force me to move to D.C. (or elsewhere), does my pay adjust? Am I expected to take a financial hit on top of everything else?
 
--   **Why the hell are you doing this without a plan?**\
+-   **Why the hell are you doing this without a plan?**  
     If I have to relocate, I need notice. If I stay, I need to know what happens next. Will I get severance? Will I be allowed to stay in my role remotely? Or am I just expected to twist in the wind while the people making these decisions keep collecting their paychecks?
 
-None of these questions have been answered. None of them. And that’s unacceptable.
+None of these questions have been answered. None of them. And that's unacceptable.
 
-So yeah, I called. I made my voice heard. And if you’re in the same boat, **you should call too**. Because sitting around waiting for guidance that may never come is a surefire way to get screwed over.
+So yeah, I called. I made my voice heard. And if you're in the same boat, **you should call too**. Because sitting around waiting for guidance that may never come is a surefire way to get screwed over.
 
-If they want to rip people out of their homes, they need to own up to the consequences. I’m not letting this slide.
+If they want to rip people out of their homes, they need to own up to the consequences. I'm not letting this slide.
+</div>
+</div>
 
-## 2025-02-19
+</div>
 
-**🕒 4:19 P.M.**
+<!-- 2025-02-19 -->
+<div class="rant-day" data-date="2025-02-19">
+<div class="date-header">
+<span class="date">February 19, 2025</span>
+</div>
 
-I deleted my social media. No more doomscrolling, no more endless feeds designed to keep me consuming mindelss media. I don’t need it. I don’t want it.
+<div class="rant-entry">
+<div class="time-stamp">4:19 PM</div>
+<div class="rant-content">
+I deleted my social media. No more doomscrolling, no more endless feeds designed to keep me consuming mindelss media. I don't need it. I don't want it.
 
-Instead, I built this website. No algorithms, no chasing likes—just me, writing what I want, when I want. I know I have no audience. That’s fine. This is for me.
+Instead, I built this website. No algorithms, no chasing likes—just me, writing what I want, when I want. I know I have no audience. That's fine. This is for me.
 
-But I’m not just writing. I’m moving. I’m going to the gym. I’m biking. I’m hiking. I’m living. Because I don’t want to just consume—I want to **do**.
+But I'm not just writing. I'm moving. I'm going to the gym. I'm biking. I'm hiking. I'm living. Because I don't want to just consume—I want to **do**.
 
-This is my life. And I’m taking control of it.
+This is my life. And I'm taking control of it.
 
-So, if you’re reading this, ask yourself: are you consuming, or are you doing?
+So, if you're reading this, ask yourself: are you consuming, or are you doing?
+</div>
+</div>
 
-## 2025-02-18
+</div>
 
-**🕒 11:38 P.M.**\
-Elon is neither a data scientist nor a data engineer. I’m not one either, but I work with data, and the number one rule is that you cannot draw conclusions from data you don’t fully understand.
+<!-- 2025-02-18 -->
+<div class="rant-day" data-date="2025-02-18">
+<div class="date-header">
+<span class="date">February 18, 2025</span>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">11:38 PM</div>
+<div class="rant-content">
+Elon is neither a data scientist nor a data engineer. I'm not one either, but I work with data, and the number one rule is that you cannot draw conclusions from data you don't fully understand.
 
 -   What is the definition of each field in the table?
 
@@ -167,28 +248,51 @@ Elon is neither a data scientist nor a data engineer. I’m not one either, but 
 
 -   What SQL Statement did his young adult entourage use to query this anyway?
 
-A screenshot of this table, without context or analysis, serves only as propaganda, pitting working-class Americans in the private sector against those in the public sector. It distracts from more pressing issues, such as changes to the Federal Acquisition Regulation (FAR), the lucrative government contracts Elon’s companies receive, and the broader oligarchic takeover.
+A screenshot of this table, without context or analysis, serves only as propaganda, pitting working-class Americans in the private sector against those in the public sector. It distracts from more pressing issues, such as changes to the Federal Acquisition Regulation (FAR), the lucrative government contracts Elon's companies receive, and the broader oligarchic takeover.
 
 No serious data professional would take that screenshot at face value.
+</div>
+</div>
 
-**🕒 11:13 P.M.**\
-My first post using mobile. Let's see if it works.\
+<div class="rant-entry">
+<div class="time-stamp">11:13 PM</div>
+<div class="rant-content">
+My first post using mobile. Let's see if it works.  
 It does!
+</div>
+</div>
 
-------------------------------------------------------------------------
-
-**🕒 11:09 P.M.**\
-Just realized that trying to automate rants was more trouble than it was worth.\
+<div class="rant-entry">
+<div class="time-stamp">11:09 PM</div>
+<div class="rant-content">
+Just realized that trying to automate rants was more trouble than it was worth.  
 Back to manual updates for a few days.
+</div>
+</div>
 
-------------------------------------------------------------------------
-
-**🕒 10:44 P.M.**\
+<div class="rant-entry">
+<div class="time-stamp">10:44 PM</div>
+<div class="rant-content">
 This is my first rant! Netlify Identity was a pain, but I figured out a better way.
+</div>
+</div>
 
-------------------------------------------------------------------------
+</div>
 
-## 2025-02-17
+<!-- 2025-02-17 -->
+<div class="rant-day" data-date="2025-02-17">
+<div class="date-header">
+<span class="date">February 17, 2025</span>
+</div>
 
-**🕒 9:00 A.M.**\
+<div class="rant-entry">
+<div class="time-stamp">9:00 AM</div>
+<div class="rant-content">
 Let's just test yesterday's format.
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
