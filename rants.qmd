@@ -9,6 +9,20 @@ format: html
 **Unfiltered thoughts, updated regularly.**
 :::
 
+## 2025-07-29
+
+**🕒 4:49 P.M.**
+
+Testing the commit feature of the new rant script!
+
+---
+
+**🕒 4:49 P.M.**
+
+This script makes it so much easier to add rants! No more manual editing and formatting.
+
+---
+
 ## 2025-03-01
 
 **🕒 9:39 P.M.**
