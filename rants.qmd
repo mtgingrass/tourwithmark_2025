@@ -67,6 +67,13 @@ Raw opinions, hot takes, and things that need to be said.
 </div>
 
 <div class="rant-entry">
+<div class="time-stamp">3:03 PM</div>
+<div class="rant-content">
+Can't vote for your interest if you to stupid to know what your interests are.
+</div>
+</div>
+
+<div class="rant-entry">
 <div class="time-stamp">10:14 AM</div>
 <div class="rant-content">
 Powell doesn't single-handedly decide rates as he wants. It's a committee and he's the chair, not a dictator.
