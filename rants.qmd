@@ -58,7 +58,24 @@ Raw opinions, hot takes, and things that need to be said.
 
 
 <!-- 2025-07-30 -->
-<div class="rant-day" data-date="2025-07-30">
+
+
+<!-- 2025-08-01 -->
+<div class="rant-day" data-date="2025-08-01">
+<div class="date-header">
+<span class="date">August 01, 2025</span>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">10:14 AM</div>
+<div class="rant-content">
+Powell doesn't single-handedly decide rates as he wants. It's a committee and he's the chair, not a dictator.
+
+Trump can't conceive of any process that involves checks and balances because he thinks like a dictator and all such process is simply an impediment. So he attempts to dismantle anything that stands in his way. He believes one person should run the country (him), forever, and any objection is treason. He has said so clearly many times.
+</div>
+</div>
+
+</div><div class="rant-day" data-date="2025-07-30">
 <div class="date-header">
 <span class="date">July 30, 2025</span>
 </div>
