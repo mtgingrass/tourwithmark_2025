@@ -91,6 +91,13 @@ from the Pi again, lets see if macbook rant is still there
 </div>
 
 <div class="rant-entry">
+<div class="time-stamp">10:57 AM</div>
+<div class="rant-content">
+now this is from macbook
+</div>
+</div>
+
+<div class="rant-entry">
 <div class="time-stamp">10:56 AM</div>
 <div class="rant-content">
 second test of rant with pi
