@@ -70,6 +70,13 @@ Raw opinions, hot takes, and things that need to be said.
 </div>
 
 <div class="rant-entry">
+<div class="time-stamp">11:00 AM</div>
+<div class="rant-content">
+from the Pi again, lets see if macbook rant is still there
+</div>
+</div>
+
+<div class="rant-entry">
 <div class="time-stamp">10:59 AM</div>
 <div class="rant-content">
 from the Pi again, lets see if macbook rant is still there
