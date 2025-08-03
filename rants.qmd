@@ -70,6 +70,7 @@ Raw opinions, hot takes, and things that need to be said.
 </div>
 
 <div class="rant-entry">
+<<<<<<< HEAD
 <div class="time-stamp">11:00 AM</div>
 <div class="rant-content">
 test rant again from pi 11 am
@@ -80,6 +81,13 @@ test rant again from pi 11 am
 <div class="time-stamp">11:00 AM</div>
 <div class="rant-content">
 from the Pi again, lets see if macbook rant is still there
+</div>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">11:10 AM</div>
+<div class="rant-content">
+from the mac again
 </div>
 </div>
 
