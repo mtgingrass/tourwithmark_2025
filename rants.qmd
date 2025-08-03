@@ -70,6 +70,13 @@ Raw opinions, hot takes, and things that need to be said.
 </div>
 
 <div class="rant-entry">
+<div class="time-stamp">10:38 AM</div>
+<div class="rant-content">
+testing
+</div>
+</div>
+
+<div class="rant-entry">
 <div class="time-stamp">10:29 AM</div>
 <div class="rant-content">
 this rant is from my Raspberry Pi
