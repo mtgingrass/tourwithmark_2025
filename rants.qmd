@@ -70,6 +70,13 @@ Raw opinions, hot takes, and things that need to be said.
 </div>
 
 <div class="rant-entry">
+<div class="time-stamp">11:18 AM</div>
+<div class="rant-content">
+from the pi, the macbook shoudl be below, then phone below that
+</div>
+</div>
+
+<div class="rant-entry">
 <div class="time-stamp">11:17 AM</div>
 <div class="rant-content">
 from macbook after the phone push
