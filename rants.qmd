@@ -77,6 +77,13 @@ this rant is from my Raspberry Pi
 </div>
 
 <div class="rant-entry">
+<div class="time-stamp">10:29 AM</div>
+<div class="rant-content">
+this rant is from my Raspberry Pi
+</div>
+</div>
+
+<div class="rant-entry">
 <div class="time-stamp">10:28 AM</div>
 <div class="rant-content">
 this rant is from my Raspberry Pi
