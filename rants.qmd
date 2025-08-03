@@ -70,6 +70,20 @@ Raw opinions, hot takes, and things that need to be said.
 </div>
 
 <div class="rant-entry">
+<div class="time-stamp">10:51 AM</div>
+<div class="rant-content">
+test rant from pi
+</div>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">10:46 AM</div>
+<div class="rant-content">
+Testing git pull feature
+</div>
+</div>
+
+<div class="rant-entry">
 <div class="time-stamp">10:38 AM</div>
 <div class="rant-content">
 testing
