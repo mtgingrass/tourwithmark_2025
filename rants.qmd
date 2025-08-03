@@ -61,7 +61,29 @@ Raw opinions, hot takes, and things that need to be said.
 
 
 <!-- 2025-08-01 -->
-<div class="rant-day" data-date="2025-08-01">
+
+
+<!-- 2025-08-03 -->
+<div class="rant-day" data-date="2025-08-03">
+<div class="date-header">
+<span class="date">August 03, 2025</span>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">10:29 AM</div>
+<div class="rant-content">
+this rant is from my Raspberry Pi
+</div>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">10:28 AM</div>
+<div class="rant-content">
+this rant is from my Raspberry Pi
+</div>
+</div>
+
+</div><div class="rant-day" data-date="2025-08-01">
 <div class="date-header">
 <span class="date">August 01, 2025</span>
 </div>
