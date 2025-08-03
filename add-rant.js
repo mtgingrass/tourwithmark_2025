@@ -342,6 +342,20 @@ async function main() {
     process.exit(1);
   }
   
+  // Pull latest changes first if we're going to push
+  if (options.push) {
+    try {
+      process.chdir(PROJECT_DIR);
+      console.log(`${colors.blue}Pulling latest changes...${colors.reset}`);
+      execSync('git pull --no-rebase origin main', { encoding: 'utf8' });
+      console.log(`${colors.green}✓ Updated to latest version${colors.reset}`);
+    } catch (pullError) {
+      console.error(`${colors.yellow}Warning: Could not pull latest changes${colors.reset}`);
+      console.error(`${colors.yellow}You may need to manually sync before pushing${colors.reset}`);
+      process.exit(1);
+    }
+  }
+  
   // Insert the rant
   console.log(`${colors.blue}Adding rant...${colors.reset}`);
   const result = insertRant(rantText.trim());
