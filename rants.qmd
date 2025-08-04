@@ -72,6 +72,13 @@ Raw opinions, hot takes, and things that need to be said.
 </div>
 
 <div class="rant-entry">
+<div class="time-stamp">11:23 AM</div>
+<div class="rant-content">
+I highly recommend it for anyone that wants to be miserable - Mark Gingrass
+</div>
+</div>
+
+<div class="rant-entry">
 <div class="time-stamp">11:22 AM</div>
 <div class="rant-content">
 If you are not prepared, be prepared to pay the price - Mark Gingrass
