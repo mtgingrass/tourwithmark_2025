@@ -72,6 +72,13 @@ Raw opinions, hot takes, and things that need to be said.
 </div>
 
 <div class="rant-entry">
+<div class="time-stamp">11:22 AM</div>
+<div class="rant-content">
+If you are not prepared, be prepared to pay the price - Mark Gingrass
+</div>
+</div>
+
+<div class="rant-entry">
 <div class="time-stamp">8:50 AM</div>
 <div class="rant-content">
 There should be caution tape in front of the storage rack where all the dumbbells are. I’m always trying to grab a weight, but there’s some old guy standing right in front of it, doing curls and blocking access to three sets of dumbbells.
