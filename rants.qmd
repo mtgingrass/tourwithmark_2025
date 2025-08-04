@@ -63,7 +63,22 @@ Raw opinions, hot takes, and things that need to be said.
 <!-- 2025-08-01 -->
 
 <!-- 2025-08-03 -->
-<div class="rant-day" data-date="2025-08-03">
+
+
+<!-- 2025-08-04 -->
+<div class="rant-day" data-date="2025-08-04">
+<div class="date-header">
+<span class="date">August 04, 2025</span>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">8:50 AM</div>
+<div class="rant-content">
+There should be caution tape in front of the storage rack where all the dumbbells are. I’m always trying to grab a weight, but there’s some old guy standing right in front of it, doing curls and blocking access to three sets of dumbbells.
+</div>
+</div>
+
+</div><div class="rant-day" data-date="2025-08-03">
 <div class="date-header">
 <span class="date">August 03, 2025</span>
 </div>
