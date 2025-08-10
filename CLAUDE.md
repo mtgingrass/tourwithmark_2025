@@ -19,6 +19,17 @@ The script will:
 3. Save converted images to corresponding `images` folders
 4. Create `images` folders if they don't exist
 
+## Book Cover Images
+
+For book covers on the `/booklist` page:
+- Use Open Library's free cover API for book images
+- Download covers using the script: `./get-openlibrary-covers.sh`
+- Store images in `/book_images/` directory
+- Use relative paths in markdown: `book_images/book-name.jpg`
+- Open Library API format: `https://covers.openlibrary.org/b/isbn/{ISBN}-L.jpg`
+
+Note: Avoid using Amazon image URLs directly as they block hotlinking. Open Library provides freely available book covers without restrictions.
+
 ## Requirements
 
 Install cwebp (part of webp tools):
