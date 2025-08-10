@@ -1,0 +1,19 @@
+---
+title: 'Caesar Head State Park: Quick Out and Back Adventure'
+author: 'Mark'
+date: '2025-08-10'
+categories: ['Hiking', 'South Carolina', 'State Parks']
+image: 'images/IMG_0247.webp'
+format: html
+description: "A quick out and back hike near Caesar Head State Park in South Carolina. Beautiful views and easy trails make this a perfect afternoon adventure."
+---
+
+A quick out and back adventure near **Caesar Head State Park** in South Carolina!
+
+This trail offers stunning views of the Blue Ridge Mountains and is perfect for a quick afternoon hike. The out-and-back route makes it easy to adjust the distance based on your time and energy levels.
+
+![](images/IMG_0247.webp)
+
+![](images/IMG_0250.webp)
+
+![](images/IMG_0251.webp)
