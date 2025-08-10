@@ -1,0 +1,47 @@
+#!/bin/bash
+
+cd book_images
+
+echo "Downloading book covers from Open Library..."
+
+# Using Open Library covers API with ISBN numbers
+curl -L -o righteous-mind.jpg "https://covers.openlibrary.org/b/isbn/9780307455772-L.jpg"
+curl -L -o night.jpg "https://covers.openlibrary.org/b/isbn/9780374500016-L.jpg"
+curl -L -o fantasyland.jpg "https://covers.openlibrary.org/b/isbn/9781400067213-L.jpg"
+curl -L -o abundance.jpg "https://covers.openlibrary.org/b/isbn/9781476744940-L.jpg"
+curl -L -o color-of-law.jpg "https://covers.openlibrary.org/b/isbn/9781631492853-L.jpg"
+curl -L -o lets-get-real.jpg "https://covers.openlibrary.org/b/isbn/9781591842262-L.jpg"
+curl -L -o policy-making.jpg "https://covers.openlibrary.org/b/isbn/9780136145547-L.jpg"
+curl -L -o jesus-john-wayne.jpg "https://covers.openlibrary.org/b/isbn/9781631495731-L.jpg"
+curl -L -o peoples-history.jpg "https://covers.openlibrary.org/b/isbn/9780062397348-L.jpg"
+curl -L -o on-tyranny.jpg "https://covers.openlibrary.org/b/isbn/9780804190114-L.jpg"
+curl -L -o pink-triangle.jpg "https://covers.openlibrary.org/b/isbn/9781555830069-L.jpg"
+curl -L -o they-thought-free.jpg "https://covers.openlibrary.org/b/isbn/9780226526720-L.jpg"
+curl -L -o limits-of-power.jpg "https://covers.openlibrary.org/b/isbn/9780805087246-L.jpg"
+curl -L -o easy-spanish.jpg "https://covers.openlibrary.org/b/isbn/9780071463386-L.jpg"
+curl -L -o four-thousand-weeks.jpg "https://covers.openlibrary.org/b/isbn/9780374159122-L.jpg"
+curl -L -o how-to-win-friends.jpg "https://covers.openlibrary.org/b/isbn/9780671027032-L.jpg"
+curl -L -o master-senate.jpg "https://covers.openlibrary.org/b/isbn/9780394528366-L.jpg"
+curl -L -o means-ascent.jpg "https://covers.openlibrary.org/b/isbn/9780679733713-L.jpg"
+curl -L -o passage-power.jpg "https://covers.openlibrary.org/b/isbn/9780375713255-L.jpg"
+curl -L -o path-to-power.jpg "https://covers.openlibrary.org/b/isbn/9780679729457-L.jpg"
+curl -L -o mans-search-meaning.jpg "https://covers.openlibrary.org/b/isbn/9780807014295-L.jpg"
+curl -L -o sapiens.jpg "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg"
+curl -L -o dreyers-english.jpg "https://covers.openlibrary.org/b/isbn/9780812995701-L.jpg"
+curl -L -o lean-enterprise.jpg "https://covers.openlibrary.org/b/isbn/9781449368425-L.jpg"
+curl -L -o remarkably-bright.jpg "https://covers.openlibrary.org/b/isbn/9780063204157-L.jpg"
+curl -L -o animal-farm.jpg "https://covers.openlibrary.org/b/isbn/9780451526342-L.jpg"
+curl -L -o how-we-learn.jpg "https://covers.openlibrary.org/b/isbn/9780525559887-L.jpg"
+curl -L -o walk-in-woods.jpg "https://covers.openlibrary.org/b/isbn/9780767902526-L.jpg"
+curl -L -o salt-history.jpg "https://covers.openlibrary.org/b/isbn/9780142001615-L.jpg"
+curl -L -o dataclysm.jpg "https://covers.openlibrary.org/b/isbn/9780385347372-L.jpg"
+curl -L -o phoenix-project.jpg "https://covers.openlibrary.org/b/isbn/9781942788294-L.jpg"
+curl -L -o reason-i-jump.jpg "https://covers.openlibrary.org/b/isbn/9780812994865-L.jpg"
+curl -L -o who-moved-cheese.jpg "https://covers.openlibrary.org/b/isbn/9780399144462-L.jpg"
+curl -L -o bogleheads-guide.jpg "https://covers.openlibrary.org/b/isbn/9781119211297-L.jpg"
+curl -L -o surprising-meetings.jpg "https://covers.openlibrary.org/b/isbn/9780190616212-L.jpg"
+curl -L -o cant-hurt-me.jpg "https://covers.openlibrary.org/b/isbn/9781544512280-L.jpg"
+curl -L -o demon-haunted.jpg "https://covers.openlibrary.org/b/isbn/9780345409461-L.jpg"
+
+echo "Download complete!"
+ls -lh *.jpg

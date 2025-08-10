@@ -1,0 +1,47 @@
+#!/bin/bash
+
+cd book_images
+
+echo "Downloading book covers..."
+
+# Download each book cover using curl
+curl -L -o righteous-mind.jpg "https://m.media-amazon.com/images/I/81XwUkicJ5L._SY466_.jpg"
+curl -L -o night.jpg "https://m.media-amazon.com/images/I/41xShlnTZTL._SY445_SX342_.jpg"
+curl -L -o fantasyland.jpg "https://m.media-amazon.com/images/I/51P5xI8DGUL._SY445_SX342_.jpg"
+curl -L -o abundance.jpg "https://m.media-amazon.com/images/I/41ZCz6fFHaL._SY445_SX342_.jpg"
+curl -L -o color-of-law.jpg "https://m.media-amazon.com/images/I/51SYSsUAmlL._SY445_SX342_.jpg"
+curl -L -o lets-get-real.jpg "https://m.media-amazon.com/images/I/41Tni5mqaXL._SY445_SX342_.jpg"
+curl -L -o policy-making.jpg "https://m.media-amazon.com/images/I/51e7cHBwbsL._SY445_SX342_.jpg"
+curl -L -o jesus-john-wayne.jpg "https://m.media-amazon.com/images/I/41nY7vu8YLL._SY445_SX342_.jpg"
+curl -L -o peoples-history.jpg "https://m.media-amazon.com/images/I/51529Lfc2ML._SY445_SX342_.jpg"
+curl -L -o on-tyranny.jpg "https://m.media-amazon.com/images/I/41T3B04wB-L._SY445_SX342_.jpg"
+curl -L -o pink-triangle.jpg "https://m.media-amazon.com/images/I/41uBZ1VbKbL._SY445_SX342_.jpg"
+curl -L -o they-thought-free.jpg "https://m.media-amazon.com/images/I/51ILF3wGnRL._SY445_SX342_.jpg"
+curl -L -o limits-of-power.jpg "https://m.media-amazon.com/images/I/41Ugz9l7bpL._SY445_SX342_.jpg"
+curl -L -o easy-spanish.jpg "https://m.media-amazon.com/images/I/51-wEu69HAL._SY445_SX342_.jpg"
+curl -L -o four-thousand-weeks.jpg "https://m.media-amazon.com/images/I/410RTQezHYL._SY445_SX342_.jpg"
+curl -L -o how-to-win-friends.jpg "https://m.media-amazon.com/images/I/51X7dEUFgoL._SY445_SX342_.jpg"
+curl -L -o master-senate.jpg "https://m.media-amazon.com/images/I/51kJB59jNVL._SY445_SX342_.jpg"
+curl -L -o means-ascent.jpg "https://m.media-amazon.com/images/I/51k5UiHNWoL._SY445_SX342_.jpg"
+curl -L -o passage-power.jpg "https://m.media-amazon.com/images/I/51QR9pksOkL._SY445_SX342_.jpg"
+curl -L -o path-to-power.jpg "https://m.media-amazon.com/images/I/51jGBnHQaCL._SY445_SX342_.jpg"
+curl -L -o mans-search-meaning.jpg "https://m.media-amazon.com/images/I/41s4xJZlEYL._SY445_SX342_.jpg"
+curl -L -o sapiens.jpg "https://m.media-amazon.com/images/I/41+lolL22gL._SY445_SX342_.jpg"
+curl -L -o dreyers-english.jpg "https://m.media-amazon.com/images/I/419Ik3TyCBL._SY445_SX342_.jpg"
+curl -L -o lean-enterprise.jpg "https://m.media-amazon.com/images/I/51mMmRxf9FL._SY445_SX342_.jpg"
+curl -L -o remarkably-bright.jpg "https://m.media-amazon.com/images/I/51xJbEMRCxL._SY445_SX342_.jpg"
+curl -L -o animal-farm.jpg "https://m.media-amazon.com/images/I/61bowUmXklL._SY466_.jpg"
+curl -L -o how-we-learn.jpg "https://m.media-amazon.com/images/I/414jUehh2kL._SY445_SX342_.jpg"
+curl -L -o walk-in-woods.jpg "https://m.media-amazon.com/images/I/51u6Uf2OTAL._SY445_SX342_.jpg"
+curl -L -o salt-history.jpg "https://m.media-amazon.com/images/I/51vhNcQT-5L._SY445_SX342_.jpg"
+curl -L -o dataclysm.jpg "https://m.media-amazon.com/images/I/51fXm96TzNL._SY445_SX342_.jpg"
+curl -L -o phoenix-project.jpg "https://m.media-amazon.com/images/I/51vIZPlfDPL._SY445_SX342_.jpg"
+curl -L -o reason-i-jump.jpg "https://m.media-amazon.com/images/I/51UM2E-qs3L._SY445_SX342_.jpg"
+curl -L -o who-moved-cheese.jpg "https://m.media-amazon.com/images/I/510MtLEij5L._SY445_SX342_.jpg"
+curl -L -o bogleheads-guide.jpg "https://m.media-amazon.com/images/I/51XRCkafJIL._SY445_SX342_.jpg"
+curl -L -o surprising-meetings.jpg "https://m.media-amazon.com/images/I/41CBdJcUdjL._SY445_SX342_.jpg"
+curl -L -o cant-hurt-me.jpg "https://m.media-amazon.com/images/I/51Ln0ls5WQL._SY445_SX342_.jpg"
+curl -L -o demon-haunted.jpg "https://m.media-amazon.com/images/I/51Mqp381DFL._SY445_SX342_.jpg"
+
+echo "Download complete!"
+ls -lh *.jpg
