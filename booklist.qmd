@@ -21,7 +21,7 @@ My bookshelf reflects my curiosity. I choose books that explore history, politic
 ::: {.books-grid}
 
 ::: {.book-card}
-![The Righteous Mind](https://images-na.ssl-images-amazon.com/images/I/81XwUkicJ5L.jpg){.book-cover}
+![The Righteous Mind](/book_images/righteous-mind.jpg){.book-cover}
 
 ::: {.book-info}
 ### The Righteous Mind
@@ -34,7 +34,7 @@ Social psychologist Jonathan Haidt explores the roots of our moral divisions, ar
 :::
 
 ::: {.book-card}
-![Night](https://images-na.ssl-images-amazon.com/images/I/71NBtCxq8CL.jpg){.book-cover}
+![Night](/book_images/night.jpg){.book-cover}
 
 ::: {.book-info}
 ### Night
@@ -47,7 +47,7 @@ A haunting memoir of Elie Wiesel's experiences as a teenage boy in Nazi concentr
 :::
 
 ::: {.book-card}
-![Fantasyland](https://images-na.ssl-images-amazon.com/images/I/91EBG9Pi2OL.jpg){.book-cover}
+![Fantasyland](/book_images/fantasyland.jpg){.book-cover}
 
 ::: {.book-info}
 ### Fantasyland
@@ -68,7 +68,7 @@ A comprehensive analysis of America's 500-year history of embracing fantasy and 
 ::: {.books-grid}
 
 ::: {.book-card}
-![Abundance](https://images-na.ssl-images-amazon.com/images/I/71aFQ7O2GOL.jpg){.book-cover}
+![Abundance](/book_images/abundance.jpg){.book-cover}
 
 ::: {.book-info}
 ### Abundance
@@ -81,7 +81,7 @@ Klein and Thompson argue that America's persistent shortages stem from outdated 
 :::
 
 ::: {.book-card}
-![The Color of Law](https://images-na.ssl-images-amazon.com/images/I/91C5wVhNvjL.jpg){.book-cover}
+![The Color of Law](/book_images/color-of-law.jpg){.book-cover}
 
 ::: {.book-info}
 ### The Color of Law
@@ -94,7 +94,7 @@ Rothstein examines how governments systematically imposed residential segregatio
 :::
 
 ::: {.book-card}
-![Let's Get Real or Let's Not Play](https://images-na.ssl-images-amazon.com/images/I/71hBRBJd0YL.jpg){.book-cover}
+![Let's Get Real or Let's Not Play](/book_images/lets-get-real.jpg){.book-cover}
 
 ::: {.book-info}
 ### Let's Get Real or Let's Not Play
@@ -107,7 +107,7 @@ A fresh approach to sales emphasizing clarity, authenticity, and emotional intel
 :::
 
 ::: {.book-card}
-![The Policy-Making Process](https://images-na.ssl-images-amazon.com/images/I/51e7cHBwbsL.jpg){.book-cover}
+![The Policy-Making Process](/book_images/policy-making.jpg){.book-cover}
 
 ::: {.book-info}
 ### The Policy-Making Process
@@ -120,7 +120,7 @@ A foundational text examining the complexities of decision-making in government.
 :::
 
 ::: {.book-card}
-![Jesus and John Wayne](https://images-na.ssl-images-amazon.com/images/I/81S0AB3qZ8L.jpg){.book-cover}
+![Jesus and John Wayne](/book_images/jesus-john-wayne.jpg){.book-cover}
 
 ::: {.book-info}
 ### Jesus and John Wayne
@@ -133,7 +133,7 @@ Historian Du Mez examines how white evangelical culture embraced militant mascul
 :::
 
 ::: {.book-card}
-![A People's History of the United States](https://images-na.ssl-images-amazon.com/images/I/71Fqo3AnYFL.jpg){.book-cover}
+![A People's History of the United States](/book_images/peoples-history.jpg){.book-cover}
 
 ::: {.book-info}
 ### A People's History of the United States
@@ -146,7 +146,7 @@ A groundbreaking reinterpretation of American history from the perspective of th
 :::
 
 ::: {.book-card}
-![On Tyranny](https://images-na.ssl-images-amazon.com/images/I/81XGzHX2YWL.jpg){.book-cover}
+![On Tyranny](/book_images/on-tyranny.jpg){.book-cover}
 
 ::: {.book-info}
 ### On Tyranny
@@ -159,7 +159,7 @@ A concise guide on resisting authoritarianism, drawing lessons from history to p
 :::
 
 ::: {.book-card}
-![The Men With the Pink Triangle](https://images-na.ssl-images-amazon.com/images/I/71BVdJwFJxL.jpg){.book-cover}
+![The Men With the Pink Triangle](/book_images/pink-triangle.jpg){.book-cover}
 
 ::: {.book-info}
 ### The Men With the Pink Triangle
@@ -172,7 +172,7 @@ A harrowing account of the persecution of homosexuals in Nazi concentration camp
 :::
 
 ::: {.book-card}
-![They Thought They Were Free](https://images-na.ssl-images-amazon.com/images/I/71QqnHGSy8L.jpg){.book-cover}
+![They Thought They Were Free](/book_images/they-thought-free.jpg){.book-cover}
 
 ::: {.book-info}
 ### They Thought They Were Free
@@ -193,7 +193,7 @@ An exploration of how ordinary Germans came to accept and support the Nazi regim
 ::: {.books-grid}
 
 ::: {.book-card}
-![The Limits of Power](https://images-na.ssl-images-amazon.com/images/I/71t2WRqF4aL.jpg){.book-cover}
+![The Limits of Power](/book_images/limits-of-power.jpg){.book-cover}
 
 ::: {.book-info}
 ### The Limits of Power
@@ -206,7 +206,7 @@ A critical examination of America's foreign policy and its overreliance on milit
 :::
 
 ::: {.book-card}
-![Easy Spanish Step-By-Step](https://images-na.ssl-images-amazon.com/images/I/71xGQP6hwoL.jpg){.book-cover}
+![Easy Spanish Step-By-Step](/book_images/easy-spanish.jpg){.book-cover}
 
 ::: {.book-info}
 ### Easy Spanish Step-By-Step
@@ -219,7 +219,7 @@ An accessible guide for beginners learning Spanish, focusing on essential gramma
 :::
 
 ::: {.book-card}
-![Four Thousand Weeks](https://images-na.ssl-images-amazon.com/images/I/81fEcMKXJjL.jpg){.book-cover}
+![Four Thousand Weeks](/book_images/four-thousand-weeks.jpg){.book-cover}
 
 ::: {.book-info}
 ### Four Thousand Weeks
@@ -232,7 +232,7 @@ A profound reflection on time management, urging readers to embrace life's limit
 :::
 
 ::: {.book-card}
-![How to Win Friends and Influence People](https://images-na.ssl-images-amazon.com/images/I/71vK0WVQ4rL.jpg){.book-cover}
+![How to Win Friends and Influence People](/book_images/how-to-win-friends.jpg){.book-cover}
 
 ::: {.book-info}
 ### How to Win Friends and Influence People
@@ -245,7 +245,7 @@ A timeless classic offering practical advice on effective communication and buil
 :::
 
 ::: {.book-card}
-![Master of the Senate](https://images-na.ssl-images-amazon.com/images/I/71AOMYlUzQL.jpg){.book-cover}
+![Master of the Senate](/book_images/master-senate.jpg){.book-cover}
 
 ::: {.book-info}
 ### Master of the Senate
@@ -258,7 +258,7 @@ An in-depth biography of Lyndon B. Johnson, focusing on his tenure in the U.S. S
 :::
 
 ::: {.book-card}
-![Means of Ascent](https://images-na.ssl-images-amazon.com/images/I/71fCCvvKMLL.jpg){.book-cover}
+![Means of Ascent](/book_images/means-ascent.jpg){.book-cover}
 
 ::: {.book-info}
 ### Means of Ascent
@@ -271,7 +271,7 @@ The second volume in Caro's series on LBJ, detailing his controversial 1948 Sena
 :::
 
 ::: {.book-card}
-![The Passage of Power](https://images-na.ssl-images-amazon.com/images/I/71a5HQ8fKTL.jpg){.book-cover}
+![The Passage of Power](/book_images/passage-power.jpg){.book-cover}
 
 ::: {.book-info}
 ### The Passage of Power
@@ -284,7 +284,7 @@ Chronicles Johnson's vice presidency and transition to presidency after JFK's as
 :::
 
 ::: {.book-card}
-![The Path to Power](https://images-na.ssl-images-amazon.com/images/I/71r9CXkjsVL.jpg){.book-cover}
+![The Path to Power](/book_images/path-to-power.jpg){.book-cover}
 
 ::: {.book-info}
 ### The Path to Power
@@ -297,7 +297,7 @@ The first installment exploring Johnson's early life and political rise in Texas
 :::
 
 ::: {.book-card}
-![Man's Search for Meaning](https://images-na.ssl-images-amazon.com/images/I/81s6DUyQCZL.jpg){.book-cover}
+![Man's Search for Meaning](/book_images/mans-search-meaning.jpg){.book-cover}
 
 ::: {.book-info}
 ### Man's Search for Meaning
@@ -310,7 +310,7 @@ A moving memoir by a Holocaust survivor on finding purpose amidst suffering.
 :::
 
 ::: {.book-card}
-![Sapiens](https://images-na.ssl-images-amazon.com/images/I/71f2R9pZZGL.jpg){.book-cover}
+![Sapiens](/book_images/sapiens.jpg){.book-cover}
 
 ::: {.book-info}
 ### Sapiens
@@ -323,7 +323,7 @@ A sweeping narrative of human history, examining how Homo sapiens came to domina
 :::
 
 ::: {.book-card}
-![Dreyer's English](https://images-na.ssl-images-amazon.com/images/I/71+DsiqmJML.jpg){.book-cover}
+![Dreyer's English](/book_images/dreyers-english.jpg){.book-cover}
 
 ::: {.book-info}
 ### Dreyer's English
@@ -336,7 +336,7 @@ An informative and entertaining guide to writing and grammar from a seasoned cop
 :::
 
 ::: {.book-card}
-![Lean Enterprise](https://images-na.ssl-images-amazon.com/images/I/71DJlQoRs3L.jpg){.book-cover}
+![Lean Enterprise](/book_images/lean-enterprise.jpg){.book-cover}
 
 ::: {.book-info}
 ### Lean Enterprise
@@ -349,7 +349,7 @@ A guide for organizations adopting lean principles to drive innovation and growt
 :::
 
 ::: {.book-card}
-![Remarkably Bright Creatures](https://images-na.ssl-images-amazon.com/images/I/91UKm+QqpEL.jpg){.book-cover}
+![Remarkably Bright Creatures](/book_images/remarkably-bright.jpg){.book-cover}
 
 ::: {.book-info}
 ### Remarkably Bright Creatures
@@ -362,7 +362,7 @@ A heartwarming story about unexpected friendships and healing, featuring a giant
 :::
 
 ::: {.book-card}
-![Animal Farm](https://images-na.ssl-images-amazon.com/images/I/71JUJ6pGoIL.jpg){.book-cover}
+![Animal Farm](/book_images/animal-farm.jpg){.book-cover}
 
 ::: {.book-info}
 ### Animal Farm
@@ -375,7 +375,7 @@ A satirical allegory on totalitarianism and power dynamics, as relevant today as
 :::
 
 ::: {.book-card}
-![How We Learn](https://images-na.ssl-images-amazon.com/images/I/81E+imjWnCL.jpg){.book-cover}
+![How We Learn](/book_images/how-we-learn.jpg){.book-cover}
 
 ::: {.book-info}
 ### How We Learn
@@ -388,7 +388,7 @@ Cognitive neuroscientist Dehaene explores learning mechanisms, combining insight
 :::
 
 ::: {.book-card}
-![A Walk in the Woods](https://images-na.ssl-images-amazon.com/images/I/81R1qZ9eQFL.jpg){.book-cover}
+![A Walk in the Woods](/book_images/walk-in-woods.jpg){.book-cover}
 
 ::: {.book-info}
 ### A Walk in the Woods
@@ -409,7 +409,7 @@ Bryson's humorous memoir of attempting to hike the 2,190-mile Appalachian Trail.
 ::: {.books-grid}
 
 ::: {.book-card}
-![Salt: A World History](https://images-na.ssl-images-amazon.com/images/I/71A+qdT2IGL.jpg){.book-cover}
+![Salt: A World History](/book_images/salt-history.jpg){.book-cover}
 
 ::: {.book-info}
 ### Salt: A World History
@@ -422,7 +422,7 @@ Explores the profound impact of salt on civilization, trade routes, economies, a
 :::
 
 ::: {.book-card}
-![Dataclysm](https://images-na.ssl-images-amazon.com/images/I/71hIDw1DFkL.jpg){.book-cover}
+![Dataclysm](/book_images/dataclysm.jpg){.book-cover}
 
 ::: {.book-info}
 ### Dataclysm
@@ -435,7 +435,7 @@ OkCupid co-founder analyzes online data to reveal patterns about human behavior 
 :::
 
 ::: {.book-card}
-![The Phoenix Project](https://images-na.ssl-images-amazon.com/images/I/81DJY8x9jHL.jpg){.book-cover}
+![The Phoenix Project](/book_images/phoenix-project.jpg){.book-cover}
 
 ::: {.book-info}
 ### The Phoenix Project
@@ -448,7 +448,7 @@ A novel illustrating IT operations challenges and the journey to implement DevOp
 :::
 
 ::: {.book-card}
-![The Reason I Jump](https://images-na.ssl-images-amazon.com/images/I/71mN3c0k9kL.jpg){.book-cover}
+![The Reason I Jump](/book_images/reason-i-jump.jpg){.book-cover}
 
 ::: {.book-info}
 ### The Reason I Jump
@@ -461,7 +461,7 @@ A thirteen-year-old with autism offers extraordinary insight into his mind and e
 :::
 
 ::: {.book-card}
-![Who Moved My Cheese?](https://images-na.ssl-images-amazon.com/images/I/71z-9KzfnGL.jpg){.book-cover}
+![Who Moved My Cheese?](/book_images/who-moved-cheese.jpg){.book-cover}
 
 ::: {.book-info}
 ### Who Moved My Cheese?
@@ -474,7 +474,7 @@ A motivational fable about adapting to change through the story of mice searchin
 :::
 
 ::: {.book-card}
-![The Bogleheads' Guide to Investing](https://images-na.ssl-images-amazon.com/images/I/71qDf4CmplL.jpg){.book-cover}
+![The Bogleheads' Guide to Investing](/book_images/bogleheads-guide.jpg){.book-cover}
 
 ::: {.book-info}
 ### The Bogleheads' Guide to Investing
@@ -487,7 +487,7 @@ Comprehensive guide offering straightforward advice on investing and long-term w
 :::
 
 ::: {.book-card}
-![The Surprising Science of Meetings](https://images-na.ssl-images-amazon.com/images/I/710Yl5TtGXL.jpg){.book-cover}
+![The Surprising Science of Meetings](/book_images/surprising-meetings.jpg){.book-cover}
 
 ::: {.book-info}
 ### The Surprising Science of Meetings
@@ -500,7 +500,7 @@ Evidence-based strategies to enhance meeting quality and transform collaboration
 :::
 
 ::: {.book-card}
-![Can't Hurt Me](https://images-na.ssl-images-amazon.com/images/I/81gTRv2HXrL.jpg){.book-cover}
+![Can't Hurt Me](/book_images/cant-hurt-me.jpg){.book-cover}
 
 ::: {.book-info}
 ### Can't Hurt Me
@@ -513,7 +513,7 @@ Former Navy SEAL shares his own path from poverty to becoming a top endurance at
 :::
 
 ::: {.book-card}
-![The Demon-Haunted World](https://images-na.ssl-images-amazon.com/images/I/71f8U5Uv3EL.jpg){.book-cover}
+![The Demon-Haunted World](/book_images/demon-haunted.jpg){.book-cover}
 
 ::: {.book-info}
 ### The Demon-Haunted World
