@@ -66,7 +66,22 @@ Raw opinions, hot takes, and things that need to be said.
 
 
 <!-- 2025-08-04 -->
-<div class="rant-day" data-date="2025-08-04">
+
+
+<!-- 2025-08-10 -->
+<div class="rant-day" data-date="2025-08-10">
+<div class="date-header">
+<span class="date">August 10, 2025</span>
+</div>
+
+<div class="rant-entry">
+<div class="time-stamp">2:16 PM</div>
+<div class="rant-content">
+Just learned about tmux and now I am in love. Only the nerdy ones will understand.
+</div>
+</div>
+
+</div><div class="rant-day" data-date="2025-08-04">
 <div class="date-header">
 <span class="date">August 04, 2025</span>
 </div>
