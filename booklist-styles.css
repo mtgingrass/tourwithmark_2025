@@ -1,0 +1,275 @@
+/* Modern Booklist Styles */
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --background-light: #f8f9fa;
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --card-hover-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  --text-primary: #2c3e50;
+  --text-secondary: #7f8c8d;
+  --border-radius: 12px;
+  --transition-speed: 0.3s;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 2rem;
+  margin: -2rem -2rem 3rem -2rem;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+  color: white;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+.hero-section em {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  font-style: normal;
+}
+
+/* Reading Status Headers */
+.reading-status {
+  margin: 3rem 0 2rem 0;
+}
+
+.reading-status h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+/* Books Grid */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.books-grid.compact {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Book Cards */
+.book-card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-speed) ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.book-card.compact {
+  border-left: 4px solid var(--secondary-color);
+}
+
+.book-card.compact:hover {
+  border-left-color: var(--accent-color);
+}
+
+/* Book Cover Images */
+.book-cover {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Book Info */
+.book-info {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-info.no-image {
+  padding: 2rem 1.5rem;
+}
+
+.book-info h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.book-info strong {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.book-info p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Compact Card Styles */
+.compact .book-info {
+  padding: 1.2rem;
+}
+
+.compact .book-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.compact .book-info strong {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.compact .book-info p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Book Links */
+.book-link {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(135deg, var(--secondary-color), #2980b9);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all var(--transition-speed) ease;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.book-link:hover {
+  background: linear-gradient(135deg, #2980b9, var(--secondary-color));
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.compact .book-link {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+  
+  .books-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .books-grid.compact {
+    grid-template-columns: 1fr;
+  }
+  
+  .reading-status h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+  
+  .book-info {
+    padding: 1.2rem;
+  }
+  
+  .book-info h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animation on Load */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.book-card {
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.book-card:nth-child(1) { animation-delay: 0.1s; }
+.book-card:nth-child(2) { animation-delay: 0.2s; }
+.book-card:nth-child(3) { animation-delay: 0.3s; }
+.book-card:nth-child(4) { animation-delay: 0.4s; }
+.book-card:nth-child(5) { animation-delay: 0.5s; }
+.book-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Dark Mode Support (optional) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-light: #1a1a1a;
+    --text-primary: #ecf0f1;
+    --text-secondary: #bdc3c7;
+  }
+  
+  .book-card {
+    background: #2c2c2c;
+  }
+  
+  .hero-section {
+    background: linear-gradient(135deg, #434343 0%, #000000 100%);
+  }
+}
