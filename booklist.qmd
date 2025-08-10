@@ -1,5 +1,4 @@
 ---
-title: "My Bookshelf"
 format:
   html:
     toc: false

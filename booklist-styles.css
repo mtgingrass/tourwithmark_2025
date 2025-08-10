@@ -18,9 +18,11 @@
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 4rem 2rem;
-  margin: -2rem -2rem 3rem -2rem;
+  margin: -3rem -3rem 3rem -3rem;
   text-align: center;
   border-radius: 0 0 30px 30px;
+  width: calc(100% + 6rem);
+  max-width: none;
 }
 
 .hero-section h1 {
