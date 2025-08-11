@@ -12,6 +12,8 @@ website:
       - random_posts.qmd
       - text: "Rants"
         href: rants.qmd
+      - text: "Hiking Map"
+        href: hiking_map.qmd
 
     right:
       - booklist.qmd
