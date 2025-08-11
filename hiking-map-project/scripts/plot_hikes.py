@@ -133,6 +133,20 @@ def create_interactive_map(data_dir):
             # Create polyline for this hike
             color = colors[idx % len(colors)]
             
+            # Format date and distance for display
+            # Parse date string and format to just show date without time
+            try:
+                date_obj = pd.to_datetime(activity['date'])
+                formatted_date = date_obj.strftime('%B %d, %Y')  # e.g., "May 12, 2024"
+            except:
+                formatted_date = activity['date']  # fallback to original if parsing fails
+            
+            # Round distance to no decimal places
+            try:
+                distance_rounded = round(float(activity['distance']))
+            except:
+                distance_rounded = activity['distance']  # fallback to original if conversion fails
+            
             # Add the track to map
             folium.PolyLine(
                 points,
@@ -141,18 +155,18 @@ def create_interactive_map(data_dir):
                 opacity=0.7,
                 popup=folium.Popup(
                     f"<b>{activity['name']}</b><br>"
-                    f"Date: {activity['date']}<br>"
-                    f"Distance: {activity['distance']} km",
+                    f"Date: {formatted_date}<br>"
+                    f"Distance: {distance_rounded} km",
                     max_width=300
                 ),
-                tooltip=f"{activity['name']} ({activity['date']})"
+                tooltip=f"{activity['name']} ({formatted_date})"
             ).add_to(base_map)
             
             # Add start marker for each hike
             if points:
                 folium.Marker(
                     points[0],
-                    popup=f"Start: {activity['name']}",
+                    popup=f"{activity['name']}",
                     tooltip=activity['name'],
                     icon=folium.Icon(color=color, icon='play', prefix='fa')
                 ).add_to(base_map)
