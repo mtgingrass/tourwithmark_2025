@@ -7,7 +7,28 @@ format:
 ---
 
 ```{=html}
-<iframe src="hiking-map-project/hiking_map.html" width="100%" height="800px" frameborder="0" style="border:0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"></iframe>
+<iframe id="hiking-map-iframe" src="hiking-map-project/hiking_map.html" width="100%" height="800px" frameborder="0" style="border:0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"></iframe>
+
+<script>
+// Pass URL hash to iframe when page loads or hash changes
+function updateIframeHash() {
+    var iframe = document.getElementById('hiking-map-iframe');
+    if (window.location.hash && iframe) {
+        // Update iframe source with the hash
+        var hash = window.location.hash;
+        var currentSrc = iframe.src.split('#')[0];
+        iframe.src = currentSrc + hash;
+    }
+}
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(updateIframeHash, 100);
+});
+
+// Listen for hash changes
+window.addEventListener('hashchange', updateIframeHash);
+</script>
 ```
 
 ## Hiking Statistics
