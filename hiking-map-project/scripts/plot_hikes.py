@@ -14,6 +14,7 @@ import csv
 from datetime import datetime
 from fitparse import FitFile
 import json
+from folium import Element
 
 
 def parse_gpx_file(filepath):
@@ -89,7 +90,9 @@ def create_interactive_map(data_dir):
         location=[40.0, -105.0],  # Default to Colorado area
         zoom_start=10,
         tiles='OpenStreetMap',
-        prefer_canvas=True  # Better performance with many tracks
+        prefer_canvas=True,  # Better performance with many tracks
+        zoom_control=True,
+        scrollWheelZoom=True
     )
     
     # Add different tile layers (OpenStreetMap is already added as default)
@@ -101,6 +104,7 @@ def create_interactive_map(data_dir):
     total_tracks = 0
     failed_tracks = 0
     all_points = []
+    markers_data = []  # Store marker data for zoom functionality
     
     # Color palette for different hikes
     colors = ['red', 'blue', 'green', 'purple', 'orange', 'darkred', 
@@ -164,12 +168,23 @@ def create_interactive_map(data_dir):
             
             # Add start marker for each hike
             if points:
-                folium.Marker(
+                # Calculate bounds for this hike
+                hike_bounds = [[min(p[0] for p in points), min(p[1] for p in points)],
+                              [max(p[0] for p in points), max(p[1] for p in points)]]
+                
+                marker = folium.Marker(
                     points[0],
                     popup=f"{activity['name']}",
                     tooltip=activity['name'],
                     icon=folium.Icon(color=color, icon='play', prefix='fa')
-                ).add_to(base_map)
+                )
+                marker.add_to(base_map)
+                
+                # Store marker data for zoom functionality
+                markers_data.append({
+                    'location': points[0],
+                    'bounds': hike_bounds
+                })
     
     # Adjust map bounds to show all tracks
     if all_points:
@@ -189,6 +204,51 @@ def create_interactive_map(data_dir):
     # Add minimap
     minimap = plugins.MiniMap(toggle_display=True)
     base_map.add_child(minimap)
+    
+    # Add custom JavaScript for zoom-on-click functionality
+    zoom_script = """
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Wait for map to be fully loaded
+        setTimeout(function() {
+            // Get reference to the map
+            var mapId = document.querySelector('.folium-map').id;
+            var map = window[mapId];
+            
+            // Add click handler to all markers
+            map.eachLayer(function(layer) {
+                if (layer instanceof L.Marker) {
+                    layer.on('click', function(e) {
+                        // Get current zoom level
+                        var currentZoom = map.getZoom();
+                        var targetZoom = 14;  // Target zoom level for detail view
+                        
+                        // Only zoom in if we're not already at or beyond target zoom
+                        if (currentZoom < targetZoom) {
+                            map.setView(e.latlng, targetZoom, {
+                                animate: true,
+                                duration: 0.5
+                            });
+                        } else {
+                            // If already zoomed in, just center on the marker
+                            map.panTo(e.latlng, {
+                                animate: true,
+                                duration: 0.5
+                            });
+                        }
+                        
+                        // Prevent event from bubbling (which could cause zoom out)
+                        L.DomEvent.stopPropagation(e);
+                    });
+                }
+            });
+        }, 1000);
+    });
+    </script>
+    """
+    
+    # Add the script to the map
+    base_map.get_root().html.add_child(Element(zoom_script))
     
     # Save map
     output_path = os.path.join(os.path.dirname(data_dir), 'hiking_map.html')
