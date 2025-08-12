@@ -17,3 +17,11 @@ This trail offers stunning views of the Blue Ridge Mountains and is perfect for 
 ![](images/IMG_0250.webp)
 
 ![](images/IMG_0251.webp)
+
+<div style="background-color: #f0f8ff; border: 2px solid #007bff; border-radius: 8px; padding: 15px; margin: 20px 0; text-align: center;">
+  <p style="margin: 0; font-size: 16px;">
+    🥾 <a href="/hiking_map.html#87" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">
+      View Hike #87: Silver Steps Trail on the Interactive Hiking Map
+    </a> 🗺️
+  </p>
+</div>
