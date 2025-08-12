@@ -271,6 +271,7 @@ def create_interactive_map(data_dir):
                 
                 # Store marker data for zoom functionality
                 markers_data.append({
+                    'hike_number': activity['hike_number'],
                     'location': points[0],
                     'bounds': hike_bounds
                 })
@@ -294,45 +295,115 @@ def create_interactive_map(data_dir):
     minimap = plugins.MiniMap(toggle_display=True)
     base_map.add_child(minimap)
     
-    # Add custom JavaScript for zoom-on-click functionality
-    zoom_script = """
+    # Build JavaScript data object for hike navigation
+    hike_data_js = "var hikeData = {"
+    for marker in markers_data:
+        if marker['hike_number']:  # Only add if there's a hike number
+            hike_data_js += f"""
+    '{marker['hike_number']}': {{
+        location: [{marker['location'][0]}, {marker['location'][1]}],
+        bounds: [[{marker['bounds'][0][0]}, {marker['bounds'][0][1]}], 
+                 [{marker['bounds'][1][0]}, {marker['bounds'][1][1]}]]
+    }},"""
+    hike_data_js = hike_data_js.rstrip(',') + "\n};"
+    
+    # Add custom JavaScript for zoom-on-click and URL anchor functionality
+    zoom_script = f"""
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    // Store hike data for anchor navigation
+    {hike_data_js}
+    
+    document.addEventListener('DOMContentLoaded', function() {{
         // Wait for map to be fully loaded
-        setTimeout(function() {
+        setTimeout(function() {{
             // Get reference to the map
             var mapId = document.querySelector('.folium-map').id;
             var map = window[mapId];
             
             // Add click handler to all markers
-            map.eachLayer(function(layer) {
-                if (layer instanceof L.Marker) {
-                    layer.on('click', function(e) {
+            map.eachLayer(function(layer) {{
+                if (layer instanceof L.Marker) {{
+                    layer.on('click', function(e) {{
                         // Get current zoom level
                         var currentZoom = map.getZoom();
                         var targetZoom = 14;  // Target zoom level for detail view
                         
                         // Only zoom in if we're not already at or beyond target zoom
-                        if (currentZoom < targetZoom) {
-                            map.setView(e.latlng, targetZoom, {
+                        if (currentZoom < targetZoom) {{
+                            map.setView(e.latlng, targetZoom, {{
                                 animate: true,
                                 duration: 0.5
-                            });
-                        } else {
+                            }});
+                        }} else {{
                             // If already zoomed in, just center on the marker
-                            map.panTo(e.latlng, {
+                            map.panTo(e.latlng, {{
                                 animate: true,
                                 duration: 0.5
-                            });
-                        }
+                            }});
+                        }}
                         
                         // Prevent event from bubbling (which could cause zoom out)
                         L.DomEvent.stopPropagation(e);
-                    });
-                }
-            });
-        }, 1000);
-    });
+                    }});
+                }}
+            }});
+            
+            // Function to zoom to a specific hike by number
+            function zoomToHike(hikeNumber) {{
+                if (hikeData[hikeNumber]) {{
+                    var data = hikeData[hikeNumber];
+                    // First fit bounds to show the entire trail
+                    if (data.bounds) {{
+                        map.fitBounds(data.bounds, {{
+                            padding: [50, 50],
+                            animate: true,
+                            duration: 1
+                        }});
+                        // Then zoom to a reasonable level if too far out
+                        setTimeout(function() {{
+                            if (map.getZoom() < 13) {{
+                                map.setView(data.location, 13, {{
+                                    animate: true,
+                                    duration: 0.5
+                                }});
+                            }}
+                        }}, 1100);
+                    }} else {{
+                        // Fallback to just centering on the location
+                        map.setView(data.location, 14, {{
+                            animate: true,
+                            duration: 1
+                        }});
+                    }}
+                    
+                    // Open the popup for this hike's marker
+                    map.eachLayer(function(layer) {{
+                        if (layer instanceof L.Marker) {{
+                            var popup = layer.getPopup();
+                            if (popup && popup.getContent().includes('#' + hikeNumber + ':')) {{
+                                layer.openPopup();
+                            }}
+                        }}
+                    }});
+                }}
+            }}
+            
+            // Check for URL hash/anchor on page load
+            if (window.location.hash) {{
+                var hikeNumber = window.location.hash.replace('#', '');
+                // Small delay to ensure map is fully loaded
+                setTimeout(function() {{
+                    zoomToHike(hikeNumber);
+                }}, 500);
+            }}
+            
+            // Listen for hash changes
+            window.addEventListener('hashchange', function() {{
+                var hikeNumber = window.location.hash.replace('#', '');
+                zoomToHike(hikeNumber);
+            }});
+        }}, 1000);
+    }});
     </script>
     """
     
