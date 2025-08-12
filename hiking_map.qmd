@@ -1,5 +1,5 @@
 ---
-title: "My Hiking Adventures"
+title: "I'd Hike That"
 format:
   html:
     toc: false
