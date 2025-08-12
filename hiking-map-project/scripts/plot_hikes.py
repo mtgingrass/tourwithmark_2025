@@ -256,9 +256,14 @@ def create_interactive_map(data_dir):
                 hike_bounds = [[min(p[0] for p in points), min(p[1] for p in points)],
                               [max(p[0] for p in points), max(p[1] for p in points)]]
                 
+                # Create marker popup with blog link if available
+                marker_popup_html = f"<b>{activity['display_name']}</b>"
+                if activity.get('blog_url'):
+                    marker_popup_html += f"<br><a href='{activity['blog_url']}' target='_blank' style='display: inline-block; margin-top: 8px; padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px; font-size: 13px;'>📖 Read Blog Post</a>"
+                
                 marker = folium.Marker(
                     points[0],
-                    popup=f"{activity['display_name']}",
+                    popup=folium.Popup(marker_popup_html, max_width=300),
                     tooltip=activity['display_name'],
                     icon=folium.Icon(color=marker_color, icon='play', prefix='fa')
                 )
