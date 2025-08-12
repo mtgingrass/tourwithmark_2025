@@ -41,7 +41,7 @@ def list_unmapped_trails():
     
     return trails
 
-def update_trail_name(hike_number, trail_name, location='', notes=''):
+def update_trail_name(hike_number, trail_name, location='', notes='', blog_url=''):
     """Update the trail name for a specific hike number"""
     
     # Path to trail names file
@@ -64,6 +64,8 @@ def update_trail_name(hike_number, trail_name, location='', notes=''):
                 trail['Location'] = location
             if notes:
                 trail['Notes'] = notes
+            if blog_url:
+                trail['Blog_URL'] = blog_url
             updated = True
             print(f"Updated #{hike_number}: {trail_name}")
             break
@@ -75,7 +77,7 @@ def update_trail_name(hike_number, trail_name, location='', notes=''):
     # Write back to file
     with open(trail_names_path, 'w', newline='') as f:
         fieldnames = ['Hike_Number', 'Activity_ID', 'Date', 'Original_Name', 
-                      'Trail_Name', 'Distance_km', 'Location', 'Notes']
+                      'Trail_Name', 'Distance_km', 'Location', 'Notes', 'Blog_URL']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(trails)
@@ -129,7 +131,8 @@ def interactive_mode():
                 if new_name:
                     location = input("Enter location (optional): ").strip()
                     notes = input("Enter notes (optional): ").strip()
-                    update_trail_name(hike_num, new_name, location, notes)
+                    blog_url = input("Enter blog post URL (optional): ").strip()
+                    update_trail_name(hike_num, new_name, location, notes, blog_url)
                     print(f"Updated #{hike_num} to: {new_name}")
                 
             except ValueError:

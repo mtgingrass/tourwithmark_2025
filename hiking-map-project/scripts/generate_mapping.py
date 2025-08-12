@@ -78,7 +78,7 @@ def generate_trail_mapping():
     # Write to CSV
     with open(output_path, 'w', newline='') as f:
         fieldnames = ['Hike_Number', 'Activity_ID', 'Date', 'Original_Name', 
-                      'Trail_Name', 'Distance_km', 'Location', 'Notes']
+                      'Trail_Name', 'Distance_km', 'Location', 'Notes', 'Blog_URL']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(mappings)

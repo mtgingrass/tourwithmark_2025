@@ -79,7 +79,8 @@ def create_interactive_map(data_dir):
                 trail_mapping[row['Activity_ID']] = {
                     'number': row['Hike_Number'],
                     'trail_name': row['Trail_Name'],
-                    'original_name': row['Original_Name']
+                    'original_name': row['Original_Name'],
+                    'blog_url': row.get('Blog_URL', '')
                 }
         print(f"Loaded trail name mappings for {len(trail_mapping)} hikes")
     
@@ -94,6 +95,7 @@ def create_interactive_map(data_dir):
             mapped_info = trail_mapping.get(activity_id, {})
             hike_number = mapped_info.get('number', '')
             trail_name = mapped_info.get('trail_name', '')
+            blog_url = mapped_info.get('blog_url', '')
             
             # Create display name with number
             if hike_number:
@@ -111,6 +113,7 @@ def create_interactive_map(data_dir):
                 'display_name': display_name,
                 'hike_number': hike_number,
                 'trail_name': trail_name,
+                'blog_url': blog_url,
                 'distance': row['Distance'],
                 'filename': os.path.basename(row['Filename']) if row['Filename'] else None
             })
@@ -202,6 +205,11 @@ def create_interactive_map(data_dir):
                 opacity=0.8,
             ).add_to(base_map)
             
+            # Create blog link HTML if URL exists
+            blog_link_html = ""
+            if activity.get('blog_url'):
+                blog_link_html = f"<br><a href='{activity['blog_url']}' target='_blank' style='display: inline-block; margin-top: 8px; padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px; font-size: 13px;'>📖 Read Blog Post</a>"
+            
             # Then add the colored track on top
             folium.PolyLine(
                 points,
@@ -211,7 +219,8 @@ def create_interactive_map(data_dir):
                 popup=folium.Popup(
                     f"<b>{activity['display_name']}</b><br>"
                     f"Date: {formatted_date}<br>"
-                    f"Distance: {distance_rounded} km",
+                    f"Distance: {distance_rounded} km"
+                    f"{blog_link_html}",
                     max_width=300
                 ),
                 tooltip=f"{activity['display_name']}"
