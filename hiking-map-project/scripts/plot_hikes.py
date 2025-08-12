@@ -145,9 +145,11 @@ def create_interactive_map(data_dir):
             except:
                 formatted_date = activity['date']  # fallback to original if parsing fails
             
-            # Round distance to no decimal places
+            # Convert distance from meters to kilometers and round to 1 decimal place
             try:
-                distance_rounded = round(float(activity['distance']))
+                distance_meters = float(activity['distance'])
+                distance_km = distance_meters / 1000.0
+                distance_rounded = round(distance_km, 1)
             except:
                 distance_rounded = activity['distance']  # fallback to original if conversion fails
             
