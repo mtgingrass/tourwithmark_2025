@@ -68,16 +68,49 @@ def create_interactive_map(data_dir):
     # Read hiking activities CSV
     csv_path = os.path.join(data_dir, 'hiking_activities.csv')
     activities_dir = os.path.join(data_dir, 'activities')
+    trail_names_path = os.path.join(data_dir, 'trail_names.csv')
+    
+    # Read trail names mapping if it exists
+    trail_mapping = {}
+    if os.path.exists(trail_names_path):
+        with open(trail_names_path, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                trail_mapping[row['Activity_ID']] = {
+                    'number': row['Hike_Number'],
+                    'trail_name': row['Trail_Name'],
+                    'original_name': row['Original_Name']
+                }
+        print(f"Loaded trail name mappings for {len(trail_mapping)} hikes")
     
     # Parse CSV to get activity metadata
     activities = []
     with open(csv_path, 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
+            activity_id = row['Activity ID']
+            
+            # Get mapped trail info if available
+            mapped_info = trail_mapping.get(activity_id, {})
+            hike_number = mapped_info.get('number', '')
+            trail_name = mapped_info.get('trail_name', '')
+            
+            # Create display name with number
+            if hike_number:
+                if trail_name:
+                    display_name = f"#{hike_number}: {trail_name}"
+                else:
+                    display_name = f"#{hike_number}: {row['Activity Name']}"
+            else:
+                display_name = row['Activity Name']
+            
             activities.append({
-                'id': row['Activity ID'],
+                'id': activity_id,
                 'date': row['Activity Date'],
                 'name': row['Activity Name'],
+                'display_name': display_name,
+                'hike_number': hike_number,
+                'trail_name': trail_name,
                 'distance': row['Distance'],
                 'filename': os.path.basename(row['Filename']) if row['Filename'] else None
             })
@@ -160,12 +193,12 @@ def create_interactive_map(data_dir):
                 weight=3,
                 opacity=0.7,
                 popup=folium.Popup(
-                    f"<b>{activity['name']}</b><br>"
+                    f"<b>{activity['display_name']}</b><br>"
                     f"Date: {formatted_date}<br>"
                     f"Distance: {distance_rounded} km",
                     max_width=300
                 ),
-                tooltip=f"{activity['name']} ({formatted_date})"
+                tooltip=f"{activity['display_name']}"
             ).add_to(base_map)
             
             # Add start marker for each hike
@@ -176,8 +209,8 @@ def create_interactive_map(data_dir):
                 
                 marker = folium.Marker(
                     points[0],
-                    popup=f"{activity['name']}",
-                    tooltip=activity['name'],
+                    popup=f"{activity['display_name']}",
+                    tooltip=activity['display_name'],
                     icon=folium.Icon(color=color, icon='play', prefix='fa')
                 )
                 marker.add_to(base_map)
