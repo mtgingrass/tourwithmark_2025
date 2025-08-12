@@ -18,15 +18,32 @@ from folium import Element
 
 
 def parse_gpx_file(filepath):
-    """Parse GPX file and extract coordinates"""
+    """Parse GPX file and extract coordinates with decimation to reduce file size"""
     try:
         with open(filepath, 'r') as gpx_file:
             gpx = gpxpy.parse(gpx_file)
             points = []
+            decimation_factor = 10  # Keep every 10th point
+            point_counter = 0
+            
             for track in gpx.tracks:
                 for segment in track.segments:
-                    for point in segment.points:
-                        points.append([point.latitude, point.longitude])
+                    segment_points = list(segment.points)
+                    # Always keep first point
+                    if segment_points:
+                        points.append([round(segment_points[0].latitude, 5), 
+                                     round(segment_points[0].longitude, 5)])
+                    
+                    # Keep every Nth point
+                    for i, point in enumerate(segment_points[1:-1], 1):
+                        if i % decimation_factor == 0:
+                            points.append([round(point.latitude, 5), 
+                                         round(point.longitude, 5)])
+                    
+                    # Always keep last point
+                    if len(segment_points) > 1:
+                        points.append([round(segment_points[-1].latitude, 5), 
+                                     round(segment_points[-1].longitude, 5)])
             return points
     except Exception as e:
         print(f"Error parsing GPX {filepath}: {e}")
@@ -34,7 +51,7 @@ def parse_gpx_file(filepath):
 
 
 def parse_fit_file(filepath):
-    """Parse FIT file and extract coordinates"""
+    """Parse FIT file and extract coordinates with decimation to reduce file size"""
     try:
         # Handle .gz compressed files
         if filepath.endswith('.gz'):
@@ -44,6 +61,11 @@ def parse_fit_file(filepath):
             fitfile = FitFile(filepath)
         
         points = []
+        decimation_factor = 10  # Keep every 10th point
+        point_counter = 0
+        temp_points = []
+        
+        # First collect all points
         for record in fitfile.get_messages('record'):
             lat = None
             lon = None
@@ -54,7 +76,21 @@ def parse_fit_file(filepath):
                     lon = data.value * (180.0 / 2**31)
             
             if lat and lon:
-                points.append([lat, lon])
+                temp_points.append([round(lat, 5), round(lon, 5)])
+        
+        # Now decimate the points
+        if temp_points:
+            # Always keep first point
+            points.append(temp_points[0])
+            
+            # Keep every Nth point
+            for i in range(1, len(temp_points) - 1):
+                if i % decimation_factor == 0:
+                    points.append(temp_points[i])
+            
+            # Always keep last point
+            if len(temp_points) > 1:
+                points.append(temp_points[-1])
         
         return points
     except Exception as e:
@@ -131,10 +167,7 @@ def create_interactive_map(data_dir):
         scrollWheelZoom=True
     )
     
-    # Add different tile layers (OpenStreetMap is already added as default)
-    folium.TileLayer('Stamen Terrain', name='Terrain', show=False).add_to(base_map)
-    folium.TileLayer('Stamen Toner', name='Toner', show=False).add_to(base_map)
-    folium.TileLayer('CartoDB positron', name='Light', show=False).add_to(base_map)
+    # Keep only OpenStreetMap to reduce file size
     
     # Track statistics
     total_tracks = 0
@@ -196,25 +229,16 @@ def create_interactive_map(data_dir):
             except:
                 distance_rounded = activity['distance']  # fallback to original if conversion fails
             
-            # Add the track to map with enhanced visibility
-            # First add a white background line for contrast
-            folium.PolyLine(
-                points,
-                color='white',
-                weight=7,
-                opacity=0.8,
-            ).add_to(base_map)
-            
             # Create blog link HTML if URL exists
             blog_link_html = ""
             if activity.get('blog_url'):
                 blog_link_html = f"<br><a href='{activity['blog_url']}' target='_blank' style='display: inline-block; margin-top: 8px; padding: 6px 12px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px; font-size: 13px;'>📖 Read Blog Post</a>"
             
-            # Then add the colored track on top
+            # Add the track to map (single line with stroke for visibility)
             folium.PolyLine(
                 points,
                 color=trail_color,
-                weight=5,
+                weight=4,
                 opacity=0.9,
                 popup=folium.Popup(
                     f"<b>{activity['display_name']}</b><br>"
