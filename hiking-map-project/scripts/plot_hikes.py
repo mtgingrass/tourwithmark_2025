@@ -139,11 +139,17 @@ def create_interactive_map(data_dir):
     all_points = []
     markers_data = []  # Store marker data for zoom functionality
     
-    # Color palette for different hikes
-    colors = ['red', 'blue', 'green', 'purple', 'orange', 'darkred', 
-              'lightred', 'beige', 'darkblue', 'darkgreen', 'cadetblue', 
-              'darkpurple', 'white', 'pink', 'lightblue', 'lightgreen', 
-              'gray', 'black', 'lightgray']
+    # Color palette for trails - using vibrant hex colors for lines
+    trail_colors = ['#FF0000', '#0066FF', '#00AA00', '#9900FF', '#FF6600', '#CC0000',
+                    '#FF3366', '#00CCCC', '#0033CC', '#006600', '#FF00FF', 
+                    '#6600CC', '#FFAA00', '#FF0099', '#0099FF', '#33CC33', 
+                    '#CC00CC', '#FF3300', '#009999']
+    
+    # Marker colors - must be from folium's allowed list
+    marker_colors = ['red', 'blue', 'green', 'purple', 'orange', 'darkred',
+                     'lightred', 'cadetblue', 'darkblue', 'darkgreen', 'pink',
+                     'darkpurple', 'orange', 'lightblue', 'lightgreen',
+                     'red', 'purple', 'blue', 'green']
     
     # Process each activity
     for idx, activity in enumerate(activities):
@@ -168,7 +174,8 @@ def create_interactive_map(data_dir):
             all_points.extend(points)
             
             # Create polyline for this hike
-            color = colors[idx % len(colors)]
+            trail_color = trail_colors[idx % len(trail_colors)]
+            marker_color = marker_colors[idx % len(marker_colors)]
             
             # Format date and distance for display
             # Parse date string and format to just show date without time
@@ -186,12 +193,21 @@ def create_interactive_map(data_dir):
             except:
                 distance_rounded = activity['distance']  # fallback to original if conversion fails
             
-            # Add the track to map
+            # Add the track to map with enhanced visibility
+            # First add a white background line for contrast
             folium.PolyLine(
                 points,
-                color=color,
-                weight=3,
-                opacity=0.7,
+                color='white',
+                weight=7,
+                opacity=0.8,
+            ).add_to(base_map)
+            
+            # Then add the colored track on top
+            folium.PolyLine(
+                points,
+                color=trail_color,
+                weight=5,
+                opacity=0.9,
                 popup=folium.Popup(
                     f"<b>{activity['display_name']}</b><br>"
                     f"Date: {formatted_date}<br>"
@@ -211,7 +227,7 @@ def create_interactive_map(data_dir):
                     points[0],
                     popup=f"{activity['display_name']}",
                     tooltip=activity['display_name'],
-                    icon=folium.Icon(color=color, icon='play', prefix='fa')
+                    icon=folium.Icon(color=marker_color, icon='play', prefix='fa')
                 )
                 marker.add_to(base_map)
                 
