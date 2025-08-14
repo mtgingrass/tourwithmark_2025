@@ -86,7 +86,7 @@
       // Find or create container
       let container = document.getElementById('tour-likes-container');
       if (!container) {
-        // Try to insert after the main content
+        // Try to insert near the top of the post
         const contentArea = document.querySelector('main.content') || 
                            document.querySelector('article') || 
                            document.querySelector('main') ||
@@ -96,19 +96,26 @@
           container = document.createElement('div');
           container.id = 'tour-likes-container';
           
-          // Find a good place to insert (after content, before footer/nav)
+          // Find the best place to insert near the top
           const postBody = contentArea.querySelector('.post-body') || contentArea;
-          const lastContent = postBody.querySelector('p:last-of-type, figure:last-of-type, img:last-of-type, div.sourceCode:last-of-type');
           
-          if (lastContent) {
-            lastContent.insertAdjacentElement('afterend', container);
+          // Try to find the first paragraph after the title
+          // Look for the first p tag that's not inside a special container
+          const firstParagraph = postBody.querySelector('p:first-of-type');
+          const firstImage = postBody.querySelector('img:first-of-type, figure:first-of-type');
+          
+          // Insert after the first paragraph, or before the first image if no paragraph exists
+          if (firstParagraph) {
+            firstParagraph.insertAdjacentElement('afterend', container);
+          } else if (firstImage) {
+            firstImage.insertAdjacentElement('beforebegin', container);
           } else {
-            // Insert before any navigation or after main content
-            const nav = contentArea.querySelector('.page-navigation, .post-nav');
-            if (nav) {
-              nav.insertAdjacentElement('beforebegin', container);
+            // Fallback: insert at the beginning of the content area
+            const firstChild = postBody.firstElementChild;
+            if (firstChild) {
+              firstChild.insertAdjacentElement('afterend', container);
             } else {
-              contentArea.appendChild(container);
+              postBody.appendChild(container);
             }
           }
         }
