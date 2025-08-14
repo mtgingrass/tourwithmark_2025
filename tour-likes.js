@@ -3,7 +3,7 @@
   'use strict';
 
   // Configuration
-  const API_BASE = 'http://159.203.106.224:3000/api';
+  const API_BASE = 'https://api.tourwithmark.com/api';
   const HEALTH_CHECK_TIMEOUT = 2000; // 2 seconds
   const STORAGE_KEY = 'tour_likes_cache';
 
@@ -48,13 +48,6 @@
     // Check if API is available
     async checkApiHealth() {
       try {
-        // Skip API if we're on HTTPS and API is HTTP (mixed content block)
-        if (window.location.protocol === 'https:' && API_BASE.startsWith('http:')) {
-          console.log('Mixed content blocked - HTTPS site cannot call HTTP API');
-          this.apiAvailable = false;
-          return false;
-        }
-        
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), HEALTH_CHECK_TIMEOUT);
         
