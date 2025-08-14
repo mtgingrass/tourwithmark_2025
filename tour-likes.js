@@ -68,6 +68,11 @@
 
     // Initialize the like widget
     async init() {
+      console.log('TourLikes: Initializing...', {
+        postId: this.postId,
+        url: window.location.href
+      });
+      
       // Check API availability
       const isAvailable = await this.checkApiHealth();
       
@@ -75,22 +80,36 @@
         console.log('Like API unavailable - feature disabled');
         return;
       }
+      
+      console.log('TourLikes: API is available');
 
       // Find or create container
       let container = document.getElementById('tour-likes-container');
       if (!container) {
         // Try to insert after the main content
-        const article = document.querySelector('article') || document.querySelector('main');
-        if (article) {
+        const contentArea = document.querySelector('main.content') || 
+                           document.querySelector('article') || 
+                           document.querySelector('main') ||
+                           document.querySelector('.quarto-about-trestles');
+        
+        if (contentArea) {
           container = document.createElement('div');
           container.id = 'tour-likes-container';
           
-          // Find a good place to insert (after content, before comments if they exist)
-          const lastParagraph = article.querySelector('p:last-of-type');
-          if (lastParagraph) {
-            lastParagraph.insertAdjacentElement('afterend', container);
+          // Find a good place to insert (after content, before footer/nav)
+          const postBody = contentArea.querySelector('.post-body') || contentArea;
+          const lastContent = postBody.querySelector('p:last-of-type, figure:last-of-type, img:last-of-type, div.sourceCode:last-of-type');
+          
+          if (lastContent) {
+            lastContent.insertAdjacentElement('afterend', container);
           } else {
-            article.appendChild(container);
+            // Insert before any navigation or after main content
+            const nav = contentArea.querySelector('.page-navigation, .post-nav');
+            if (nav) {
+              nav.insertAdjacentElement('beforebegin', container);
+            } else {
+              contentArea.appendChild(container);
+            }
           }
         }
       }
@@ -231,14 +250,22 @@
     }
   }
 
-  // Initialize when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
+  // Initialize when DOM is ready (only on tour pages)
+  function initializeLikes() {
+    const path = window.location.pathname;
+    // Only initialize on tour pages or if we have the container already
+    if (path.includes('/tours/') || document.getElementById('tour-likes-container')) {
+      console.log('TourLikes: Detected tour page, initializing...');
       const likes = new TourLikes();
       likes.init();
-    });
+    } else {
+      console.log('TourLikes: Not a tour page, skipping initialization');
+    }
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeLikes);
   } else {
-    const likes = new TourLikes();
-    likes.init();
+    initializeLikes();
   }
 })();
