@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Like System</title>
+    <link rel="stylesheet" href="tour-likes.css">
+    <style>
+        body {
+            background: #1a1a1a;
+            color: #ddd;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 { color: #d9534f; }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #444;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Like System</h1>
+    
+    <div class="test-section">
+        <h2>API Status</h2>
+        <div id="api-status">Checking...</div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Simulated Tour Post</h2>
+        <p>This simulates a tour post at path: /tours/test-post-1/</p>
+        <div id="tour-likes-container"></div>
+    </div>
+    
+    <script>
+        // Override the path detection for testing
+        window.history.pushState({}, '', '/tours/test-post-1/');
+    </script>
+    <script src="tour-likes.js"></script>
+    
+    <script>
+        // Check API status
+        fetch('http://159.203.106.224:3000/api/health')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('api-status').innerHTML = 
+                    '<span style="color: #5cb85c;">✓ API is running</span><br>' +
+                    'Status: ' + data.status + '<br>' +
+                    'Timestamp: ' + data.timestamp;
+            })
+            .catch(error => {
+                document.getElementById('api-status').innerHTML = 
+                    '<span style="color: #d9534f;">✗ API is not accessible</span><br>' +
+                    'Error: ' + error.message;
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Button Debug Test</title>
+    <link rel="stylesheet" href="tour-likes.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #fff;
+        }
+        .debug-info {
+            background: #333;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-family: monospace;
+        }
+        article {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Like Button Debug Test</h1>
+    
+    <div class="debug-info">
+        <h3>Debug Information:</h3>
+        <div id="debug-output"></div>
+    </div>
+    
+    <article>
+        <h2>Test Tour Post</h2>
+        <p>This is a test article to verify the like button appears and works correctly.</p>
+        <p>The like button should appear below this paragraph.</p>
+    </article>
+    
+    <div class="debug-info">
+        <h3>Console:</h3>
+        <div id="console-output"></div>
+    </div>
+
+    <script>
+        // Override console.log to display in page
+        const consoleOutput = document.getElementById('console-output');
+        const originalLog = console.log;
+        const originalError = console.error;
+        
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            const msg = args.map(arg => typeof arg === 'object' ? JSON.stringify(arg) : arg).join(' ');
+            consoleOutput.innerHTML += `<div style="color: #4CAF50">[LOG] ${msg}</div>`;
+        };
+        
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            const msg = args.map(arg => typeof arg === 'object' ? JSON.stringify(arg) : arg).join(' ');
+            consoleOutput.innerHTML += `<div style="color: #f44336">[ERROR] ${msg}</div>`;
+        };
+
+        // Debug info
+        const debugOutput = document.getElementById('debug-output');
+        debugOutput.innerHTML = `
+            <div>Page URL: ${window.location.href}</div>
+            <div>Protocol: ${window.location.protocol}</div>
+            <div>Path: ${window.location.pathname}</div>
+            <div>API will be called at: https://api.tourwithmark.com/api</div>
+        `;
+        
+        // Set a fake path for testing
+        window.history.pushState({}, '', '/tours/test-post/');
+    </script>
+    
+    <script src="tour-likes.js"></script>
+    
+    <script>
+        // Additional debug after script loads
+        setTimeout(() => {
+            const container = document.getElementById('tour-likes-container');
+            if (container) {
+                console.log('Container found:', container);
+            } else {
+                console.log('Container NOT found');
+            }
+            
+            const widget = document.querySelector('.tour-likes-widget');
+            if (widget) {
+                console.log('Widget found:', widget);
+            } else {
+                console.log('Widget NOT found');
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
