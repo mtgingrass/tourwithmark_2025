@@ -48,6 +48,13 @@
     // Check if API is available
     async checkApiHealth() {
       try {
+        // Skip API if we're on HTTPS and API is HTTP (mixed content block)
+        if (window.location.protocol === 'https:' && API_BASE.startsWith('http:')) {
+          console.log('Mixed content blocked - HTTPS site cannot call HTTP API');
+          this.apiAvailable = false;
+          return false;
+        }
+        
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), HEALTH_CHECK_TIMEOUT);
         
@@ -60,6 +67,7 @@
         this.apiAvailable = response.ok;
         return this.apiAvailable;
       } catch (e) {
+        console.log('API health check failed:', e.message);
         this.apiAvailable = false;
         return false;
       }
