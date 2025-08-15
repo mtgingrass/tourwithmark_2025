@@ -3,7 +3,7 @@ title: 'States’ Rights, Abortion, A Historical Perspective'
 author: 'Mark'
 date: '2025-02-14'
 categories: ['Politics', 'History']
-image: 'images/white-house-1800s.png'
+image: 'images/white-house-1800s.webp'
 format: html
 description: Which is better, states’ rights or federal authority. The fragmentation of government at various levels impacts public participation and allows for the capture of political power by the ultra wealthy.
 ---
