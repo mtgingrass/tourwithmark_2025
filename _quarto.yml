@@ -3,6 +3,8 @@ project:
   resources:
     - admin/
     - likes-dashboard.html
+    - analytics-dashboard.html
+    - page-tracker.js
 website:
   title: "Tour with Mark"
   navbar:
@@ -35,6 +37,7 @@ format:
     include-after-body:
       - text: |
           <script src="/tour-likes.js"></script>
+          <script src="/page-tracker.js"></script>
 
 editor: visual
 
