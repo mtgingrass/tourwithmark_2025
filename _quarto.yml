@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - admin/
+    - likes-dashboard.html
 website:
   title: "Tour with Mark"
   navbar:
