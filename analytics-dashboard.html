@@ -465,8 +465,8 @@
 
     <script>
         let currentTab = 'overview';
-        let analyticsData = {};
-        let likesData = [];
+        window.analyticsData = {};
+        window.likesData = [];
 
         // Initialize dashboard
         document.addEventListener('DOMContentLoaded', () => {
@@ -510,25 +510,52 @@
             errorDiv.style.display = 'none';
 
             try {
-                // Fetch analytics data
-                const [analyticsResponse, likesResponse] = await Promise.all([
-                    fetch('https://api.tourwithmark.com/api/analytics'),
-                    fetch('https://api.tourwithmark.com/api/stats')
-                ]);
+                // Try to fetch analytics data, fall back gracefully if not available
+                let analyticsData = { pageViews: [], recentActivity: [], totalStats: {} };
+                let likesData = [];
                 
-                if (!analyticsResponse.ok || !likesResponse.ok) {
-                    throw new Error('Failed to fetch data');
+                // Fetch likes data (this endpoint exists)
+                try {
+                    const likesResponse = await fetch('https://api.tourwithmark.com/api/stats');
+                    if (likesResponse.ok) {
+                        likesData = await likesResponse.json();
+                    }
+                } catch (e) {
+                    console.log('Likes API not available');
                 }
                 
-                analyticsData = await analyticsResponse.json();
-                likesData = await likesResponse.json();
+                // Try to fetch analytics data (new endpoint)
+                try {
+                    const analyticsResponse = await fetch('https://api.tourwithmark.com/api/analytics');
+                    if (analyticsResponse.ok) {
+                        const data = await analyticsResponse.json();
+                        analyticsData = data;
+                    } else if (analyticsResponse.status === 404) {
+                        // New endpoints not yet available
+                        errorDiv.innerHTML = `
+                            <strong>Note:</strong> Page view tracking endpoints are not yet active. 
+                            The server needs to be restarted to enable page view analytics. 
+                            Currently showing like statistics only.
+                        `;
+                        errorDiv.style.display = 'block';
+                    }
+                } catch (e) {
+                    console.log('Analytics API not available yet');
+                }
+                
+                // Update with whatever data we have
+                window.analyticsData = analyticsData;
+                window.likesData = likesData;
                 
                 updateDashboard();
                 updateLastUpdated();
                 
             } catch (error) {
                 console.error('Error fetching data:', error);
-                errorDiv.textContent = `Failed to load data: ${error.message}`;
+                errorDiv.innerHTML = `
+                    <strong>Error:</strong> ${error.message}<br>
+                    <small>The server may need to be restarted to enable the new analytics endpoints.</small>
+                `;
                 errorDiv.style.display = 'block';
             } finally {
                 // Reset button state
@@ -542,17 +569,17 @@
         // Update dashboard with fetched data
         function updateDashboard() {
             // Update stat cards
-            const stats = analyticsData.totalStats || {};
+            const stats = window.analyticsData.totalStats || {};
             document.getElementById('total-views').textContent = formatNumber(stats.total_page_views || 0);
             document.getElementById('unique-visitors').textContent = formatNumber(stats.total_unique_visitors || 0);
             document.getElementById('pages-viewed').textContent = formatNumber(stats.total_pages_viewed || 0);
             
             // Calculate total likes
-            const totalLikes = likesData.reduce((sum, item) => sum + item.count, 0);
+            const totalLikes = window.likesData.reduce((sum, item) => sum + item.count, 0);
             document.getElementById('total-likes').textContent = formatNumber(totalLikes);
             
             // Calculate active today from recent activity
-            const activeToday = analyticsData.recentActivity ? analyticsData.recentActivity.length : 0;
+            const activeToday = window.analyticsData.recentActivity ? window.analyticsData.recentActivity.length : 0;
             document.getElementById('active-today').textContent = formatNumber(activeToday);
             
             // Calculate average views per page
@@ -571,11 +598,11 @@
         // Update overview table
         function updateOverviewTable() {
             const tbody = document.getElementById('overview-tbody');
-            const pageViews = analyticsData.pageViews || [];
+            const pageViews = window.analyticsData.pageViews || [];
             
             // Create a map of likes by post ID
             const likesMap = {};
-            likesData.forEach(item => {
+            window.likesData.forEach(item => {
                 likesMap[item.post_id] = item.count;
             });
             
@@ -622,7 +649,7 @@
         // Update pages table
         function updatePagesTable() {
             const tbody = document.getElementById('pages-tbody');
-            const pageViews = analyticsData.pageViews || [];
+            const pageViews = window.analyticsData.pageViews || [];
             
             tbody.innerHTML = pageViews.map(page => `
                 <tr>
@@ -642,9 +669,9 @@
         // Update likes table
         function updateLikesTable() {
             const tbody = document.getElementById('likes-tbody');
-            const maxLikes = Math.max(...likesData.map(item => item.count), 1);
+            const maxLikes = Math.max(...window.likesData.map(item => item.count), 1);
             
-            tbody.innerHTML = likesData.map(item => `
+            tbody.innerHTML = window.likesData.map(item => `
                 <tr>
                     <td>
                         <a href="/tours/${item.post_id}/" class="page-link" target="_blank">
@@ -665,7 +692,7 @@
         // Update recent activity
         function updateRecentActivity() {
             const container = document.getElementById('recent-activity');
-            const recentActivity = analyticsData.recentActivity || [];
+            const recentActivity = window.analyticsData.recentActivity || [];
             
             if (recentActivity.length === 0) {
                 container.innerHTML = '<div class="empty-state">No activity in the last 24 hours</div>';
