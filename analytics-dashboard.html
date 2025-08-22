@@ -298,6 +298,111 @@
             color: #4CAF50;
         }
 
+        /* Time Filter Controls */
+        .time-filter-controls {
+            background: rgba(40, 40, 40, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .filter-section {
+            margin-bottom: 15px;
+        }
+
+        .filter-label {
+            display: inline-block;
+            margin-right: 15px;
+            color: #999;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 1px;
+        }
+
+        .time-period-buttons {
+            display: inline-flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .period-btn {
+            background: rgba(60, 60, 60, 0.5);
+            color: #999;
+            border: 1px solid rgba(100, 100, 100, 0.3);
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s;
+        }
+
+        .period-btn:hover {
+            background: rgba(80, 80, 80, 0.5);
+            color: #e0e0e0;
+        }
+
+        .period-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: transparent;
+        }
+
+        .custom-date-range {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(100, 100, 100, 0.2);
+        }
+
+        .date-inputs {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .date-input-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .date-input-group label {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .date-input-group input[type="date"] {
+            background: rgba(60, 60, 60, 0.5);
+            color: #e0e0e0;
+            border: 1px solid rgba(100, 100, 100, 0.3);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+
+        .date-input-group input[type="date"]:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+        }
+
+        .apply-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .apply-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
         .badge-likes {
             background: rgba(233, 30, 99, 0.2);
             color: #E91E63;
@@ -393,6 +498,34 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Time Period Filter Controls -->
+        <div class="time-filter-controls">
+            <div class="filter-section">
+                <label class="filter-label">Time Period:</label>
+                <div class="time-period-buttons">
+                    <button class="period-btn active" data-period="all" onclick="setTimePeriod('all')">All Time</button>
+                    <button class="period-btn" data-period="today" onclick="setTimePeriod('today')">Today</button>
+                    <button class="period-btn" data-period="week" onclick="setTimePeriod('week')">This Week</button>
+                    <button class="period-btn" data-period="month" onclick="setTimePeriod('month')">This Month</button>
+                    <button class="period-btn" data-period="year" onclick="setTimePeriod('year')">This Year</button>
+                    <button class="period-btn" data-period="custom" onclick="toggleCustomDateRange()">Custom Range</button>
+                </div>
+            </div>
+            <div class="custom-date-range" id="custom-date-range" style="display: none;">
+                <div class="date-inputs">
+                    <div class="date-input-group">
+                        <label for="start-date">From:</label>
+                        <input type="date" id="start-date" onchange="applyCustomDateRange()">
+                    </div>
+                    <div class="date-input-group">
+                        <label for="end-date">To:</label>
+                        <input type="date" id="end-date" onchange="applyCustomDateRange()">
+                    </div>
+                    <button class="apply-btn" onclick="applyCustomDateRange()">Apply</button>
+                </div>
+            </div>
+        </div>
 
         <div class="error-message" id="error-message"></div>
         <div class="loading-spinner" id="loading"></div>
@@ -465,8 +598,104 @@
 
     <script>
         let currentTab = 'overview';
+        let currentPeriod = 'all';
+        let customStartDate = null;
+        let customEndDate = null;
         window.analyticsData = {};
         window.likesData = [];
+
+        // Time period filtering functions
+        function setTimePeriod(period) {
+            currentPeriod = period;
+            
+            // Update button states
+            document.querySelectorAll('.period-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[data-period="${period}"]`).classList.add('active');
+            
+            // Hide custom date range unless custom is selected
+            const customRange = document.getElementById('custom-date-range');
+            if (period === 'custom') {
+                customRange.style.display = 'block';
+            } else {
+                customRange.style.display = 'none';
+                // Clear custom dates when not using custom
+                customStartDate = null;
+                customEndDate = null;
+            }
+            
+            // Fetch data with new filter
+            fetchAllData();
+        }
+        
+        function toggleCustomDateRange() {
+            const customRange = document.getElementById('custom-date-range');
+            if (customRange.style.display === 'none') {
+                setTimePeriod('custom');
+                // Set default dates to last 30 days
+                const endDate = new Date();
+                const startDate = new Date();
+                startDate.setDate(startDate.getDate() - 30);
+                
+                document.getElementById('start-date').value = startDate.toISOString().split('T')[0];
+                document.getElementById('end-date').value = endDate.toISOString().split('T')[0];
+            } else {
+                setTimePeriod('all');
+            }
+        }
+        
+        function applyCustomDateRange() {
+            const startDateInput = document.getElementById('start-date').value;
+            const endDateInput = document.getElementById('end-date').value;
+            
+            if (startDateInput && endDateInput) {
+                customStartDate = startDateInput;
+                customEndDate = endDateInput;
+                currentPeriod = 'custom';
+                fetchAllData();
+            }
+        }
+        
+        function getDateRangeParams() {
+            const now = new Date();
+            let startDate, endDate;
+            
+            switch(currentPeriod) {
+                case 'today':
+                    startDate = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+                    endDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+                    break;
+                case 'week':
+                    startDate = new Date(now);
+                    startDate.setDate(now.getDate() - 7);
+                    endDate = now;
+                    break;
+                case 'month':
+                    startDate = new Date(now.getFullYear(), now.getMonth(), 1);
+                    endDate = now;
+                    break;
+                case 'year':
+                    startDate = new Date(now.getFullYear(), 0, 1);
+                    endDate = now;
+                    break;
+                case 'custom':
+                    if (customStartDate && customEndDate) {
+                        startDate = new Date(customStartDate);
+                        endDate = new Date(customEndDate);
+                        endDate.setDate(endDate.getDate() + 1); // Include end date
+                    }
+                    break;
+                case 'all':
+                default:
+                    return '';
+            }
+            
+            if (startDate && endDate) {
+                return `?startDate=${startDate.toISOString()}&endDate=${endDate.toISOString()}`;
+            }
+            return '';
+        }
 
         // Initialize dashboard
         document.addEventListener('DOMContentLoaded', () => {
@@ -526,7 +755,8 @@
                 
                 // Try to fetch analytics data (new endpoint)
                 try {
-                    const analyticsResponse = await fetch('https://api.tourwithmark.com/api/analytics');
+                    const dateParams = getDateRangeParams();
+                    const analyticsResponse = await fetch(`https://api.tourwithmark.com/api/analytics${dateParams}`);
                     if (analyticsResponse.ok) {
                         const data = await analyticsResponse.json();
                         analyticsData = data;

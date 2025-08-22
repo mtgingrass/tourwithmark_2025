@@ -258,6 +258,18 @@ app.post('/api/pageview', (req, res) => {
 
 // Get page view analytics
 app.get('/api/analytics', (req, res) => {
+  // Get date range from query parameters
+  const { startDate, endDate } = req.query;
+  
+  // Build date filter clause
+  let dateFilter = '';
+  const params = [];
+  
+  if (startDate && endDate) {
+    dateFilter = ' WHERE viewed_at >= ? AND viewed_at < ?';
+    params.push(startDate, endDate);
+  }
+  
   const queries = {
     // Total page views by page
     pageViews: `
@@ -268,12 +280,23 @@ app.get('/api/analytics', (req, res) => {
         COUNT(DISTINCT user_fingerprint) as unique_visitors,
         MAX(viewed_at) as last_viewed
       FROM page_views
+      ${dateFilter}
       GROUP BY page_path
       ORDER BY total_views DESC
     `,
     
-    // Recent activity (last 24 hours)
-    recentActivity: `
+    // Recent activity (last 24 hours or within date range)
+    recentActivity: dateFilter ? `
+      SELECT 
+        page_path,
+        page_title,
+        COUNT(*) as views_24h
+      FROM page_views
+      ${dateFilter}
+      GROUP BY page_path
+      ORDER BY views_24h DESC
+      LIMIT 10
+    ` : `
       SELECT 
         page_path,
         page_title,
@@ -293,6 +316,7 @@ app.get('/api/analytics', (req, res) => {
         COUNT(DISTINCT page_path) as total_pages_viewed,
         COUNT(DISTINCT session_id) as total_sessions
       FROM page_views
+      ${dateFilter}
     `
   };
 
@@ -302,7 +326,10 @@ app.get('/api/analytics', (req, res) => {
 
   // Execute all queries
   Object.entries(queries).forEach(([key, query]) => {
-    db.all(query, [], (err, rows) => {
+    // Use the same params for all queries when date filtering is applied
+    const queryParams = dateFilter ? [...params] : [];
+    
+    db.all(query, queryParams, (err, rows) => {
       if (err) {
         console.error(`Error in ${key} query:`, err);
         results[key] = { error: err.message };
@@ -320,6 +347,20 @@ app.get('/api/analytics', (req, res) => {
 
 // Get combined stats (likes + page views)
 app.get('/api/dashboard-stats', (req, res) => {
+  // Get date range from query parameters
+  const { startDate, endDate } = req.query;
+  
+  // Build date filter clause
+  let pvDateFilter = '';
+  let likesDateFilter = '';
+  const params = [];
+  
+  if (startDate && endDate) {
+    pvDateFilter = ' WHERE viewed_at >= ? AND viewed_at < ?';
+    likesDateFilter = ' WHERE created_at >= ? AND created_at < ?';
+    params.push(startDate, endDate, startDate, endDate);
+  }
+  
   const query = `
     SELECT 
       COALESCE(pv.page_path, l.post_id) as page_id,
@@ -336,6 +377,7 @@ app.get('/api/dashboard-stats', (req, res) => {
         COUNT(DISTINCT user_fingerprint) as unique_visitors,
         MAX(viewed_at) as last_viewed
       FROM page_views
+      ${pvDateFilter}
       GROUP BY page_path
     ) pv
     FULL OUTER JOIN (
@@ -343,12 +385,13 @@ app.get('/api/dashboard-stats', (req, res) => {
         post_id,
         COUNT(*) as like_count
       FROM likes
+      ${likesDateFilter}
       GROUP BY post_id
     ) l ON pv.page_path LIKE '%' || l.post_id || '%'
     ORDER BY total_views DESC
   `;
 
-  db.all(query, [], (err, rows) => {
+  db.all(query, params, (err, rows) => {
     if (err) {
       console.error('Error fetching dashboard stats:', err);
       res.status(500).json({ error: 'Database error' });
