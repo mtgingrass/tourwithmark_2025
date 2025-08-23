@@ -19,6 +19,12 @@ I’ve built out my van and experienced the realities of a tough life. I’ve be
 
 This site is where it all merges. Here, you’ll find my life experiences, the challenges from my hikes, and the philosophy behind my pursuit of a more meaningful life. I’ve stepped away from traditional social media—not because I don’t have opinions, but because I want to create more often and consume less. I want to focus on literature written with dedication and attention, ideas that took time to develop, perhaps over months, years, or even a lifeteim.  
 
-Whether you’re here to follow my adventures, learn from my experiences, or find motivation for your own journey, welcome.
+Whether you're here to follow my adventures, learn from my experiences, or find motivation for your own journey, welcome.
 
 **This is TourWithMark.com. My trail. My terms. My Life.**
+
+---
+
+::: {.dashboard-links}
+[Site Analytics](https://tourwithmark.com/analytics-dashboard.html) • [Likes Dashboard](https://tourwithmark.com/likes-dashboard.html)
+:::
