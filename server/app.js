@@ -66,15 +66,42 @@ function initDatabase() {
     )
   `, (err) => {
     if (err) {
-      console.error('Error creating table:', err);
+      console.error('Error creating likes table:', err);
     } else {
-      console.log('Database initialized');
+      console.log('Likes table initialized');
     }
   });
 
-  // Create index for faster queries
+  // Create page views table
+  db.run(`
+    CREATE TABLE IF NOT EXISTS page_views (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      page_path TEXT NOT NULL,
+      page_title TEXT,
+      user_fingerprint TEXT NOT NULL,
+      viewed_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      referrer TEXT,
+      session_id TEXT
+    )
+  `, (err) => {
+    if (err) {
+      console.error('Error creating page_views table:', err);
+    } else {
+      console.log('Page views table initialized');
+    }
+  });
+
+  // Create indexes for faster queries
   db.run(`CREATE INDEX IF NOT EXISTS idx_post_id ON likes(post_id)`, (err) => {
-    if (err) console.error('Error creating index:', err);
+    if (err) console.error('Error creating likes index:', err);
+  });
+  
+  db.run(`CREATE INDEX IF NOT EXISTS idx_page_path ON page_views(page_path)`, (err) => {
+    if (err) console.error('Error creating page_views index:', err);
+  });
+  
+  db.run(`CREATE INDEX IF NOT EXISTS idx_viewed_at ON page_views(viewed_at)`, (err) => {
+    if (err) console.error('Error creating viewed_at index:', err);
   });
 }
 
@@ -206,6 +233,172 @@ app.get('/api/stats', (req, res) => {
       }
     }
   );
+});
+
+// Track page view
+app.post('/api/pageview', (req, res) => {
+  const { path, title, referrer, sessionId } = req.body;
+  const userFingerprint = getUserFingerprint(req);
+  
+  // Record the page view
+  db.run(
+    `INSERT INTO page_views (page_path, page_title, user_fingerprint, referrer, session_id) 
+     VALUES (?, ?, ?, ?, ?)`,
+    [path, title, userFingerprint, referrer, sessionId],
+    function(err) {
+      if (err) {
+        console.error('Error recording page view:', err);
+        res.status(500).json({ error: 'Failed to record page view' });
+      } else {
+        res.json({ success: true, id: this.lastID });
+      }
+    }
+  );
+});
+
+// Get page view analytics
+app.get('/api/analytics', (req, res) => {
+  // Get date range from query parameters
+  const { startDate, endDate } = req.query;
+  
+  // Build date filter clause
+  let dateFilter = '';
+  const params = [];
+  
+  if (startDate && endDate) {
+    dateFilter = ' WHERE viewed_at >= ? AND viewed_at < ?';
+    params.push(startDate, endDate);
+  }
+  
+  const queries = {
+    // Total page views by page
+    pageViews: `
+      SELECT 
+        page_path,
+        page_title,
+        COUNT(*) as total_views,
+        COUNT(DISTINCT user_fingerprint) as unique_visitors,
+        MAX(viewed_at) as last_viewed
+      FROM page_views
+      ${dateFilter}
+      GROUP BY page_path
+      ORDER BY total_views DESC
+    `,
+    
+    // Recent activity (last 24 hours or within date range)
+    recentActivity: dateFilter ? `
+      SELECT 
+        page_path,
+        page_title,
+        COUNT(*) as views_24h
+      FROM page_views
+      ${dateFilter}
+      GROUP BY page_path
+      ORDER BY views_24h DESC
+      LIMIT 10
+    ` : `
+      SELECT 
+        page_path,
+        page_title,
+        COUNT(*) as views_24h
+      FROM page_views
+      WHERE viewed_at > datetime('now', '-24 hours')
+      GROUP BY page_path
+      ORDER BY views_24h DESC
+      LIMIT 10
+    `,
+    
+    // Overall stats
+    totalStats: `
+      SELECT 
+        COUNT(*) as total_page_views,
+        COUNT(DISTINCT user_fingerprint) as total_unique_visitors,
+        COUNT(DISTINCT page_path) as total_pages_viewed,
+        COUNT(DISTINCT session_id) as total_sessions
+      FROM page_views
+      ${dateFilter}
+    `
+  };
+
+  const results = {};
+  let completed = 0;
+  const totalQueries = Object.keys(queries).length;
+
+  // Execute all queries
+  Object.entries(queries).forEach(([key, query]) => {
+    // Use the same params for all queries when date filtering is applied
+    const queryParams = dateFilter ? [...params] : [];
+    
+    db.all(query, queryParams, (err, rows) => {
+      if (err) {
+        console.error(`Error in ${key} query:`, err);
+        results[key] = { error: err.message };
+      } else {
+        results[key] = key === 'totalStats' ? rows[0] : rows;
+      }
+      
+      completed++;
+      if (completed === totalQueries) {
+        res.json(results);
+      }
+    });
+  });
+});
+
+// Get combined stats (likes + page views)
+app.get('/api/dashboard-stats', (req, res) => {
+  // Get date range from query parameters
+  const { startDate, endDate } = req.query;
+  
+  // Build date filter clause
+  let pvDateFilter = '';
+  let likesDateFilter = '';
+  const params = [];
+  
+  if (startDate && endDate) {
+    pvDateFilter = ' WHERE viewed_at >= ? AND viewed_at < ?';
+    likesDateFilter = ' WHERE created_at >= ? AND created_at < ?';
+    params.push(startDate, endDate, startDate, endDate);
+  }
+  
+  const query = `
+    SELECT 
+      COALESCE(pv.page_path, l.post_id) as page_id,
+      pv.page_title,
+      COALESCE(pv.total_views, 0) as total_views,
+      COALESCE(pv.unique_visitors, 0) as unique_visitors,
+      COALESCE(l.like_count, 0) as like_count,
+      pv.last_viewed
+    FROM (
+      SELECT 
+        page_path,
+        page_title,
+        COUNT(*) as total_views,
+        COUNT(DISTINCT user_fingerprint) as unique_visitors,
+        MAX(viewed_at) as last_viewed
+      FROM page_views
+      ${pvDateFilter}
+      GROUP BY page_path
+    ) pv
+    FULL OUTER JOIN (
+      SELECT 
+        post_id,
+        COUNT(*) as like_count
+      FROM likes
+      ${likesDateFilter}
+      GROUP BY post_id
+    ) l ON pv.page_path LIKE '%' || l.post_id || '%'
+    ORDER BY total_views DESC
+  `;
+
+  db.all(query, params, (err, rows) => {
+    if (err) {
+      console.error('Error fetching dashboard stats:', err);
+      res.status(500).json({ error: 'Database error' });
+    } else {
+      res.json(rows);
+    }
+  });
 });
 
 // Error handling middleware
