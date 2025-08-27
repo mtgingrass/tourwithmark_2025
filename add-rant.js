@@ -27,7 +27,8 @@ function parseArgs() {
     editor: false,
     guiEditor: false,
     message: null,
-    rantText: null
+    rantText: null,
+    aiFormat: false
   };
 
   for (let i = 0; i < args.length; i++) {
@@ -54,6 +55,10 @@ function parseArgs() {
         if (i + 1 < args.length) {
           options.message = args[++i];
         }
+        break;
+      case '-f':
+      case '--format':
+        options.aiFormat = true;
         break;
       case '-h':
       case '--help':
@@ -84,6 +89,7 @@ ${colors.yellow}Options:${colors.reset}
   -p, --push       Add, commit, and push to GitHub
   -e, --editor     Open editor for composing rant
   --gui            Open GUI editor (VS Code, TextEdit, etc.)
+  -f, --format     Format text with AI (fix grammar, add structure)
   -m, --message    Custom commit message (use with -c or -p)
   -h, --help       Show this help message
 
@@ -91,10 +97,11 @@ ${colors.yellow}Examples:${colors.reset}
   rant "This is my rant"
   rant -c "This rant will be committed"
   rant -p "This rant will be pushed to GitHub"
+  rant -f -p "unformatted text gets cleaned up then pushed"
   rant -p -m "Add thoughts on topic X" "My detailed thoughts..."
   rant -e
   rant --gui -p
-  echo "My rant" | rant -p
+  echo "My rant" | rant -f -p
 `);
 }
 
@@ -182,6 +189,53 @@ function openEditor(useGui = false) {
   } catch (error) {
     console.error(`${colors.red}Error opening editor: ${error.message}${colors.reset}`);
     process.exit(1);
+  }
+}
+
+// Format text using AI (via Claude CLI)
+async function formatWithAI(text) {
+  console.log(`${colors.blue}Formatting with AI...${colors.reset}`);
+  
+  const prompt = `Please format and improve the following text for a blog rant/post. 
+Make it more readable by:
+- Adding proper paragraph breaks where needed
+- Converting lists into bullet points or numbered lists where appropriate
+- Fixing any obvious grammar or spelling errors
+- Improving sentence structure for clarity
+- Adding emphasis (bold/italic) where it would help
+- Ensuring proper capitalization and punctuation
+
+Keep the original tone and meaning intact. Do not add conclusions, summaries, or additional content. 
+Only format and structure what's already there.
+
+Here's the text to format:
+
+${text}
+
+Please output ONLY the formatted text, nothing else.`;
+
+  try {
+    // Create a temporary file with the prompt
+    const tempPromptFile = path.join(require('os').tmpdir(), `rant-prompt-${Date.now()}.txt`);
+    fs.writeFileSync(tempPromptFile, prompt);
+    
+    // Call Claude CLI - using stdin to avoid shell escaping issues
+    const result = execSync(`cat "${tempPromptFile}" | claude`, { 
+      encoding: 'utf8',
+      maxBuffer: 1024 * 1024 * 10 // 10MB buffer
+    });
+    
+    // Clean up temp file
+    fs.unlinkSync(tempPromptFile);
+    
+    // Return the formatted text
+    const formattedText = result.trim();
+    console.log(`${colors.green}✓ AI formatting complete${colors.reset}`);
+    return formattedText;
+  } catch (error) {
+    console.error(`${colors.yellow}Warning: AI formatting failed, using original text${colors.reset}`);
+    console.error(`${colors.yellow}Error: ${error.message}${colors.reset}`);
+    return text; // Return original text if AI formatting fails
   }
 }
 
@@ -340,6 +394,11 @@ async function main() {
     console.error(`${colors.red}Error: No rant text provided${colors.reset}`);
     console.log(`${colors.yellow}Use -h for help${colors.reset}`);
     process.exit(1);
+  }
+  
+  // Apply AI formatting if requested
+  if (options.aiFormat) {
+    rantText = await formatWithAI(rantText.trim());
   }
   
   // Pull latest changes first if we're going to push
