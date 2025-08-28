@@ -160,44 +160,17 @@ Demetre C. Daskalakis MD MPH (he/his/him)
 </div>
 </div>
 
-<div class="rant-entry" id="rant-2025-08-28-1756422409373">
-<div class="time-stamp">
-7:06 PM
-<a href="#rant-2025-08-28-1756422409373" class="rant-anchor" title="Link to this rant">🔗</a>
-</div>
-<div class="rant-content">
-# This Is Just a Test
-
-Have AI give it a **heading** or some **bold** or something. *Show off.* 
-
-This should also end up with an anchor link, but we shall see.
-</div>
-</div>
-
-<div class="rant-entry" id="rant-2025-08-28-1756422318452">
-<div class="time-stamp">
-7:05 PM
-<a href="#rant-2025-08-28-1756422318452" class="rant-anchor" title="Link to this rant">🔗</a>
-</div>
-<div class="rant-content">
-This is a test rant to verify the anchor link functionality works correctly
-</div>
-</div>
-
-<div class="rant-entry">
-<div class="time-stamp">6:56 PM</div>
-<div class="rant-content">
-Execution error
-</div>
-</div>
 
 </div><div class="rant-day" data-date="2025-08-27">
 <div class="date-header">
 <span class="date">August 27, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">5:16 PM</div>
+<div class="rant-entry" id="rant-2025-08-27-1716">
+<div class="time-stamp">
+5:16 PM
+<a href="#rant-2025-08-27-1716" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 The folks behind all this are people like **Russ Vought** (head of the Office of Budget Management and primary author of Project 2025) and **Howard Lutnick** (Commerce Secretary and former Cantor Fitzgerald, which is the biggest supporter of the Heritage Foundation). 
 
@@ -284,17 +257,23 @@ Alex Karp, the CEO of Palantir, knew Thiel well before 2003 when Thiel tapped hi
 </div>
 
 
-<div class="rant-entry">
-<div class="time-stamp">1:49 PM</div>
+<div class="rant-entry" id="rant-2025-08-27-1349">
+<div class="time-stamp">
+1:49 PM
+<a href="#rant-2025-08-27-1349" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 In America, it doesn’t matter your background or life experiences. Anyone can be a mass shooter
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">1:38 PM</div>
+<div class="rant-entry" id="rant-2025-08-27-1338">
+<div class="time-stamp">
+1:38 PM
+<a href="#rant-2025-08-27-1338" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
-Thoughts and prayers my ass. These children were literally praying as they were being shot. - It's just a fact of lie, JD Vance. Fuck the NRA and GOP.
+Thoughts and prayers my ass. These children were literally praying as they were being shot. - It's just a fact of life, JD Vance. Fuck the NRA and GOP.
 </div>
 </div>
 
@@ -303,22 +282,21 @@ Thoughts and prayers my ass. These children were literally praying as they were 
 <span class="date">August 11, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">12:30 PM</div>
+<div class="rant-entry" id="rant-2025-08-11-1230">
+<div class="time-stamp">
+12:30 PM
+<a href="#rant-2025-08-11-1230" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 The city ranked #1 in violent crime per capita is Mobile AL. Red Mayor and red Governer.
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">8:30 AM</div>
-<div class="rant-content">
-They're starting the process of normalizing and conditioning the public to accept martial law, while also turning DC into a military zone before the midterms so when they reject the election results and illegally overtake the rest of the government, any attempt to protest or rebel will be shut down immediately.
+<div class="rant-entry" id="rant-2025-08-11-0830">
+<div class="time-stamp">
+8:30 AM
+<a href="#rant-2025-08-11-0830" class="rant-anchor" title="Link to this rant">🔗</a>
 </div>
-</div>
-
-<div class="rant-entry">
-<div class="time-stamp">6:35 AM</div>
 <div class="rant-content">
 They're starting the process of normalizing and conditioning the public to accept martial law, while also turning DC into a military zone before the midterms so when they reject the election results and illegally overtake the rest of the government, any attempt to protest or rebel will be shut down immediately.
 </div>
@@ -329,8 +307,11 @@ They're starting the process of normalizing and conditioning the public to accep
 <span class="date">August 10, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">2:16 PM</div>
+<div class="rant-entry" id="rant-2025-08-10-1416">
+<div class="time-stamp">
+2:16 PM
+<a href="#rant-2025-08-10-1416" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 Just learned about tmux and now I am in love. Only the nerdy ones will understand.
 </div>
@@ -341,22 +322,31 @@ Just learned about tmux and now I am in love. Only the nerdy ones will understan
 <span class="date">August 04, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">11:23 AM</div>
+<div class="rant-entry" id="rant-2025-08-04-1123">
+<div class="time-stamp">
+11:23 AM
+<a href="#rant-2025-08-04-1123" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 I highly recommend it for anyone that wants to be miserable - Mark Gingrass
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">11:22 AM</div>
+<div class="rant-entry" id="rant-2025-08-04-1122">
+<div class="time-stamp">
+11:22 AM
+<a href="#rant-2025-08-04-1122" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 If you are not prepared, be prepared to pay the price - Mark Gingrass
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">8:50 AM</div>
+<div class="rant-entry" id="rant-2025-08-04-0850">
+<div class="time-stamp">
+8:50 AM
+<a href="#rant-2025-08-04-0850" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 There should be caution tape in front of the storage rack where all the dumbbells are. I’m always trying to grab a weight, but there’s some old guy standing right in front of it, doing curls and blocking access to three sets of dumbbells.
 </div>
@@ -367,22 +357,31 @@ There should be caution tape in front of the storage rack where all the dumbbell
 <span class="date">August 03, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">7:55 PM</div>
+<div class="rant-entry" id="rant-2025-08-03-1955">
+<div class="time-stamp">
+7:55 PM
+<a href="#rant-2025-08-03-1955" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 Senator Josh Hawley destroyed Lankford. Its insider trading, point blank.
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">2:51 PM</div>
+<div class="rant-entry" id="rant-2025-08-03-1451">
+<div class="time-stamp">
+2:51 PM
+<a href="#rant-2025-08-03-1451" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
-Using my phone for my bedt rant.
+Using my phone for my best rant.
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">2:05 PM</div>
+<div class="rant-entry" id="rant-2025-08-03-1405">
+<div class="time-stamp">
+2:05 PM
+<a href="#rant-2025-08-03-1405" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 I got rid of – just one I got rid of the other night, you buy a house, they have a faucet in the house, Joe, and the faucet the water doesn’t come out. They have a restrictor. You can’t – in areas where you have so much water they don’t know what to do with it. Uh, you have a shower head the shower doesn’t uh, the shower doesn’t, you think it’s not working. It is working. The water’s dripping out and that’s no good for me. I like this hair lace and [sic] – I like that hair nice and wet. Takes you – you have to stand in the shower for 20 minutes before you get the soap out of your hair. And I put a, a thing – and it sounds funny but it’s really not. It’s horrible. And uh, when you wash your hands, you turn on the faucet, no water comes out. You’re washing whole – water barely comes out it’s ridi – this was done by crazy people. And I wor – wrote it all off and got it approved in Congress so that they can’t just change it. - President Trump
 </div>
@@ -393,15 +392,21 @@ I got rid of – just one I got rid of the other night, you buy a house, they ha
 <span class="date">August 01, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">3:03 PM</div>
+<div class="rant-entry" id="rant-2025-08-01-1503">
+<div class="time-stamp">
+3:03 PM
+<a href="#rant-2025-08-01-1503" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
-Can't vote for your interest if you to stupid to know what your interests are.
+Can't vote for your interest if you too stupid to know what your interests are.
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">10:14 AM</div>
+<div class="rant-entry" id="rant-2025-08-01-1014">
+<div class="time-stamp">
+10:14 AM
+<a href="#rant-2025-08-01-1014" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 Powell doesn't single-handedly decide rates as he wants. It's a committee and he's the chair, not a dictator.
 
@@ -414,8 +419,11 @@ Trump can't conceive of any process that involves checks and balances because he
 <span class="date">July 30, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">5:02 PM</div>
+<div class="rant-entry" id="rant-2025-07-30-1702">
+<div class="time-stamp">
+5:02 PM
+<a href="#rant-2025-07-30-1702" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 Pedo files being covered up by pedophiles.
 </div>
@@ -427,34 +435,46 @@ Pedo files being covered up by pedophiles.
 </div>
 
 
-<div class="rant-entry">
-<div class="time-stamp">5:22 PM</div>
+<div class="rant-entry" id="rant-2025-07-29-1722">
+<div class="time-stamp">
+5:22 PM
+<a href="#rant-2025-07-29-1722" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 We couldn't save your wife without killing the baby, so we decided to let them both die.
 </div>
 </div>
 
 
-<div class="rant-entry">
-<div class="time-stamp">5:03 PM</div>
+<div class="rant-entry" id="rant-2025-07-29-1703">
+<div class="time-stamp">
+5:03 PM
+<a href="#rant-2025-07-29-1703" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 Theft by employers through stolen wages exceed all other forms of theft combined.
 Mugging, burglary, shoplifting. All less than stolen by employers from employees.
-And yet, if an employee takes a  out of the register, the cops will arrest them and throw them in a jail cell, when a kid decided to back out of selling their goat too the the fair because she loved it and wanted to keep it as a pet, the cops travelled 500 miles, took the goat, and had it slaughtered. (https://reason.com/2023/03/31/police-traveled-500-miles-to-seize-girls-pet-goat-for-slaughter/)
+And yet, if an employee takes a dollar out of the register, the cops will arrest them and throw them in a jail cell, when a kid decided to back out of selling their goat too the the fair because she loved it and wanted to keep it as a pet, the cops travelled 500 miles, took the goat, and had it slaughtered. (https://reason.com/2023/03/31/police-traveled-500-miles-to-seize-girls-pet-goat-for-slaughter/)
 But call the cops about an employer keeping thousands of dollars of your pay? Uh, thats a civil issue." Notice how its only a crime if its the poor stealing from the rich.
 Thanks for what you do at the DOL. Its too bad the conservatives have been dismantling so much of the federal DOL.
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">5:02 PM</div>
+<div class="rant-entry" id="rant-2025-07-29-1702b">
+<div class="time-stamp">
+5:02 PM
+<a href="#rant-2025-07-29-1702b" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 Test
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">4:57 PM</div>
+<div class="rant-entry" id="rant-2025-07-29-1657">
+<div class="time-stamp">
+4:57 PM
+<a href="#rant-2025-07-29-1657" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 It's not the strangers/drag queens/LGBTQ people that you, or especially kids, need to worry about. It's the men in the family. After working 11 years at a crime lab doing DNA, I don't know if I've come across a kid rape kit with a trans person as the suspect. But there are thousands of them from the dad/stepdad/moms bf/step brother/grandpa/etc. If you want to protect kids, start there.
 
@@ -462,8 +482,11 @@ So, bathroom bills aren't really protecting kids, just diverting attention from 
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">4:50 PM</div>
+<div class="rant-entry" id="rant-2025-07-29-1650">
+<div class="time-stamp">
+4:50 PM
+<a href="#rant-2025-07-29-1650" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 This is a multi-line rant.
 
@@ -473,15 +496,21 @@ And it should preserve the formatting!
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">4:49 PM</div>
+<div class="rant-entry" id="rant-2025-07-29-1649a">
+<div class="time-stamp">
+4:49 PM
+<a href="#rant-2025-07-29-1649a" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 Testing the commit feature of the new rant script!
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">4:49 PM</div>
+<div class="rant-entry" id="rant-2025-07-29-1649b">
+<div class="time-stamp">
+4:49 PM
+<a href="#rant-2025-07-29-1649b" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 This script makes it so much easier to add rants! No more manual editing and formatting.
 </div>
@@ -495,8 +524,11 @@ This script makes it so much easier to add rants! No more manual editing and for
 <span class="date">March 1, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">9:39 PM</div>
+<div class="rant-entry" id="rant-2025-03-01-2139">
+<div class="time-stamp">
+9:39 PM
+<a href="#rant-2025-03-01-2139" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 This entire rant is from From [Reddit](https://www.reddit.com/r/worldnews/comments/1j0zud0/comment/mfgi38j/) user [**JustMyOpinionz**](https://www.reddit.com/user/JustMyOpinionz/) . This deserves to be read:
 
@@ -534,8 +566,11 @@ While Trump schemes, Zelensky fights. While Vance panders, Zelensky leads. While
 <span class="date">February 23, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">6:30 AM</div>
+<div class="rant-entry" id="rant-2025-02-23-0630">
+<div class="time-stamp">
+6:30 AM
+<a href="#rant-2025-02-23-0630" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 The Fork was a completely tone deaf offer that could only be devised by someone who has never had to actually worry about having a real job.
 
@@ -551,15 +586,21 @@ Normal people can't just lock themselves into unemployment with 2 weeks to decid
 <span class="date">February 20, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">3:58 PM</div>
+<div class="rant-entry" id="rant-2025-02-20-1558">
+<div class="time-stamp">
+3:58 PM
+<a href="#rant-2025-02-20-1558" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 <a href="https://youtube.com/shorts/8bbOG1rNW5I" target="_blank"> </a>
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">2:19 PM</div>
+<div class="rant-entry" id="rant-2025-02-20-1419">
+<div class="time-stamp">
+2:19 PM
+<a href="#rant-2025-02-20-1419" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 I Called My Reps—And You Should Too
 
@@ -597,8 +638,11 @@ If they want to rip people out of their homes, they need to own up to the conseq
 <span class="date">February 19, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">4:19 PM</div>
+<div class="rant-entry" id="rant-2025-02-19-1619">
+<div class="time-stamp">
+4:19 PM
+<a href="#rant-2025-02-19-1619" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 I deleted my social media. No more doomscrolling, no more endless feeds designed to keep me consuming mindelss media. I don't need it. I don't want it.
 
@@ -620,8 +664,11 @@ So, if you're reading this, ask yourself: are you consuming, or are you doing?
 <span class="date">February 18, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">11:38 PM</div>
+<div class="rant-entry" id="rant-2025-02-18-2338">
+<div class="time-stamp">
+11:38 PM
+<a href="#rant-2025-02-18-2338" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 Elon is neither a data scientist nor a data engineer. I'm not one either, but I work with data, and the number one rule is that you cannot draw conclusions from data you don't fully understand.
 
@@ -647,24 +694,33 @@ No serious data professional would take that screenshot at face value.
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">11:13 PM</div>
+<div class="rant-entry" id="rant-2025-02-18-2313">
+<div class="time-stamp">
+11:13 PM
+<a href="#rant-2025-02-18-2313" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 My first post using mobile. Let's see if it works.  
 It does!
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">11:09 PM</div>
+<div class="rant-entry" id="rant-2025-02-18-2309">
+<div class="time-stamp">
+11:09 PM
+<a href="#rant-2025-02-18-2309" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 Just realized that trying to automate rants was more trouble than it was worth.  
 Back to manual updates for a few days.
 </div>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">10:44 PM</div>
+<div class="rant-entry" id="rant-2025-02-18-2244">
+<div class="time-stamp">
+10:44 PM
+<a href="#rant-2025-02-18-2244" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 This is my first rant! Netlify Identity was a pain, but I figured out a better way.
 </div>
@@ -678,8 +734,11 @@ This is my first rant! Netlify Identity was a pain, but I figured out a better w
 <span class="date">February 17, 2025</span>
 </div>
 
-<div class="rant-entry">
-<div class="time-stamp">9:00 AM</div>
+<div class="rant-entry" id="rant-2025-02-17-0900">
+<div class="time-stamp">
+9:00 AM
+<a href="#rant-2025-02-17-0900" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
 <div class="rant-content">
 Let's just test yesterday's format.
 </div>
