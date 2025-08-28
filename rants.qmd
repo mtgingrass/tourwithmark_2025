@@ -83,6 +83,30 @@ Raw opinions, hot takes, and things that need to be said.
 <span class="date">August 28, 2025</span>
 </div>
 
+<div class="rant-entry" id="rant-2025-08-28-1756422409373">
+<div class="time-stamp">
+7:06 PM
+<a href="#rant-2025-08-28-1756422409373" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
+<div class="rant-content">
+# This Is Just a Test
+
+Have AI give it a **heading** or some **bold** or something. *Show off.* 
+
+This should also end up with an anchor link, but we shall see.
+</div>
+</div>
+
+<div class="rant-entry" id="rant-2025-08-28-1756422318452">
+<div class="time-stamp">
+7:05 PM
+<a href="#rant-2025-08-28-1756422318452" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
+<div class="rant-content">
+This is a test rant to verify the anchor link functionality works correctly
+</div>
+</div>
+
 <div class="rant-entry">
 <div class="time-stamp">6:56 PM</div>
 <div class="rant-content">
