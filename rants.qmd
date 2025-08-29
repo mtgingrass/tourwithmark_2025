@@ -90,6 +90,15 @@ Raw opinions, hot takes, and things that need to be said.
 <div class="time-stamp">
 12:09 PM
 <a href="#rant-2025-08-29-1756483750767" class="rant-anchor" title="Link to this rant">🔗</a>
+<button class="share-button" onclick="shareRant('rant-2025-08-29-1756483750767', 'Beginning Monday, South Carolina\'s new hands-free driving law goes into effect...')" title="Share this rant">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="18" cy="5" r="3"></circle>
+<circle cx="6" cy="12" r="3"></circle>
+<circle cx="18" cy="19" r="3"></circle>
+<line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+<line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+</svg>
+</button>
 </div>
 <div class="rant-content">
 Beginning Monday, South Carolina's new hands-free driving law goes into effect. This new law prohibits drivers from using mobile electronic devices while operating a motor vehicle.
@@ -766,3 +775,140 @@ Let's just test yesterday's format.
 
 </div>
 </div>
+
+<script>
+function shareRant(rantId, excerpt) {
+  const url = window.location.origin + window.location.pathname + '#' + rantId;
+  const title = 'Rant from TourWithMark';
+  const text = excerpt.length > 100 ? excerpt.substring(0, 97) + '...' : excerpt;
+  
+  // Try Web Share API first (works on mobile and some desktop browsers)
+  if (navigator.share) {
+    navigator.share({
+      title: title,
+      text: text,
+      url: url
+    }).catch(err => {
+      // User cancelled or error occurred, try fallback
+      fallbackShare(url, title, text);
+    });
+  } else {
+    // Fallback for desktop browsers
+    fallbackShare(url, title, text);
+  }
+}
+
+function fallbackShare(url, title, text) {
+  // Create a modal with share options
+  const modal = document.createElement('div');
+  modal.className = 'share-modal';
+  modal.innerHTML = `
+    <div class="share-modal-content">
+      <h3>Share this rant</h3>
+      <div class="share-options">
+        <button onclick="shareToTwitter('${url}', '${encodeURIComponent(text)}')">
+          <svg width="20" height="20" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          X (Twitter)
+        </button>
+        <button onclick="shareToFacebook('${url}')">
+          <svg width="20" height="20" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </button>
+        <button onclick="copyToClipboard('${url}')">
+          <svg width="20" height="20" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+          Copy Link
+        </button>
+        <button onclick="shareViaEmail('${url}', '${encodeURIComponent(title)}', '${encodeURIComponent(text)}')">
+          <svg width="20" height="20" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Email
+        </button>
+      </div>
+      <button class="close-modal" onclick="closeShareModal()">×</button>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  
+  // Close modal when clicking outside
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      closeShareModal();
+    }
+  });
+}
+
+function shareToTwitter(url, text) {
+  window.open(`https://twitter.com/intent/tweet?text=${text}&url=${encodeURIComponent(url)}`, '_blank');
+  closeShareModal();
+}
+
+function shareToFacebook(url) {
+  window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+  closeShareModal();
+}
+
+function copyToClipboard(url) {
+  navigator.clipboard.writeText(url).then(() => {
+    // Show success message
+    const button = event.target.closest('button');
+    const originalHTML = button.innerHTML;
+    button.innerHTML = '✓ Copied!';
+    button.style.backgroundColor = '#4caf50';
+    setTimeout(() => {
+      button.innerHTML = originalHTML;
+      button.style.backgroundColor = '';
+    }, 2000);
+  }).catch(() => {
+    // Fallback for older browsers
+    const input = document.createElement('input');
+    input.value = url;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+    alert('Link copied to clipboard!');
+  });
+}
+
+function shareViaEmail(url, title, text) {
+  window.location.href = `mailto:?subject=${title}&body=${text}%0A%0A${url}`;
+  closeShareModal();
+}
+
+function closeShareModal() {
+  const modal = document.querySelector('.share-modal');
+  if (modal) {
+    modal.remove();
+  }
+}
+
+// Add share buttons to all existing rants on page load
+document.addEventListener('DOMContentLoaded', function() {
+  const rantEntries = document.querySelectorAll('.rant-entry');
+  rantEntries.forEach(entry => {
+    const timeStamp = entry.querySelector('.time-stamp');
+    const rantId = entry.id;
+    const content = entry.querySelector('.rant-content').textContent.trim();
+    const excerpt = content.substring(0, 100);
+    
+    // Only add if share button doesn't already exist
+    if (!timeStamp.querySelector('.share-button')) {
+      const shareButton = document.createElement('button');
+      shareButton.className = 'share-button';
+      shareButton.title = 'Share this rant';
+      shareButton.innerHTML = `
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+      `;
+      shareButton.onclick = function() {
+        shareRant(rantId, excerpt);
+      };
+      timeStamp.appendChild(shareButton);
+    }
+  });
+});
+</script>

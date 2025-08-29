@@ -235,6 +235,43 @@ div[class*="quarto"] {
   filter: grayscale(1) opacity(0.5);
 }
 
+/* Anchor Links */
+.rant-anchor {
+  margin-left: auto;
+  opacity: 0.3;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.rant-entry:hover .rant-anchor {
+  opacity: 0.8;
+}
+
+.rant-anchor:hover {
+  opacity: 1 !important;
+  text-decoration: none;
+}
+
+/* Highlight targeted rant */
+.rant-entry:target {
+  border-color: var(--rant-accent);
+  box-shadow: 0 0 0 2px var(--rant-accent);
+  animation: pulse 0.5s ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* Rant Content */
 .rant-content {
   color: var(--rant-text);
@@ -343,4 +380,149 @@ div[class*="quarto"] {
 
 .rants-container::-webkit-scrollbar-thumb:hover {
   background: var(--rant-accent-hover);
+}
+
+/* Share Button Styles */
+.share-button {
+  background: transparent;
+  border: 1px solid var(--rant-border);
+  color: var(--rant-text-muted);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+
+.share-button:hover {
+  color: var(--rant-accent);
+  border-color: var(--rant-accent);
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.share-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Share Modal Styles */
+.share-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+.share-modal-content {
+  background: var(--rant-card-bg);
+  border: 1px solid var(--rant-border);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+
+.share-modal-content h3 {
+  color: var(--rant-accent);
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.share-options {
+  display: grid;
+  gap: 1rem;
+}
+
+.share-options button {
+  background: var(--rant-secondary);
+  border: 1px solid var(--rant-border);
+  color: var(--rant-text);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.share-options button:hover {
+  background: var(--rant-accent);
+  color: white;
+  transform: translateX(4px);
+}
+
+.share-options button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--rant-text-muted);
+  font-size: 2rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.close-modal:hover {
+  background: var(--rant-secondary);
+  color: var(--rant-accent);
+}
+
+/* Animations for modal */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile responsiveness for share features */
+@media (max-width: 768px) {
+  .share-button {
+    padding: 0.4rem;
+    margin-left: 0.25rem;
+  }
+  
+  .share-modal-content {
+    padding: 1.5rem;
+    width: 95%;
+  }
+  
+  .share-options button {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
 }
