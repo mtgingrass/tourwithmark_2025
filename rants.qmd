@@ -78,7 +78,25 @@ Raw opinions, hot takes, and things that need to be said.
 
 
 <!-- 2025-08-28 -->
-<div class="rant-day" data-date="2025-08-28">
+
+
+<!-- 2025-08-29 -->
+<div class="rant-day" data-date="2025-08-29">
+<div class="date-header">
+<span class="date">August 29, 2025</span>
+</div>
+
+<div class="rant-entry" id="rant-2025-08-29-1756483750767">
+<div class="time-stamp">
+12:09 PM
+<a href="#rant-2025-08-29-1756483750767" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
+<div class="rant-content">
+Beginning Monday, South Carolina's new hands-free driving law goes into effect. This new law prohibits drivers from using mobile electronic devices while operating a motor vehicle.
+</div>
+</div>
+
+</div><div class="rant-day" data-date="2025-08-28">
 <div class="date-header">
 <span class="date">August 28, 2025</span>
 </div>
