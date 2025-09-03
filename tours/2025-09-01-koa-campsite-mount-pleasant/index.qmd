@@ -1,6 +1,6 @@
 ---
 title: "KOA Campsite Adventure in Mount Pleasant"
-date: "2025-01-02"
+date: "2025-09-01"
 categories: [camping, family, travel]
 image: "images/IMG_0345.webp"
 ---
