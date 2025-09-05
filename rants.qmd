@@ -81,7 +81,25 @@ Raw opinions, hot takes, and things that need to be said.
 
 
 <!-- 2025-08-29 -->
-<div class="rant-day" data-date="2025-08-29">
+
+
+<!-- 2025-09-05 -->
+<div class="rant-day" data-date="2025-09-05">
+<div class="date-header">
+<span class="date">September 05, 2025</span>
+</div>
+
+<div class="rant-entry" id="rant-2025-09-05-1757109071938">
+<div class="time-stamp">
+5:51 PM
+<a href="#rant-2025-09-05-1757109071938" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
+<div class="rant-content">
+Imagine rebranding the Department of Defense as the Department of War, all while deploying federal forces against peaceful communities and the people who support them, and threatening more of it—all while thinking you deserve a Nobel Peace Prize. But hey, at least no one is talking about how you had 1000 FBI agents redact your name from the Epstein files. Get rid of this President and all those that support him. This means you, Biggs. Time for a replacement before you leach off the system with 100% retirement for life for not doing shit.
+</div>
+</div>
+
+</div><div class="rant-day" data-date="2025-08-29">
 <div class="date-header">
 <span class="date">August 29, 2025</span>
 </div>
