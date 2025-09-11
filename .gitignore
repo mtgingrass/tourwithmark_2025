@@ -1,13 +1,27 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-.Rdata
-.httr-oauth
-.DS_Store
-.quarto
-
-/.quarto/
-/_site/
-
+# Raw images (should be ignored per CLAUDE.md)
+**/raw_images/
 **/raw_image/
+
+# Large video files
+*.MOV
+*.mov
+*.mp4
+*.avi
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# Build files
+_site/
+.quarto/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Excel temporary files
+~$*.xlsx
