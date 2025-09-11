@@ -1,0 +1,36 @@
+project:
+  type: website
+  resources:
+    - admin/
+website:
+  title: "Tour with Mark"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - posts.qmd
+      - random_posts.qmd
+      - text: "Rants"
+        href: rants.qmd
+
+    right:
+      - booklist.qmd
+      - icon: github
+        href: https://github.com/mtgingrass
+        aria-label: GitHub
+      - icon: envelope-arrow-up-fill
+        href: mailto:twm@tourwithmark.com
+
+format:
+  html:
+    theme: cyborg
+    css: styles.css
+    toc: true
+
+editor: visual
+
+freeze: auto
+
+execute:
+  freeze: auto
+

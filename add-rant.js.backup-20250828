@@ -262,10 +262,7 @@ function autoLinkUrls(text) {
 
 // Insert rant into the file
 function insertRant(rantText) {
-  const { date, displayDate, time, timestamp } = getCurrentDateTime();
-  
-  // Generate unique ID for this rant (date + timestamp in milliseconds)
-  const rantId = `rant-${date}-${Date.now()}`;
+  const { date, displayDate, time } = getCurrentDateTime();
   
   // Read current content
   let content = fs.readFileSync(RANTS_FILE, 'utf8');
@@ -293,14 +290,11 @@ function insertRant(rantText) {
     
     if (dateHeaderMatch) {
       insertPosition = dateHeaderMatch.index + dateHeaderMatch[0].length;
-      // Just add the new rant entry with anchor ID and link
+      // Just add the new rant entry
       newRantHTML = `
 
-<div class="rant-entry" id="${rantId}">
-<div class="time-stamp">
-${time}
-<a href="#${rantId}" class="rant-anchor" title="Link to this rant">🔗</a>
-</div>
+<div class="rant-entry">
+<div class="time-stamp">${time}</div>
 <div class="rant-content">
 ${autoLinkUrls(rantText).replace(/\n/g, '\n')}
 </div>
@@ -326,11 +320,8 @@ ${autoLinkUrls(rantText).replace(/\n/g, '\n')}
 <span class="date">${displayDate}</span>
 </div>
 
-<div class="rant-entry" id="${rantId}">
-<div class="time-stamp">
-${time}
-<a href="#${rantId}" class="rant-anchor" title="Link to this rant">🔗</a>
-</div>
+<div class="rant-entry">
+<div class="time-stamp">${time}</div>
 <div class="rant-content">
 ${autoLinkUrls(rantText).replace(/\n/g, '\n')}
 </div>
@@ -345,12 +336,7 @@ ${autoLinkUrls(rantText).replace(/\n/g, '\n')}
   // Write back to file
   fs.writeFileSync(RANTS_FILE, content);
   
-  return { 
-    date: displayDate, 
-    time, 
-    preview: rantText.substring(0, 50) + (rantText.length > 50 ? '...' : ''),
-    id: rantId 
-  };
+  return { date: displayDate, time, preview: rantText.substring(0, 50) + (rantText.length > 50 ? '...' : '') };
 }
 
 // Execute git commands
@@ -434,7 +420,6 @@ async function main() {
   const result = insertRant(rantText.trim());
   console.log(`${colors.green}✓ Rant added successfully!${colors.reset}`);
   console.log(`${colors.cyan}Date: ${result.date}, Time: ${result.time}${colors.reset}`);
-  console.log(`${colors.cyan}Anchor link: #${result.id}${colors.reset}`);
   
   // Handle git operations if requested
   if (options.commit || options.push) {
