@@ -84,7 +84,45 @@ Raw opinions, hot takes, and things that need to be said.
 
 
 <!-- 2025-09-05 -->
-<div class="rant-day" data-date="2025-09-05">
+
+
+<!-- 2025-09-18 -->
+<div class="rant-day" data-date="2025-09-18">
+<div class="date-header">
+<span class="date">September 18, 2025</span>
+</div>
+
+<div class="rant-entry" id="rant-2025-09-18-1758189028586">
+<div class="time-stamp">
+5:50 AM
+<a href="#rant-2025-09-18-1758189028586" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
+<div class="rant-content">
+Test Rant
+</div>
+</div>
+
+<div class="rant-entry" id="rant-2025-09-18-1758188891357">
+<div class="time-stamp">
+5:48 AM
+<a href="#rant-2025-09-18-1758188891357" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
+<div class="rant-content">
+Test rant from updated script
+</div>
+</div>
+
+<div class="rant-entry" id="rant-2025-09-18-1758188475870">
+<div class="time-stamp">
+5:41 AM
+<a href="#rant-2025-09-18-1758188475870" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
+<div class="rant-content">
+Testing from droplet
+</div>
+</div>
+
+</div><div class="rant-day" data-date="2025-09-05">
 <div class="date-header">
 <span class="date">September 05, 2025</span>
 </div>
