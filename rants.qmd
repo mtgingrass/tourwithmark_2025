@@ -92,6 +92,16 @@ Raw opinions, hot takes, and things that need to be said.
 <span class="date">September 18, 2025</span>
 </div>
 
+<div class="rant-entry" id="rant-2025-09-18-1758190600320">
+<div class="time-stamp">
+10:16 AM
+<a href="#rant-2025-09-18-1758190600320" class="rant-anchor" title="Link to this rant">🔗</a>
+</div>
+<div class="rant-content">
+This is a test from digital ocean droplet 2
+</div>
+</div>
+
 <div class="rant-entry" id="rant-2025-09-18-1758189028586">
 <div class="time-stamp">
 5:50 AM
