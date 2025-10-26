@@ -25,3 +25,5 @@ _site/
 
 # Excel temporary files
 ~$*.xlsx
+
+/.quarto/

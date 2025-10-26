@@ -1,0 +1,59 @@
+---
+title: 'Random Photo Updates'
+author: 'Mark'
+date: '2025-10-26'
+categories: ['Life', 'Photography']
+image: 'images/IMG_0648.webp'
+format: html
+description: "A collection of random photos from recent adventures and everyday moments. These captured memories showcase different places, experiences, and moments worth remembering."
+---
+
+Just sharing some random photos that have been sitting in my camera roll. Each one tells a little story or captures a moment that felt worth preserving. From outdoor adventures to everyday scenes, here's a glimpse into recent happenings.
+
+Sometimes the best memories come from the unplanned moments between the big adventures.
+
+![](images/IMG_0648.webp)
+
+![](images/IMG_0658.webp)
+
+![](images/IMG_0665.webp)
+
+![](images/IMG_0671.webp)
+
+![](images/IMG_0691.webp)
+
+![](images/IMG_0692.webp)
+
+![](images/IMG_0702.webp)
+
+![](images/IMG_0707.webp)
+
+![](images/IMG_0750.webp)
+
+![](images/IMG_0751.webp)
+
+![](images/IMG_0758.webp)
+
+![](images/IMG_0762.webp)
+
+![](images/IMG_0766.webp)
+
+![](images/IMG_0775.webp)
+
+![](images/IMG_0776.webp)
+
+![](images/IMG_0779.webp)
+
+![](images/IMG_0786.webp)
+
+![](images/IMG_0792.webp)
+
+![](images/IMG_0815.webp)
+
+![](images/IMG_0822.webp)
+
+![](images/IMG_0827.webp)
+
+![](images/IMG_0833.webp)
+
+![](images/IMG_0841.webp)
