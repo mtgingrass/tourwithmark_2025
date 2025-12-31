@@ -11,15 +11,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - tours.qmd
-      - random_posts.qmd
-      - text: "Rants"
-        href: rants.qmd
       - text: "Hiking Map"
         href: hiking_map.qmd
 
     right:
-      - booklist.qmd
       - icon: github
         href: https://github.com/mtgingrass
         aria-label: GitHub
