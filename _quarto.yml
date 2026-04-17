@@ -15,11 +15,8 @@ website:
         href: hiking_map.qmd
 
     right:
-      - icon: github
-        href: https://github.com/mtgingrass
-        aria-label: GitHub
       - icon: envelope-arrow-up-fill
-        href: mailto:twm@tourwithmark.com
+        href: mailto:markm@tourwithmark.com
 
 format:
   html:
