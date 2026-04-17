@@ -2,16 +2,18 @@
 title: "Tour with Mark"
 about:
   template: trestles
-image: images/markfoglick.webp
+image: images/markhikebig.webp
 ---
 
 # Welcome to Tour with Mark 
 
-## Don't just think, do.
+## Stop Thinking
 
 I’m Mark, and this is my space. A place for adventure, learning, and self-reflection. I’m a thinker, a traveler, and a lifelong learner.
 
-I don’t just think about things, I do them.  
+Life is short. Stop *thinking* about what to do next and just go after it.
+
+Every time I hear someone say they want to go to the Galapagos one day, or maybe next year, I cringe. I cringe because if you take two big trips a year, you might only have 30, 40, or 50 trips left in your entire lifetime. Start doing the math—you can't possibly do what you want if you don't do it NOW.
 
 I’ve built out my own camper van and experienced the realities of a tough life. I’ve been poor, and I’ve been comfortably middle class. I’ve been  homeless, and I’ve lived in luxury apartments that most of my peers couldn’t afford. I delivered newspapers from age 8 through 14, worked at McDonald’s and retail jobs. From there, I went on to serve as an Air Force electronics technician; eventually to managing multi-million dollar IT contracts. I’ve seen a lot—across industries, social classes, and life’s full spectrum. 
 
@@ -24,7 +26,3 @@ Welcome.
 **This is TourWithMark.com. My trail. My terms. My Life.**
 
 ---
-
-::: {.dashboard-links}
-[Site Analytics](https://tourwithmark.com/analytics-dashboard.html) • [Likes Dashboard](https://tourwithmark.com/likes-dashboard.html)
-:::
